@@ -4,7 +4,19 @@ const path = require('path');
 var _ = require('./common/lodash.min.js')
 const fs = require('fs');
 
-app.get('/common/*',function (req, res) {
+app.get('*',function (req, res) {
+  console.log('GET * path=' + decodeURIComponent(req.path));
+  res.sendFile(path.join(__dirname, decodeURIComponent(req.path)));
+  
+})
+
+var port = 3001
+
+app.listen(port);
+
+console.log('Listening on http://localhost:' + port)
+
+/*app.get('/common/*',function (req, res) {
   res.sendFile(path.join(__dirname, req.path));
 })
 
@@ -22,13 +34,9 @@ app.get('/index.js',function (req, res) {
 
 app.get('/index.html',function (req, res) {
   res.sendFile(path.join(__dirname, req.path));
-})
+})*/
 
-app.get('*',function (req, res) {
-  // This does not work for files with a hashpound
-  //res.sendFile(path.join(__dirname, decodeURIComponent(req.path)));
-  
-  var filePath = path.join(__dirname, req.path);
+  /*var filePath = path.join(__dirname, req.path);
   if (filePath == './')
     filePath = './index.html';
 
@@ -85,11 +93,4 @@ app.get('*',function (req, res) {
       res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.end(content, 'utf-8');
     }
-  })
-})
-
-var port = 3001
-
-app.listen(port);
-
-console.log('Listening on http://localhost:' + port)
+  })*/
