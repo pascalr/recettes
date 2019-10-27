@@ -3,6 +3,9 @@
   float: left;
   margin-right: 20px;
 }
+h2 {
+  clear: left;
+}
 </style>
 
 <div><small>Recette originale de: <a href="https://cuisinez.telequebec.tv/recettes/2570/crepe-hollandaise"><b>Cuisine futée</b></a></small></div>
@@ -17,10 +20,6 @@
     Cuisson :       35 minutes
     8 portions
     ⭐⭐⭐⭐⭐
-
-
-
-
 
 <h2>Ingrédients</h2>
     500 ml (2 tasses) de lait

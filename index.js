@@ -9,11 +9,28 @@ function rIcon(filename) {
 const htmlFilename = window.location.pathname.slice(6)
 const filename = decodeURIComponent(htmlFilename)
 
+function genLink(name) {
+  return e('div', {onClick: () => {$('#placeholder').load(encodeURIComponent('data/' + name))}, style: {cursor: 'pointer'}}, name);
+}
+
+function aproposLink() {
+  return e('span', {class: 'menubtn', onClick: () => {$('#placeholder').load(encodeURIComponent('apropos.html'))}, style: {cursor: 'pointer'}}, 'À propos');
+}
+
+class HomePage extends React.Component {
+  render() {
+    return e('div', {id: 'placeholder', style: {marginTop: '20px'}},
+      genLink('Crêpe hollandaise #déjeuner #recette'),
+      genLink('Relish #recette #condiment'),
+    )
+  }
+}
+
 class IndexPage extends React.Component {
   render() {
     return e('div', {id: 'indexPage'},
       e(Navbar),
-      e('div', {id: 'placeholder', style: {marginTop: '20px'}}),
+      e(HomePage),
     )
   }
 }
@@ -28,11 +45,11 @@ class Navbar extends React.Component {
     const {showActionDropdown, marginWidth} = this.state
    
     return e('div', {className: 'navbar'},
-      e('a', {href: 'http://localhost:3000/'}, 'Acceuil'), // Home is a link where there are links to all else
-      e('a', {href: 'http://localhost:3000/'}, 'Repas'),
-      e('a', {href: 'http://localhost:3000/'}, 'Dessert'),
+      e('a', {href: 'index.html'}, rIcon('home-24px.svg')),
+      e('a', {href: 'index.html'}, 'Repas'),
+      e('a', {href: 'index.html'}, 'Dessert'),
       e('input', {id: 'filterVal2', onKeyDown: this.onKeyDown, type: 'text', value: this.state.query, onChange: ({target}) => {this.setState({query: target.value})}}),
-      e('a', {href: 'http://localhost:3000/'}, 'À propos'),
+      aproposLink(),
       //e('a', {href: `http://localhost:3000/edit/${encodeURIComponent(filename)}`}, 'Edit'),
       e('span', {className: 'dropdown'},
         e('button', {className: 'dropbtn', onClick: () => {this.setState({showActionDropdown: !showActionDropdown})}}, 'Ingrédients', e('i', {className: 'fa fa-caret-down'})),
@@ -58,8 +75,8 @@ class Navbar extends React.Component {
 
 ReactDOM.render(e(IndexPage), document.querySelector('#root'));
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   //$('#placeholder').load('/data/relish.html');
   $('#placeholder').load(encodeURIComponent('data/Crêpe hollandaise #déjeuner #recette'));
   //$('#placeholder').load(encodeURIComponent('data/a test.html'));
-});
+});*/

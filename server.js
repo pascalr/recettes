@@ -8,6 +8,10 @@ app.get('/index.html',function (req, res) {
   res.sendFile(path.join(__dirname, 'local.html'));
 })
 
+app.get('/',function (req, res) {
+  res.sendFile(path.join(__dirname, 'local.html'));
+})
+
 app.get('*',function (req, res) {
   console.log('GET * path=' + decodeURIComponent(req.path));
   res.sendFile(path.join(__dirname, decodeURIComponent(req.path)));
