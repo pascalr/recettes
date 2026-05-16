@@ -1,0 +1,161 @@
+.ing-btn {
+  float: right;
+}
+
+.recipe-instructions ul {
+  margin-top: 0;
+  font-style: italic;
+  padding: 0 1.5rem;
+}
+
+.recipe-instructions ul > li::marker {
+  content: "- ";
+}
+
+.recipe-instructions > * + * {
+  margin-top: 0.75em;
+}
+
+.recipe-instructions, .ing-list {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+}
+
+.recipe-note {
+  font-style: italic;
+}
+
+.recipe-image-credit {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.recipe-image-credit::before {
+  content: "Crédit photo: ";
+  font-style: italic;
+}
+
+.recipe-title {
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  line-height: 1.1em;
+}
+
+.recipe-image-container {
+  width: 452px;          /* This is your fixed width */
+  max-width: 100%;       /* Shrinks responsively */
+  flex-shrink: 0;
+}
+
+/* Maintain aspect ratio using padding-bottom trick (e.g., 3:2 aspect ratio) */
+.recipe-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc(100% * 304 / 452); /* height/width = 2/3 for a 3:2 ratio */
+  overflow: hidden;
+}
+
+.recipe-image-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.recipe-header {
+  display: flex;
+  gap: 40px;
+}
+
+.recipe-step::before {
+  font-weight: bold;
+  content: counter(stepnb) ". ";
+}
+
+.recipe-step {
+  counter-increment: stepnb;
+}
+
+.recipe h2 {
+  border-bottom: 1px solid black;
+  padding-left: 0.25rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe {
+  min-width: 230px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 0 0.5rem;
+  margin-bottom: 20em;
+}
+
+ul.ing-list {
+  list-style-type: none; /* Remove bullets */
+  padding-left: 0;
+}
+
+ul.ing-list li {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+}
+
+ul.ing-list li + li {
+  border-top-width: 0;
+}
+
+/* missing food name: color: #cc0000; */
+/* quand il y a un lien: color: #0d6efd; */
+.food-name {
+  color: #2a7ffd;
+  font-weight: bold;
+}
+
+.nav {
+  background-color: #212529;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.nav a, .nav a:visited, .nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.recipe-detail {
+  color: gray;
+}
+.recipe-detail b{
+  color: black;
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url('./fonts/Satisfy/Satisfy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .recipe-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
