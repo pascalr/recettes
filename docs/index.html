@@ -24,11 +24,33 @@
       .recipe-list li a img {
         margin-right: 0.5em;
       }
-    </style>
+      .navbar-home {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centers the title perfectly */
+        width: 100%;
+        height: 50px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        background-color: #111111;
+        position: relative;
+      }
+
+      .navbar-title {
+        color: #ffffff;
+        font-family: system-ui, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        /* Font size matches the absolute centered scale of your subpages */
+        font-size: 1rem; 
+      }
+          </style>
   </head>
   <body>
+    <nav class="navbar-home">
+      <span class="navbar-title">Site de Pascal - Recettes</span>
+    </nav>
     <div class="container">
-      <h2 class="h001">Recettes</h2>
       <ul class="recipe-list">
         <h2>Soupes</h2>
         <li>
