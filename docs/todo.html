@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste de recettes</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/recipe.css" />
+    <link rel="stylesheet" href="./assets/old_main.css" />
+    <style>
+      h2 {
+        margin: 0.5em 0 0.25em 0;
+        border-bottom: 1px solid black;
+      }
+      .recipe-list li a {
+        color: black;
+        font-size: 1.1em;
+        text-decoration: none;
+      }
+      .recipe-list li a div {
+        display: flex;
+        align-items: center;
+      }
+      .recipe-list li a {
+        display: flex;
+        align-items: center;
+      }
+      .recipe-list li a img {
+        margin-right: 0.5em;
+      }
+      .navbar-home {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centers the title perfectly */
+        width: 100%;
+        height: 50px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        background-color: #111111;
+        position: relative;
+      }
+
+      .navbar-title {
+        color: #ffffff;
+        font-family: system-ui, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        /* Font size matches the absolute centered scale of your subpages */
+        font-size: 1rem; 
+      }
+          </style>
+  </head>
+  <body>
+    <nav class="navbar-home">
+      <span class="navbar-title">Site de Pascal - Recettes</span>
+    </nav>
+    <div class="container">
+      <ul class="recipe-list">
+        <li>
+          <a href="https://planbouffe.ca/muffins-bleuets-sante/">
+            <img src="./images/thumb/17.jpg" width="71" height="48"/>
+            <div>Muffins aux bleuets</div>
+          </a>
+        </li>
+        <li>
+          <a href="./shortcake_aux_fraise.html">
+            <img src="./images/thumb/27.jpg" width="71" height="48"/>
+            <div>Shortcake aux fraises</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/237.jpeg" width="71" height="48"/>
+            <div>Salade grecque</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/185.jpeg" width="71" height="48"/>
+            <div>Pizza tomate et ail</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/143.jpeg" width="71" height="48"/>
+            <div>Salade de pois chiches</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/153.jpeg" width="71" height="48"/>
+            <div>Salade de légumineuse</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/130.jpeg" width="71" height="48"/>
+            <div>Tacos végés</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/142.jpeg" width="71" height="48"/>
+            <div>Orzo et champignons</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/154.jpeg" width="71" height="48"/>
+            <div>Soupe aux tomates</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/149.jpeg" width="71" height="48"/>
+            <div>Pizza sauce cachou et courge butternut</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/56.jpg" width="71" height="48"/>
+            <div>Papaye au lait de coco, rhum et vanille</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/57.jpg" width="71" height="48"/>
+            <div>Doigts de sorcière</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/195.jpeg" width="71" height="48"/>
+            <div>Lait de soya</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/197.jpeg" width="71" height="48"/>
+            <div>Lait d’avoine</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/225.jpeg" width="71" height="48"/>
+            <div>Chou à la crème</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/179.png" width="71" height="48"/>
+            <div>Gratin d'aubergines</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/180.png" width="71" height="48"/>
+            <div>Gratin de courgettes</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/168.jpeg" width="71" height="48"/>
+            <div>Taboulé</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/234.jpeg" width="71" height="48"/>
+            <div>Pain au zucchini blanc</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/239.jpeg" width="71" height="48"/>
+            <div>Pain au zucchini et chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/223.jpeg" width="71" height="48"/>
+            <div>Riz espagnol</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/79.jpg" width="71" height="48"/>
+            <div>Pâtes carbonara</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/78.jpg" width="71" height="48"/>
+            <div>Guacamole</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/217.jpeg" width="71" height="48"/>
+            <div>Gratin de brocoli</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/232.jpeg" width="71" height="48"/>
+            <div>Gratin de chou fleur</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/231.jpeg" width="71" height="48"/>
+            <div>Gratin de pomme de terre</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/227.jpeg" width="71" height="48"/>
+            <div>Pâtes de courge spaghetti</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/219.jpeg" width="71" height="48"/>
+            <div>Tortillas de blé</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/184.jpeg" width="71" height="48"/>
+            <div>Salade russe</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/202.jpeg" width="71" height="48"/>
+            <div>Mayonnaise</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/1.jpg" width="71" height="48"/>
+            <div>Soupe aux nouilles et brocoli</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/212.jpeg" width="71" height="48"/>
+            <div>Soupe aux pois jaune</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/208.jpeg" width="71" height="48"/>
+            <div>Soupe minestrone</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/224.jpeg" width="71" height="48"/>
+            <div>Renversé à l'ananas</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/22.jpg" width="71" height="48"/>
+            <div>Pâtes au pesto</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/65.jpg" width="71" height="48"/>
+            <div>Tarte aux fraises</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/67.jpg" width="71" height="48"/>
+            <div>Tarte aux bleuets</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/193.jpeg" width="71" height="48"/>
+            <div>Poutine</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/13.jpg" width="71" height="48"/>
+            <div>Lasagne</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/71.jpg" width="71" height="48"/>
+            <div>Biscuits à la mélasse</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/72.jpg" width="71" height="48"/>
+            <div>Biscuits à l'avoine</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/218.jpeg" width="71" height="48"/>
+            <div>Croissant</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/203.jpeg" width="71" height="48"/>
+            <div>Yogourt avec petits fruits</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/24.jpg" width="71" height="48"/>
+            <div>Granola</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/80.jpg" width="71" height="48"/>
+            <div>Macarons</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/229.jpeg" width="71" height="48"/>
+            <div>Pizza pepperoni fromage</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/200.jpeg" width="71" height="48"/>
+            <div>Hamburger</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/199.jpeg" width="71" height="48"/>
+            <div>Chocolat chaud</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/198.jpeg" width="71" height="48"/>
+            <div>Cappuccino vanille française</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/206.jpeg" width="71" height="48"/>
+            <div>Riz</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/38.jpg" width="71" height="48"/>
+            <div>Houmous</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/207.jpeg" width="71" height="48"/>
+            <div>Macaroni</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/166.jpeg" width="71" height="48"/>
+            <div>Spaghetti</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/176.png" width="71" height="48"/>
+            <div>Sandwich aux oeufs</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/205.jpeg" width="71" height="48"/>
+            <div>Sandwich au jambon</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/165.jpeg" width="71" height="48"/>
+            <div>Sandwich aux tomates</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/211.jpeg" width="71" height="48"/>
+            <div>Panini</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/62.jpg" width="71" height="48"/>
+            <div>Bagel</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/220.jpeg" width="71" height="48"/>
+            <div>Pain pita</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/209.jpeg" width="71" height="48"/>
+            <div>Moutarde maison</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/12.jpg" width="71" height="48"/>
+            <div>Quiche</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/213.jpeg" width="71" height="48"/>
+            <div>Salade de pâtes</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/26.jpg" width="71" height="48"/>
+            <div>Nouilles ramen</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/214.jpeg" width="71" height="48"/>
+            <div>Omelette</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/215.jpeg" width="71" height="48"/>
+            <div>Sauce BBQ</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/228.jpeg" width="71" height="48"/>
+            <div>Sauce miel et ail</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/216.jpeg" width="71" height="48"/>
+            <div>Macaroni au fromage</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/230.jpeg" width="71" height="48"/>
+            <div>Fondue au chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/140.jpeg" width="71" height="48"/>
+            <div>Brochette de légume</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/238.jpeg" width="71" height="48"/>
+            <div>Salade de quinoa</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/235.jpeg" width="71" height="48"/>
+            <div>Nachos</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/11.jpg" width="71" height="48"/>
+            <div>Hamburger aux lentilles</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/221.jpeg" width="71" height="48"/>
+            <div>Jus de pomme</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/240.jpeg" width="71" height="48"/>
+            <div>Jus d’ananas</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/241.jpeg" width="71" height="48"/>
+            <div>Jus d'orange</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/226.jpeg" width="71" height="48"/>
+            <div>Pizza pochettes</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/201.jpeg" width="71" height="48"/>
+            <div>Haricots rouges cuits</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/20.jpg" width="71" height="48"/>
+            <div>Gâteau rouge velours</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/66.jpg" width="71" height="48"/>
+            <div>Tarte à la lime</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/64.jpg" width="71" height="48"/>
+            <div>Pain brioché</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/60.jpg" width="71" height="48"/>
+            <div>Pain baguette</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/59.jpg" width="71" height="48"/>
+            <div>Pain de grains entiers</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/30.jpg" width="71" height="48"/>
+            <div>Dumplings</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/69.jpg" width="71" height="48"/>
+            <div>Biscuits bonshommes en pain d'épice</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/73.jpg" width="71" height="48"/>
+            <div>Biscuits double chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/77.jpg" width="71" height="48"/>
+            <div>Empanadas</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/76.jpg" width="71" height="48"/>
+            <div>Tarte aux abricots</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/183.jpeg" width="71" height="48"/>
+            <div>Tofu à la vapeur</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/136.jpeg" width="71" height="48"/>
+            <div>Sous-marin aux boulettes de pois chiches</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/155.jpeg" width="71" height="48"/>
+            <div>Salade d'artichauts feta et dattes</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/112.jpg" width="71" height="48"/>
+            <div>Chi Chi</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/156.jpeg" width="71" height="48"/>
+            <div>Riz pilaf à la coriandre</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/thumb/236.jpeg" width="71" height="48"/>
+            <div>Soupe aux carottes</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

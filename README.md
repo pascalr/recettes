@@ -14,3 +14,6 @@ TODO:
 - outils de recherche (idéalement généré automatiquement avec index.html avec les recettes à jour, exact_match nom recette et aussi si contient ingrédient serait cool)
 - emphase sur les ingrédients dans les étapes, certains sont manquants
 - générer index.html automatiqement (commencer les noms de fichier avec la catégorie? _soupe_soupe_blah_blah_blah?)
+- Voir docs/todo.html pour les recettes avec images à rajouter
+- Écrire des instructions pour les recettes incomplètes
+- M'assurer que toutes les recettes sont transférées. Relish n'était pas transféré. Voir pourquoi.
