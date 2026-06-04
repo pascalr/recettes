@@ -29,7 +29,7 @@
     },
     "pain_hotdog": {
         "title": "Pain à hotdog",
-        "image": "280.png",
+        "image": "163.jpeg",
         "ingredients": [
             "œuf",
             "levure sèche active",
@@ -87,7 +87,7 @@
     },
     "lasagne_vege": {
         "title": "Lasagne végé",
-        "image": "",
+        "image": "13.jpg",
         "ingredients": [
             "PVT sec",
             "oignons",
@@ -111,7 +111,7 @@
     },
     "pate_brisee_beurre": {
         "title": "Pâte brisée (beurre)",
-        "image": "",
+        "image": "53.jpg",
         "ingredients": [
             "farine",
             "sel",
@@ -122,7 +122,7 @@
     },
     "pain_banane": {
         "title": "Pain aux bananes",
-        "image": "",
+        "image": "169.jpeg",
         "ingredients": [
             "farine",
             "poudre à pâte",
@@ -137,7 +137,7 @@
     },
     "muffins_creme_sure_cannelle": {
         "title": "Muffins à la crème sûre et à la cannelle",
-        "image": "",
+        "image": "192.jpeg",
         "ingredients": [
             "farine",
             "poudre à pâte",
@@ -170,7 +170,7 @@
     },
     "gateau_carottes": {
         "title": "Gâteau aux carottes",
-        "image": "",
+        "image": "144.jpeg",
         "ingredients": [
             "farine tout usage",
             "poudre à pâte",
@@ -208,7 +208,7 @@
     },
     "confiture_canneberge": {
         "title": "Confiture de caneberge",
-        "image": "",
+        "image": "148.jpeg",
         "ingredients": [
             "sucre",
             "eau",
@@ -218,7 +218,7 @@
     },
     "pina_colada": {
         "title": "Boisson au rhum à la vanille",
-        "image": "",
+        "image": "135.jpeg",
         "ingredients": [
             "jus d'ananas",
             "rhum à la vanille",
@@ -242,7 +242,7 @@
     },
     "biscuits_aux_brisures_de_chocolat": {
         "title": "Biscuits aux brisures de chocolat",
-        "image": "",
+        "image": "15.jpg",
         "ingredients": [
             "beurre",
             "cassonade",
@@ -259,7 +259,7 @@
     },
     "cowboy_cookies": {
         "title": "Cowboy cookies",
-        "image": "",
+        "image": "161.jpeg",
         "ingredients": [
             "beurre mou",
             "sucre",
@@ -278,7 +278,7 @@
     },
     "aubergines_pois_chiche": {
         "title": "Plat d'aubergines et pois chiches",
-        "image": "",
+        "image": "recipe_placeholder.png",
         "ingredients": [
             "huile d'olive",
             "oignons",
@@ -304,7 +304,7 @@
     },
     "muffins_bleuets": {
         "title": "Muffins aux bleuets",
-        "image": "",
+        "image": "17.jpg",
         "ingredients": [
             "sucre",
             "gros oeuf",
@@ -321,7 +321,7 @@
     },
     "muffins_avoine_bleuet": {
         "title": "Muffins à l'avoine et aux bleuets",
-        "image": "",
+        "image": "191.jpeg",
         "ingredients": [
             "farine tout usage",
             "cassonade",
@@ -338,7 +338,7 @@
     },
     "muffins_pomme_cannelle": {
         "title": "Muffins aux pommes et à la cannelle",
-        "image": "",
+        "image": "188.jpeg",
         "ingredients": [
             "farine tout usage",
             "poudre à pâte",
@@ -354,7 +354,7 @@
     },
     "gaufres": {
         "title": "Gaufres",
-        "image": "",
+        "image": "37.jpg",
         "ingredients": [
             "oeufs",
             "farine",
@@ -368,7 +368,7 @@
     },
     "potage_citrouille": {
         "title": "Potage à la citrouille",
-        "image": "",
+        "image": "181.jpeg",
         "ingredients": [
             "citrouille",
             "céleri",
@@ -382,7 +382,7 @@
     },
     "gateau_chocolat": {
         "title": "Gâteau au chocolat",
-        "image": "",
+        "image": "189.jpeg",
         "ingredients": [
             "farine tout usage",
             "sucre",
@@ -399,7 +399,7 @@
     },
     "pain_blanc_a_la_machine": {
         "title": "Pain blanc à la machine à pain",
-        "image": "",
+        "image": "21.jpg",
         "ingredients": [
             "levure sèche active",
             "farine",
@@ -412,7 +412,7 @@
     },
     "sandwich_thon": {
         "title": "Sandwich au thon",
-        "image": "",
+        "image": "187.jpeg",
         "ingredients": [
             "thon pâle en morceaux égoutté",
             "moutarde de dijon",
@@ -424,7 +424,7 @@
     },
     "boulettes_pois_chiche": {
         "title": "Boulettes de pois chiches",
-        "image": "",
+        "image": "6.jpg",
         "ingredients": [
             "pois chiches secs",
             "oeufs",
@@ -440,7 +440,7 @@
     },
     "pouding_au_pain": {
         "title": "Pouding au pain",
-        "image": "",
+        "image": "159.jpeg",
         "ingredients": [
             "lait",
             "œufs",
@@ -453,7 +453,7 @@
     },
     "biscuits_avoine_raisins": {
         "title": "Biscuits à l'avoine et aux raisins secs",
-        "image": "",
+        "image": "138.jpeg",
         "ingredients": [
             "beurre ramolli",
             "cassonade bien tassée",
@@ -471,7 +471,7 @@
     },
     "madeleines_au_miel": {
         "title": "Madeleines au miel",
-        "image": "",
+        "image": "3.jpg",
         "ingredients": [
             "farine tout usage",
             "poudre à pâte",
@@ -484,7 +484,7 @@
     },
     "biscuits_dattes_canneberges": {
         "title": "Biscuits aux dattes et canneberges",
-        "image": "",
+        "image": "recipe_placeholder.png",
         "ingredients": [
             "dattes",
             "canneberges séchés",
@@ -501,7 +501,7 @@
     },
     "aioli_chinoise_sucree": {
         "title": "Aïoli chinoise sucrée",
-        "image": "",
+        "image": "158.jpeg",
         "ingredients": [
             "gousses d'ail",
             "moutarde de dijon",
@@ -514,7 +514,7 @@
     },
     "biscuits_creme_sure": {
         "title": "Biscuits à la crème sure",
-        "image": "",
+        "image": "145.jpeg",
         "ingredients": [
             "beurre mou",
             "cassonade",
@@ -530,7 +530,7 @@
     },
     "pate_mexicain_vege": {
         "title": "Pâté mexicain végé",
-        "image": "",
+        "image": "157.jpeg",
         "ingredients": [
             "abaisse de pâte brisée non cuite",
             "oignon",
@@ -549,7 +549,7 @@
     },
     "pizza_vege": {
         "title": "Pizza végétarienne",
-        "image": "",
+        "image": "10.jpg",
         "ingredients": [
             "pâte à pizza",
             "sauce à pizza",
@@ -563,7 +563,7 @@
     },
     "pain_dore": {
         "title": "Pain doré",
-        "image": "",
+        "image": "164.jpeg",
         "ingredients": [
             "œufs",
             "lait",
@@ -574,7 +574,7 @@
     },
     "soupe_patate_haricots_blanc": {
         "title": "Soupe aux patates et haricots blancs",
-        "image": "",
+        "image": "7.jpg",
         "ingredients": [
             "huile",
             "oignon",
@@ -593,7 +593,7 @@
     },
     "cigares_aux_chous": {
         "title": "Cigares aux choux",
-        "image": "",
+        "image": "74.jpg",
         "ingredients": [
             "chou moyen",
             "oignons hachés fins",
@@ -609,7 +609,7 @@
     },
     "ragout_loville": {
         "title": "Ragoût Loville",
-        "image": "",
+        "image": "170.jpeg",
         "ingredients": [
             "saucisses italiennes",
             "oignons",
@@ -634,7 +634,7 @@
     },
     "pate_brisee_recette_maman": {
         "title": "Pâte brisée (à ma maman)",
-        "image": "",
+        "image": "53.jpg",
         "ingredients": [
             "farine",
             "graisse",
@@ -645,7 +645,7 @@
     },
     "boucles_cannelle": {
         "title": "Boucles à la cannelle",
-        "image": "",
+        "image": "137.jpeg",
         "ingredients": [
             "eau",
             "sucre",
@@ -662,7 +662,7 @@
     },
     "hamburger_haricot_noir_riz": {
         "title": "Hamburger aux haricots noirs et riz",
-        "image": "",
+        "image": "133.jpeg",
         "ingredients": [
             "haricots noirs secs",
             "riz cuit",
@@ -678,7 +678,7 @@
     },
     "citronade": {
         "title": "Citronade",
-        "image": "",
+        "image": "147.jpeg",
         "ingredients": [
             "citrons",
             "sucre",
@@ -688,7 +688,7 @@
     },
     "pain_de_viande": {
         "title": "Pain de viande",
-        "image": "",
+        "image": "178.png",
         "ingredients": [
             "sachet de soupe à l'oignon knorr",
             "boeuf haché extra maigre",
@@ -700,7 +700,7 @@
     },
     "hotdog_tofu_panné": {
         "title": "Hotdog au tofu panné",
-        "image": "",
+        "image": "68.jpg",
         "ingredients": [
             "tofu",
             "huile",
@@ -714,7 +714,7 @@
     },
     "confiture_fraises_crues": {
         "title": "Confiture aux fraises crues",
-        "image": "",
+        "image": "4.jpg",
         "ingredients": [
             "fraises fraîches",
             "sucre"
@@ -723,7 +723,7 @@
     },
     "muffins_framboises": {
         "title": "Muffins aux framboises",
-        "image": "",
+        "image": "190.jpeg",
         "ingredients": [
             "farine tout usage",
             "poudre à pâte",
@@ -741,7 +741,7 @@
     },
     "crepes": {
         "title": "Crêpes",
-        "image": "",
+        "image": "162.jpeg",
         "ingredients": [
             "farine",
             "poudre à pâte",
@@ -754,7 +754,7 @@
     },
     "muffins_brisure_chocolat": {
         "title": "Muffins aux brisures de chocolat",
-        "image": "",
+        "image": "177.png",
         "ingredients": [
             "beurre ramolli",
             "sucre",
@@ -769,7 +769,7 @@
     },
     "muffins_chocolat": {
         "title": "Muffins au chocolat",
-        "image": "",
+        "image": "25.jpg",
         "ingredients": [
             "farine tout usage",
             "cacao",
@@ -784,7 +784,7 @@
     },
     "falafels": {
         "title": "Falafels",
-        "image": "",
+        "image": "18.jpg",
         "ingredients": [
             "pois chiches cuits",
             "oignon",
@@ -803,7 +803,7 @@
     },
     "soupe_pois_casses": {
         "title": "Soupe de pois cassés verts",
-        "image": "",
+        "image": "9.jpg",
         "ingredients": [
             "oignons",
             "longe de porc",
@@ -816,7 +816,7 @@
     },
     "potage_courge_butternut": {
         "title": "Potage à la courge butternut",
-        "image": "",
+        "image": "182.jpeg",
         "ingredients": [
             "oignons",
             "courge butternut",
@@ -830,7 +830,7 @@
     },
     "puree_courge_poivree": {
         "title": "Purée de courge poivrée",
-        "image": "",
+        "image": "2.jpg",
         "ingredients": [
             "courge poivrée",
             "sirop d'érable",
@@ -842,7 +842,7 @@
     },
     "biscuits_fantaisie_chocolat": {
         "title": "Biscuits de fantaisie au chocolat",
-        "image": "",
+        "image": "146.jpeg",
         "ingredients": [
             "beurre ramolli",
             "fromage à la crème",
@@ -857,7 +857,7 @@
     },
     "pain_de_viande_vege": {
         "title": "Pain de viande végé",
-        "image": "",
+        "image": "194.png",
         "ingredients": [
             "haricots rouges secs",
             "carottes",
@@ -873,7 +873,7 @@
     },
     "brownies_chocolat": {
         "title": "Brownies au chocolat",
-        "image": "",
+        "image": "28.jpg",
         "ingredients": [
             "chocolat mi-sucré",
             "beurre",
@@ -888,7 +888,7 @@
     },
     "tarte_au_sucre": {
         "title": "Tarte au sucre",
-        "image": "",
+        "image": "23.jpg",
         "ingredients": [
             "cassonade",
             "fécule de maïs",
@@ -903,7 +903,7 @@
     },
     "boeuf_africain": {
         "title": "Boeuf africain",
-        "image": "",
+        "image": "160.jpeg",
         "ingredients": [
             "boeuf en cubes",
             "oignon",
@@ -923,7 +923,7 @@
     },
     "croustade_aux_pommes": {
         "title": "Croustade aux pommes",
-        "image": "",
+        "image": "134.jpeg",
         "ingredients": [
             "cassonnade",
             "farine",
@@ -936,7 +936,7 @@
     },
     "quiche_epinard": {
         "title": "Quiche aux épinards",
-        "image": "",
+        "image": "139.jpeg",
         "ingredients": [
             "farine",
             "beurre salé",
@@ -955,7 +955,7 @@
     },
     "biscuits_tendres_brisures_chocolat": {
         "title": "Biscuits tendres aux brisures de chocolat",
-        "image": "",
+        "image": "204.jpeg",
         "ingredients": [
             "beurre",
             "cassonade",
@@ -972,7 +972,7 @@
     },
     "tofu_au_beurre": {
         "title": "Tofu au beurre",
-        "image": "",
+        "image": "14.jpg",
         "ingredients": [
             "tofu",
             "oignon",
@@ -994,7 +994,7 @@
     },
     "trempette_artichauts": {
         "title": "Trempette aux artichauts",
-        "image": "",
+        "image": "54.jpg",
         "ingredients": [
             "fromage à la crème",
             "mayonnaise",
@@ -1007,7 +1007,7 @@
     },
     "macaroni_au_fromage_et_courge_butternut": {
         "title": "Macaroni au fromage à la courge butternut",
-        "image": "",
+        "image": "5.jpg",
         "ingredients": [
             "courge butternut",
             "huile d'olive",
