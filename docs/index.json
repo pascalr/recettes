@@ -153,5 +153,874 @@
             "cannelle moulue"
         ],
         "category": "Desserts"
+    },
+    "pain_hamburger": {
+        "title": "Pain à hamburger",
+        "image": "61.jpg",
+        "ingredients": [
+            "oeuf",
+            "levure sèche active",
+            "sel",
+            "eau",
+            "huile",
+            "sucre",
+            "farine"
+        ],
+        "category": "Autres"
+    },
+    "gateau_carottes": {
+        "title": "Gâteau aux carottes",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "poudre à pâte",
+            "bicarbonate de soude",
+            "cannelle",
+            "sel",
+            "huile végétale",
+            "sucre",
+            "oeufs",
+            "extrait de vanille",
+            "carottes râpées",
+            "beurre mou",
+            "fromage à la crème",
+            "sucre à glacer",
+            "extrait de vanille"
+        ],
+        "category": "Desserts"
+    },
+    "curry_thai_patates_douces": {
+        "title": "Curry Thaï crémeux aux patates douces",
+        "image": "8.jpg",
+        "ingredients": [
+            "huile",
+            "oignons",
+            "patates douces",
+            "bébés épinards",
+            "pâte de curry",
+            "lait de coco",
+            "bouillon",
+            "cacahuète",
+            "coriandre",
+            "sauce de poisson"
+        ],
+        "category": "Plats principaux"
+    },
+    "confiture_canneberge": {
+        "title": "Confiture de caneberge",
+        "image": "",
+        "ingredients": [
+            "sucre",
+            "eau",
+            "caneberges surgelées"
+        ],
+        "category": "Autres"
+    },
+    "pina_colada": {
+        "title": "Boisson au rhum à la vanille",
+        "image": "",
+        "ingredients": [
+            "jus d'ananas",
+            "rhum à la vanille",
+            "crème glacée à la vanille",
+            "vanille en poudre"
+        ],
+        "category": "Boissons"
+    },
+    "tarte_aux_pommes": {
+        "title": "Tarte aux pommes",
+        "image": "19.jpg",
+        "ingredients": [
+            "pommes",
+            "cassonade",
+            "cannelle moulue",
+            "fécule de maïs",
+            "beurre non salé",
+            "abaisse de pâte brisée non cuite"
+        ],
+        "category": "Desserts"
+    },
+    "biscuits_aux_brisures_de_chocolat": {
+        "title": "Biscuits aux brisures de chocolat",
+        "image": "",
+        "ingredients": [
+            "beurre",
+            "cassonade",
+            "sucre",
+            "oeuf",
+            "extrait de vanille",
+            "farine",
+            "sel",
+            "poudre à pâte",
+            "bicarbonate de soude",
+            "brisures de chocolat mi-sucré"
+        ],
+        "category": "Desserts"
+    },
+    "cowboy_cookies": {
+        "title": "Cowboy cookies",
+        "image": "",
+        "ingredients": [
+            "beurre mou",
+            "sucre",
+            "cassonade",
+            "oeufs",
+            "farine",
+            "bicarbonate de soude",
+            "sel",
+            "poudre à pâte",
+            "extrait de vanille",
+            "flocons d'avoine",
+            "noix de coco râpée",
+            "brisures de chocolat"
+        ],
+        "category": "Desserts"
+    },
+    "aubergines_pois_chiche": {
+        "title": "Plat d'aubergines et pois chiches",
+        "image": "",
+        "ingredients": [
+            "huile d'olive",
+            "oignons",
+            "ail",
+            "aubergines",
+            "pois chiche",
+            "coulis de tomates Multi",
+            "sirop d'érable",
+            "chocolat noir sans sucre",
+            "persil",
+            "basilic",
+            "feuilles de laurier",
+            "7 épices",
+            "sel de céleri",
+            "origan",
+            "paprika fumé",
+            "oignon en poudre",
+            "ail en poudre",
+            "poivre",
+            "fromage halloumi"
+        ],
+        "category": "Plats principaux"
+    },
+    "muffins_bleuets": {
+        "title": "Muffins aux bleuets",
+        "image": "",
+        "ingredients": [
+            "sucre",
+            "gros oeuf",
+            "huile végétale",
+            "lait",
+            "extrait de vanille",
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "crème sure",
+            "bleuets"
+        ],
+        "category": "Desserts"
+    },
+    "muffins_avoine_bleuet": {
+        "title": "Muffins à l'avoine et aux bleuets",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "cassonade",
+            "poudre à pâte",
+            "cannelle moulue",
+            "sel",
+            "flocons d'avoine",
+            "gros oeufs",
+            "lait",
+            "beurre",
+            "bleuets frais"
+        ],
+        "category": "Desserts"
+    },
+    "muffins_pomme_cannelle": {
+        "title": "Muffins aux pommes et à la cannelle",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "poudre à pâte",
+            "cannelle moulue",
+            "sel",
+            "cassonade",
+            "gros oeuf",
+            "lait",
+            "beurre fondu",
+            "pomme"
+        ],
+        "category": "Desserts"
+    },
+    "gaufres": {
+        "title": "Gaufres",
+        "image": "",
+        "ingredients": [
+            "oeufs",
+            "farine",
+            "huile végétale",
+            "lait",
+            "sucre",
+            "poudre à pâte",
+            "sel"
+        ],
+        "category": "Déjeuners"
+    },
+    "potage_citrouille": {
+        "title": "Potage à la citrouille",
+        "image": "",
+        "ingredients": [
+            "citrouille",
+            "céleri",
+            "oignon",
+            "patate en dés",
+            "beurre",
+            "bouillon de poulet",
+            "sel et poivre"
+        ],
+        "category": "Entrées"
+    },
+    "gateau_chocolat": {
+        "title": "Gâteau au chocolat",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "sucre",
+            "bicarbonate de soude",
+            "sel",
+            "poudre à pâte",
+            "beurre ramolli",
+            "chocolat baker's non-sucré",
+            "eau",
+            "extrait de vanille",
+            "oeuf"
+        ],
+        "category": "Desserts"
+    },
+    "pain_blanc_a_la_machine": {
+        "title": "Pain blanc à la machine à pain",
+        "image": "",
+        "ingredients": [
+            "levure sèche active",
+            "farine",
+            "sucre",
+            "huile",
+            "eau tiède",
+            "sel"
+        ],
+        "category": "Autres"
+    },
+    "sandwich_thon": {
+        "title": "Sandwich au thon",
+        "image": "",
+        "ingredients": [
+            "thon pâle en morceaux égoutté",
+            "moutarde de dijon",
+            "huile d'olive",
+            "mayonnaise",
+            "poivre"
+        ],
+        "category": "Plats principaux"
+    },
+    "boulettes_pois_chiche": {
+        "title": "Boulettes de pois chiches",
+        "image": "",
+        "ingredients": [
+            "pois chiches secs",
+            "oeufs",
+            "chapelure assaisonnée à l'italienne",
+            "fromage parmesan",
+            "poivre",
+            "ail en poudre",
+            "paprika fumé",
+            "sel",
+            "huile"
+        ],
+        "category": "Plats principaux"
+    },
+    "pouding_au_pain": {
+        "title": "Pouding au pain",
+        "image": "",
+        "ingredients": [
+            "lait",
+            "œufs",
+            "sucre",
+            "vanille",
+            "pain coupées en morceaux",
+            "grand casseau de bleuets"
+        ],
+        "category": "Desserts"
+    },
+    "biscuits_avoine_raisins": {
+        "title": "Biscuits à l'avoine et aux raisins secs",
+        "image": "",
+        "ingredients": [
+            "beurre ramolli",
+            "cassonade bien tassée",
+            "sucre granulé",
+            "oeuf",
+            "extrait de vanille",
+            "farine tout usage",
+            "bicarbonate de soude",
+            "cannelle moulue",
+            "sel",
+            "flocons d'avoine",
+            "raisins secs"
+        ],
+        "category": "Desserts"
+    },
+    "madeleines_au_miel": {
+        "title": "Madeleines au miel",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "poudre à pâte",
+            "sel",
+            "oeuf",
+            "miel",
+            "beurre non salé"
+        ],
+        "category": "Desserts"
+    },
+    "biscuits_dattes_canneberges": {
+        "title": "Biscuits aux dattes et canneberges",
+        "image": "",
+        "ingredients": [
+            "dattes",
+            "canneberges séchés",
+            "farine d'amande",
+            "oeufs",
+            "flocons d'avoine",
+            "poudre à pâte",
+            "beurre",
+            "huile de coco",
+            "vanille",
+            "pépittes de chocolat noir"
+        ],
+        "category": "Desserts"
+    },
+    "aioli_chinoise_sucree": {
+        "title": "Aïoli chinoise sucrée",
+        "image": "",
+        "ingredients": [
+            "gousses d'ail",
+            "moutarde de dijon",
+            "huile de sésame",
+            "sauce huître",
+            "huile neutre",
+            "sirop d'érable"
+        ],
+        "category": "Autres"
+    },
+    "biscuits_creme_sure": {
+        "title": "Biscuits à la crème sure",
+        "image": "",
+        "ingredients": [
+            "beurre mou",
+            "cassonade",
+            "oeufs",
+            "extrait de vanille",
+            "farine",
+            "bicarbonate de soude",
+            "sel",
+            "poudre à pâte",
+            "crème sure"
+        ],
+        "category": "Desserts"
+    },
+    "pate_mexicain_vege": {
+        "title": "Pâté mexicain végé",
+        "image": "",
+        "ingredients": [
+            "abaisse de pâte brisée non cuite",
+            "oignon",
+            "PVT surgelé",
+            "ail",
+            "tomate séché au soleil",
+            "moutarde de dijon",
+            "ketchup",
+            "pâte de tomate",
+            "eau",
+            "paprika fumé",
+            "chili en flocons",
+            "fromage cheddar"
+        ],
+        "category": "Plats principaux"
+    },
+    "pizza_vege": {
+        "title": "Pizza végétarienne",
+        "image": "",
+        "ingredients": [
+            "pâte à pizza",
+            "sauce à pizza",
+            "champignons",
+            "saucisse de blé",
+            "poivron",
+            "fromage gouda",
+            "feuilles de basilic"
+        ],
+        "category": "Plats principaux"
+    },
+    "pain_dore": {
+        "title": "Pain doré",
+        "image": "",
+        "ingredients": [
+            "œufs",
+            "lait",
+            "tranches de pain",
+            "beurre"
+        ],
+        "category": "Déjeuners"
+    },
+    "soupe_patate_haricots_blanc": {
+        "title": "Soupe aux patates et haricots blancs",
+        "image": "",
+        "ingredients": [
+            "huile",
+            "oignon",
+            "gousses d'ail",
+            "vinaigre de vin blanc",
+            "bouillon",
+            "patate",
+            "moutarde de dijon",
+            "jus de citron",
+            "paprika fumé",
+            "haricots blancs secs",
+            "sel",
+            "poivre"
+        ],
+        "category": "Entrées"
+    },
+    "cigares_aux_chous": {
+        "title": "Cigares aux choux",
+        "image": "",
+        "ingredients": [
+            "chou moyen",
+            "oignons hachés fins",
+            "gras",
+            "viande au choix hachée",
+            "sel",
+            "poivre",
+            "riz cuit",
+            "jus de tomate",
+            "beurre"
+        ],
+        "category": "Plats principaux"
+    },
+    "ragout_loville": {
+        "title": "Ragoût Loville",
+        "image": "",
+        "ingredients": [
+            "saucisses italiennes",
+            "oignons",
+            "gousses d'ail",
+            "patates douces",
+            "patates",
+            "carottes",
+            "navet (rutabaga)",
+            "pâte de tomate",
+            "persil",
+            "feuilles de laurier",
+            "muscade moulue",
+            "clou de girofle",
+            "origan séché",
+            "romarin séché",
+            "cube de bouillon aromatisé au poulet",
+            "poivre",
+            "huile",
+            "tomates en dés"
+        ],
+        "category": "Plats principaux"
+    },
+    "pate_brisee_recette_maman": {
+        "title": "Pâte brisée (à ma maman)",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "graisse",
+            "sel",
+            "eau très froide"
+        ],
+        "category": "Autres"
+    },
+    "boucles_cannelle": {
+        "title": "Boucles à la cannelle",
+        "image": "",
+        "ingredients": [
+            "eau",
+            "sucre",
+            "huile végétale",
+            "sel",
+            "farine tout usage",
+            "levure sèche active",
+            "oeufs",
+            "farine",
+            "cannelle moulue",
+            "beurre"
+        ],
+        "category": "Desserts"
+    },
+    "hamburger_haricot_noir_riz": {
+        "title": "Hamburger aux haricots noirs et riz",
+        "image": "",
+        "ingredients": [
+            "haricots noirs secs",
+            "riz cuit",
+            "oignon",
+            "ketchup",
+            "chapelure",
+            "flocons de chili",
+            "sel",
+            "cumin",
+            "huile"
+        ],
+        "category": "Plats principaux"
+    },
+    "citronade": {
+        "title": "Citronade",
+        "image": "",
+        "ingredients": [
+            "citrons",
+            "sucre",
+            "eau"
+        ],
+        "category": "Autres"
+    },
+    "pain_de_viande": {
+        "title": "Pain de viande",
+        "image": "",
+        "ingredients": [
+            "sachet de soupe à l'oignon knorr",
+            "boeuf haché extra maigre",
+            "chapelure",
+            "oeufs",
+            "ketchup maison"
+        ],
+        "category": "Plats principaux"
+    },
+    "hotdog_tofu_panné": {
+        "title": "Hotdog au tofu panné",
+        "image": "",
+        "ingredients": [
+            "tofu",
+            "huile",
+            "œuf",
+            "chapelure assaisonnée à l'italienne",
+            "farine",
+            "sel et poivre",
+            "pains à hotdog"
+        ],
+        "category": "Plats principaux"
+    },
+    "confiture_fraises_crues": {
+        "title": "Confiture aux fraises crues",
+        "image": "",
+        "ingredients": [
+            "fraises fraîches",
+            "sucre"
+        ],
+        "category": "Autres"
+    },
+    "muffins_framboises": {
+        "title": "Muffins aux framboises",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "poudre à pâte",
+            "bicarbonate de soude",
+            "sel",
+            "cannelle moulue",
+            "beurre ramolli",
+            "sucre",
+            "oeufs",
+            "crème sure",
+            "extrait de vanille",
+            "framboises surgelées"
+        ],
+        "category": "Desserts"
+    },
+    "crepes": {
+        "title": "Crêpes",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "sucre",
+            "oeufs",
+            "lait"
+        ],
+        "category": "Déjeuners"
+    },
+    "muffins_brisure_chocolat": {
+        "title": "Muffins aux brisures de chocolat",
+        "image": "",
+        "ingredients": [
+            "beurre ramolli",
+            "sucre",
+            "oeufs",
+            "farine tout usage",
+            "poudre à pâte",
+            "sel",
+            "lait",
+            "brisures de chocolat mi-sucré"
+        ],
+        "category": "Desserts"
+    },
+    "muffins_chocolat": {
+        "title": "Muffins au chocolat",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "cacao",
+            "sucre",
+            "poudre à pâte",
+            "sel",
+            "gros oeuf",
+            "lait",
+            "huile végétale"
+        ],
+        "category": "Desserts"
+    },
+    "falafels": {
+        "title": "Falafels",
+        "image": "",
+        "ingredients": [
+            "pois chiches cuits",
+            "oignon",
+            "gousses d'ail",
+            "coriandre",
+            "persil",
+            "graines de sésame",
+            "sel",
+            "poivre",
+            "coriandre en poudre",
+            "cumin",
+            "farine tout usage",
+            "huile d'olive"
+        ],
+        "category": "Plats principaux"
+    },
+    "soupe_pois_casses": {
+        "title": "Soupe de pois cassés verts",
+        "image": "",
+        "ingredients": [
+            "oignons",
+            "longe de porc",
+            "cubes de bouillon aromatisé au poulet",
+            "sauce soja",
+            "eau",
+            "pois verts cassés"
+        ],
+        "category": "Autres"
+    },
+    "potage_courge_butternut": {
+        "title": "Potage à la courge butternut",
+        "image": "",
+        "ingredients": [
+            "oignons",
+            "courge butternut",
+            "gousse d'ail",
+            "huile",
+            "cube de bouillon aromatisé au poulet",
+            "poivre",
+            "eau"
+        ],
+        "category": "Autres"
+    },
+    "puree_courge_poivree": {
+        "title": "Purée de courge poivrée",
+        "image": "",
+        "ingredients": [
+            "courge poivrée",
+            "sirop d'érable",
+            "beurre",
+            "gingembre moulu",
+            "sel et poivre"
+        ],
+        "category": "Autres"
+    },
+    "biscuits_fantaisie_chocolat": {
+        "title": "Biscuits de fantaisie au chocolat",
+        "image": "",
+        "ingredients": [
+            "beurre ramolli",
+            "fromage à la crème",
+            "sucre",
+            "gros oeuf",
+            "extrait de vanille",
+            "sel",
+            "farine tout usage",
+            "cacao"
+        ],
+        "category": "Desserts"
+    },
+    "pain_de_viande_vege": {
+        "title": "Pain de viande végé",
+        "image": "",
+        "ingredients": [
+            "haricots rouges secs",
+            "carottes",
+            "pomme de terre",
+            "sachet de soupe à l'oignon knorr",
+            "oeufs",
+            "fromage râpé",
+            "céréale de flocons de maïs écrasés",
+            "sel et poivre",
+            "ketchup maison"
+        ],
+        "category": "Plats principaux"
+    },
+    "brownies_chocolat": {
+        "title": "Brownies au chocolat",
+        "image": "",
+        "ingredients": [
+            "chocolat mi-sucré",
+            "beurre",
+            "sucre",
+            "oeuf",
+            "extrait de vanille",
+            "café pour espresso moulu",
+            "sel",
+            "farine"
+        ],
+        "category": "Desserts"
+    },
+    "tarte_au_sucre": {
+        "title": "Tarte au sucre",
+        "image": "",
+        "ingredients": [
+            "cassonade",
+            "fécule de maïs",
+            "farine",
+            "crème (35%)",
+            "oeuf",
+            "sel",
+            "beurre non salé froid",
+            "eau glacée"
+        ],
+        "category": "Desserts"
+    },
+    "boeuf_africain": {
+        "title": "Boeuf africain",
+        "image": "",
+        "ingredients": [
+            "boeuf en cubes",
+            "oignon",
+            "céleri",
+            "soupe aux tomates",
+            "tomates en dés",
+            "sel et poivre",
+            "sauce Worcestershire",
+            "cassonade",
+            "vinaigre",
+            "poivrons",
+            "gousses d'ail",
+            "carottes",
+            "champignons"
+        ],
+        "category": "Plats principaux"
+    },
+    "croustade_aux_pommes": {
+        "title": "Croustade aux pommes",
+        "image": "",
+        "ingredients": [
+            "cassonnade",
+            "farine",
+            "flocons d'avoine",
+            "beurre dur",
+            "pommes coupées et épépinées",
+            "sucre"
+        ],
+        "category": "Desserts"
+    },
+    "quiche_epinard": {
+        "title": "Quiche aux épinards",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "beurre salé",
+            "eau très froide",
+            "oeufs",
+            "crème 35%",
+            "lait",
+            "sel",
+            "poivre",
+            "oignons",
+            "épinards",
+            "mozzarella",
+            "brie"
+        ],
+        "category": "Plats principaux"
+    },
+    "biscuits_tendres_brisures_chocolat": {
+        "title": "Biscuits tendres aux brisures de chocolat",
+        "image": "",
+        "ingredients": [
+            "beurre",
+            "cassonade",
+            "sucre",
+            "extrait de vanille",
+            "eau",
+            "œufs",
+            "farine",
+            "bicarbonate de soude",
+            "sel",
+            "brisures de chocolat"
+        ],
+        "category": "Desserts"
+    },
+    "tofu_au_beurre": {
+        "title": "Tofu au beurre",
+        "image": "",
+        "ingredients": [
+            "tofu",
+            "oignon",
+            "gousses d'ail",
+            "gingembre frais haché",
+            "beurre",
+            "tomates en dés",
+            "pâte de tomate",
+            "eau",
+            "flocons de piment broyé",
+            "paprika",
+            "garam masala",
+            "muscade moulue",
+            "crème (15%)",
+            "coriandre fraîche",
+            "menthe fraîche"
+        ],
+        "category": "Plats principaux"
+    },
+    "trempette_artichauts": {
+        "title": "Trempette aux artichauts",
+        "image": "",
+        "ingredients": [
+            "fromage à la crème",
+            "mayonnaise",
+            "artichauts dans l'eau égoutées",
+            "fromage mozzarella râpé",
+            "bébés épinards",
+            "poivre"
+        ],
+        "category": "Autres"
+    },
+    "macaroni_au_fromage_et_courge_butternut": {
+        "title": "Macaroni au fromage à la courge butternut",
+        "image": "",
+        "ingredients": [
+            "courge butternut",
+            "huile d'olive",
+            "gousses d'ail",
+            "paprika fumé",
+            "noix de cajou",
+            "ail en poudre",
+            "oignon en poudre",
+            "moutarde de dijon",
+            "jus de citron",
+            "bouillon de légumes",
+            "macaroni"
+        ],
+        "category": "Plats principaux"
     }
 }

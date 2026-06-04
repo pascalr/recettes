@@ -12,7 +12,7 @@ SYSTEM_PROMPT = """You are a precise data processor. Your sole task is to take t
 You must strictly extract the following fields from the input:
 1. "title": The name of the recipe.
 2. "image": The filename of the image used. It's the last part of the img tag src attribute (e.g., "280.png" from "./images/thumb/280.png").
-3. "ingredients": An array of ingredients used.
+3. "ingredients": An array of ingredients used. Only the ingredients names should be included, without quantities or descriptors.
 4. "category": Determine and assign the most appropriate category that this item fits into. Options are: "Déjeuners", "Entrées", "Plats principaux", "Desserts", "Boissons", "Autres".
 
 Output ONLY the raw JSON object. Do not include any conversational filler, markdown formatting (like ```json), or explanations.
@@ -60,7 +60,7 @@ def main():
         file_name = os.path.basename(file_path)
 
         # Skip index.html specifically
-        if file_name.lower() == "index.html":
+        if file_name.lower() == "index.html" or file_name.lower() == "todo.html":
             continue
 
         # Strip the extension to get the clean key (e.g., 'about')
