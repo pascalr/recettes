@@ -1,0 +1,157 @@
+{
+    "relish": {
+        "title": "Relish maison",
+        "category": "Autres",
+        "image": "280.png",
+        "ingredients": [
+            "concombre hachés",
+            "sucre",
+            "vinaigre blanc",
+            "curcuma",
+            "clou de girofle moulu",
+            "graines de moutarde"
+        ]
+    },
+    "gateau_blanc": {
+        "title": "Gâteau blanc",
+        "image": "222.jpeg",
+        "ingredients": [
+            "beurre",
+            "sucre",
+            "oeuf",
+            "extrait de vanille",
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "lait"
+        ],
+        "category": "Desserts"
+    },
+    "pain_hotdog": {
+        "title": "Pain à hotdog",
+        "image": "280.png",
+        "ingredients": [
+            "œuf",
+            "levure sèche active",
+            "sel",
+            "eau",
+            "huile",
+            "sucre",
+            "farine"
+        ],
+        "category": "Autres"
+    },
+    "crepe_mince": {
+        "title": "Crêpe mince",
+        "image": "29.jpg",
+        "ingredients": [
+            "farine",
+            "sucre",
+            "œufs",
+            "lait"
+        ],
+        "category": "Déjeuners"
+    },
+    "buche_de_noel": {
+        "title": "Bûche de noël",
+        "image": "150.jpg",
+        "ingredients": [
+            "chocolat au lait",
+            "crème (35%)",
+            "farine tout usage",
+            "cacao",
+            "sel",
+            "bicarbonate de soude",
+            "oeufs",
+            "sucre",
+            "beurre non salé, ramolli",
+            "extrait de vanille",
+            "lait"
+        ],
+        "category": "Desserts"
+    },
+    "biscuits_amandes": {
+        "title": "Biscuits aux amandes",
+        "image": "132.jpeg",
+        "ingredients": [
+            "oeuf",
+            "sucre",
+            "essence d'amande",
+            "huile",
+            "poudre à pâte",
+            "sel",
+            "farine",
+            "amandes effilées"
+        ],
+        "category": "Desserts"
+    },
+    "lasagne_vege": {
+        "title": "Lasagne végé",
+        "image": "",
+        "ingredients": [
+            "PVT sec",
+            "oignons",
+            "gousse d'ail",
+            "sauce tomate",
+            "romarin séché",
+            "thym séché",
+            "origan séché",
+            "flocons de piments",
+            "paprika",
+            "sriracha en poudre",
+            "poivre",
+            "pâtes de lasagne",
+            "eau",
+            "fromage tranché épais",
+            "beurre",
+            "farine",
+            "lait"
+        ],
+        "category": "Plats principaux"
+    },
+    "pate_brisee_beurre": {
+        "title": "Pâte brisée (beurre)",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "sel",
+            "beurre non salé froid",
+            "eau glacée"
+        ],
+        "category": "Autres"
+    },
+    "pain_banane": {
+        "title": "Pain aux bananes",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "poudre à pâte",
+            "beurre non salé ramolli",
+            "cassonade légèrement tassée",
+            "œufs",
+            "extrait de vanille",
+            "bananes mûres",
+            "lait"
+        ],
+        "category": "Desserts"
+    },
+    "muffins_creme_sure_cannelle": {
+        "title": "Muffins à la crème sûre et à la cannelle",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "poudre à pâte",
+            "soda",
+            "sel",
+            "graisse végétale ou margarine",
+            "crème sure ou yogourt nature",
+            "sucre",
+            "lait",
+            "oeuf",
+            "cassonade tassée",
+            "noix de Grenoble ou de pacanes hachées (facultatif)",
+            "cannelle moulue"
+        ],
+        "category": "Desserts"
+    }
+}
