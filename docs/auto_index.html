@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste de recettes</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/recipe.css" />
+    <link rel="stylesheet" href="./assets/old_main.css" />
+    <style>
+      h2 {
+        margin: 0.5em 0 0.25em 0;
+        border-bottom: 1px solid black;
+      }
+      .recipe-list li a {
+        color: black;
+        font-size: 1.1em;
+        text-decoration: none;
+      }
+      .recipe-list li a div {
+        display: flex;
+        align-items: center;
+      }
+      .recipe-list li a {
+        display: flex;
+        align-items: center;
+      }
+      .recipe-list li a img {
+        margin-right: 0.5em;
+      }
+      .navbar-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        background-color: #111111;
+        position: relative;
+      }
+
+      .navbar-title {
+        color: #ffffff;
+        font-family: system-ui, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: 1rem; 
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar-home">
+      <span class="navbar-title">Site de Pascal - Recettes</span>
+    </nav>
+    <div class="container">
+      <ul class="recipe-list">
+        <h2>Autres</h2>
+        <li>
+          <a href="./aioli_chinoise_sucree.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Aïoli chinoise sucrée</div>
+          </a>
+        </li>
+        <li>
+          <a href="./citronade.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Citronade</div>
+          </a>
+        </li>
+        <li>
+          <a href="./confiture_fraises_crues.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Confiture aux fraises crues</div>
+          </a>
+        </li>
+        <li>
+          <a href="./confiture_canneberge.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Confiture de caneberge</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_blanc_a_la_machine.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pain blanc à la machine à pain</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_hamburger.html">
+            <img src="./images/thumb/61.jpg" width="71" height="48"/>
+            <div>Pain à hamburger</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_hotdog.html">
+            <img src="./images/thumb/280.png" width="71" height="48"/>
+            <div>Pain à hotdog</div>
+          </a>
+        </li>
+        <li>
+          <a href="./potage_courge_butternut.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Potage à la courge butternut</div>
+          </a>
+        </li>
+        <li>
+          <a href="./puree_courge_poivree.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Purée de courge poivrée</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pate_brisee_beurre.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pâte brisée (beurre)</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pate_brisee_recette_maman.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pâte brisée (à ma maman)</div>
+          </a>
+        </li>
+        <li>
+          <a href="./relish.html">
+            <img src="./images/thumb/280.png" width="71" height="48"/>
+            <div>Relish maison</div>
+          </a>
+        </li>
+        <li>
+          <a href="./trempette_artichauts.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Trempette aux artichauts</div>
+          </a>
+        </li>
+        <h2>Desserts</h2>
+        <li>
+          <a href="./biscuits_amandes.html">
+            <img src="./images/thumb/132.jpeg" width="71" height="48"/>
+            <div>Biscuits aux amandes</div>
+          </a>
+        </li>
+        <li>
+          <a href="./biscuits_aux_brisures_de_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Biscuits aux brisures de chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./biscuits_dattes_canneberges.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Biscuits aux dattes et canneberges</div>
+          </a>
+        </li>
+        <li>
+          <a href="./biscuits_fantaisie_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Biscuits de fantaisie au chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./biscuits_tendres_brisures_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Biscuits tendres aux brisures de chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./biscuits_avoine_raisins.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Biscuits à l'avoine et aux raisins secs</div>
+          </a>
+        </li>
+        <li>
+          <a href="./biscuits_creme_sure.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Biscuits à la crème sure</div>
+          </a>
+        </li>
+        <li>
+          <a href="./boucles_cannelle.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Boucles à la cannelle</div>
+          </a>
+        </li>
+        <li>
+          <a href="./brownies_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Brownies au chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./buche_de_noel.html">
+            <img src="./images/thumb/150.jpg" width="71" height="48"/>
+            <div>Bûche de noël</div>
+          </a>
+        </li>
+        <li>
+          <a href="./cowboy_cookies.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Cowboy cookies</div>
+          </a>
+        </li>
+        <li>
+          <a href="./croustade_aux_pommes.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Croustade aux pommes</div>
+          </a>
+        </li>
+        <li>
+          <a href="./gateau_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Gâteau au chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./gateau_carottes.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Gâteau aux carottes</div>
+          </a>
+        </li>
+        <li>
+          <a href="./gateau_blanc.html">
+            <img src="./images/thumb/222.jpeg" width="71" height="48"/>
+            <div>Gâteau blanc</div>
+          </a>
+        </li>
+        <li>
+          <a href="./madeleines_au_miel.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Madeleines au miel</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins au chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_bleuets.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins aux bleuets</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_brisure_chocolat.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins aux brisures de chocolat</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_framboises.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins aux framboises</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_pomme_cannelle.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins aux pommes et à la cannelle</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_avoine_bleuet.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins à l'avoine et aux bleuets</div>
+          </a>
+        </li>
+        <li>
+          <a href="./muffins_creme_sure_cannelle.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Muffins à la crème sûre et à la cannelle</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_banane.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pain aux bananes</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pouding_au_pain.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pouding au pain</div>
+          </a>
+        </li>
+        <li>
+          <a href="./tarte_au_sucre.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Tarte au sucre</div>
+          </a>
+        </li>
+        <li>
+          <a href="./tarte_aux_pommes.html">
+            <img src="./images/thumb/19.jpg" width="71" height="48"/>
+            <div>Tarte aux pommes</div>
+          </a>
+        </li>
+        <h2>Déjeuners</h2>
+        <li>
+          <a href="./crepe_mince.html">
+            <img src="./images/thumb/29.jpg" width="71" height="48"/>
+            <div>Crêpe mince</div>
+          </a>
+        </li>
+        <li>
+          <a href="./crepes.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Crêpes</div>
+          </a>
+        </li>
+        <li>
+          <a href="./gaufres.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Gaufres</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_dore.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pain doré</div>
+          </a>
+        </li>
+        <h2>Plats principaux</h2>
+        <li>
+          <a href="./boeuf_africain.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Boeuf africain</div>
+          </a>
+        </li>
+        <li>
+          <a href="./boulettes_pois_chiche.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Boulettes de pois chiches</div>
+          </a>
+        </li>
+        <li>
+          <a href="./cigares_aux_chous.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Cigares aux choux</div>
+          </a>
+        </li>
+        <li>
+          <a href="./curry_thai_patates_douces.html">
+            <img src="./images/thumb/8.jpg" width="71" height="48"/>
+            <div>Curry Thaï crémeux aux patates douces</div>
+          </a>
+        </li>
+        <li>
+          <a href="./falafels.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Falafels</div>
+          </a>
+        </li>
+        <li>
+          <a href="./hamburger_haricot_noir_riz.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Hamburger aux haricots noirs et riz</div>
+          </a>
+        </li>
+        <li>
+          <a href="./hotdog_tofu_panné.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Hotdog au tofu panné</div>
+          </a>
+        </li>
+        <li>
+          <a href="./lasagne_vege.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Lasagne végé</div>
+          </a>
+        </li>
+        <li>
+          <a href="./macaroni_au_fromage_et_courge_butternut.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Macaroni au fromage à la courge butternut</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_de_viande.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pain de viande</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pain_de_viande_vege.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pain de viande végé</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pizza_vege.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pizza végétarienne</div>
+          </a>
+        </li>
+        <li>
+          <a href="./aubergines_pois_chiche.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Plat d'aubergines et pois chiches</div>
+          </a>
+        </li>
+        <li>
+          <a href="./pate_mexicain_vege.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Pâté mexicain végé</div>
+          </a>
+        </li>
+        <li>
+          <a href="./quiche_epinard.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Quiche aux épinards</div>
+          </a>
+        </li>
+        <li>
+          <a href="./ragout_loville.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Ragoût Loville</div>
+          </a>
+        </li>
+        <li>
+          <a href="./sandwich_thon.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Sandwich au thon</div>
+          </a>
+        </li>
+        <li>
+          <a href="./tofu_au_beurre.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Tofu au beurre</div>
+          </a>
+        </li>
+        <h2>Boissons</h2>
+        <li>
+          <a href="./pina_colada.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Boisson au rhum à la vanille</div>
+          </a>
+        </li>
+        <h2>Soupes</h2>
+        <li>
+          <a href="./potage_citrouille.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Potage à la citrouille</div>
+          </a>
+        </li>
+        <li>
+          <a href="./soupe_patate_haricots_blanc.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Soupe aux patates et haricots blancs</div>
+          </a>
+        </li>
+        <li>
+          <a href="./soupe_pois_casses.html">
+            <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
+            <div>Soupe de pois cassés verts</div>
+          </a>
+        </li>
+       </ul>
+    </div>
+  </body>
+</html>

@@ -13,7 +13,7 @@ You must strictly extract the following fields from the input:
 1. "title": The name of the recipe.
 2. "image": The filename of the image used. It's the last part of the img tag src attribute (e.g., "280.png" from "./images/thumb/280.png").
 3. "ingredients": An array of ingredients used. Only the ingredients names should be included, without quantities or descriptors.
-4. "category": Determine and assign the most appropriate category that this item fits into. Options are: "Déjeuners", "Entrées", "Plats principaux", "Desserts", "Boissons", "Autres".
+4. "category": Determine and assign the most appropriate category that this item fits into. Options are: "Déjeuners", "Entrées", "Soupes", "Plats principaux", "Desserts", "Boissons", "Autres".
 
 Output ONLY the raw JSON object. Do not include any conversational filler, markdown formatting (like ```json), or explanations.
 """

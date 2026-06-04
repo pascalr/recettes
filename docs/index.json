@@ -378,7 +378,7 @@
             "bouillon de poulet",
             "sel et poivre"
         ],
-        "category": "Entrées"
+        "category": "Soupes"
     },
     "gateau_chocolat": {
         "title": "Gâteau au chocolat",
@@ -589,7 +589,7 @@
             "sel",
             "poivre"
         ],
-        "category": "Entrées"
+        "category": "Soupes"
     },
     "cigares_aux_chous": {
         "title": "Cigares aux choux",
@@ -812,7 +812,7 @@
             "eau",
             "pois verts cassés"
         ],
-        "category": "Autres"
+        "category": "Soupes"
     },
     "potage_courge_butternut": {
         "title": "Potage à la courge butternut",
