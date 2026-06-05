@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('recipe-search');
-  const recipeList = document.querySelector('.recipe-list');
+  const categoriesList = document.getElementById('categories-list');
+  const searchList = document.getElementById('search-list');
   const h2Headers = document.querySelectorAll('h2');
   let recipeData = {};
 
@@ -30,33 +31,33 @@ document.addEventListener('DOMContentLoaded', () => {
   searchInput.addEventListener('input', (e) => {
     const query = normalizeText(e.target.value.trim());
 
-    // Grab all recipe list items currently in the DOM
-    const liItems = recipeList.querySelectorAll('li');
+    // Grab all original recipe list items from the categories list
+    const originalItems = categoriesList.querySelectorAll('li');
 
-    // If query is less than 2 characters, reset visibility and stop
+    // Reset the search list container on every keypress
+    searchList.innerHTML = '';
+
+    // IF NOT SEARCHING: Query is less than 2 characters
     if (query.length < 2) {
-      // Show all h2 tags again
-      h2Headers.forEach(h2 => h2.style.display = '');
-      // Show all li tags again
-      liItems.forEach(li => li.style.display = '');
+      h2Headers.forEach(h2 => h2.style.display = '');  // Show h2 titles
+      categoriesList.style.display = '';              // Show original layout
+      searchList.style.display = 'none';              // Hide search results
       return;
     }
 
-    // Hide all h2 tags during active search
+    // IF SEARCHING: Hide headers and the original categories list
     h2Headers.forEach(h2 => h2.style.display = 'none');
+    categoriesList.style.display = 'none';
+    searchList.style.display = '';
 
     const matches = [];
 
-    // Evaluate matches and calculate scores for sorting priority
-    liItems.forEach(li => {
+    // Evaluate matching elements based on data in index.json
+    originalItems.forEach(li => {
       const recipeId = li.id;
       const recipe = recipeData[recipeId];
 
-      if (!recipe) {
-        // If the ID isn't in the JSON, hide it
-        li.style.display = 'none';
-        return;
-      }
+      if (!recipe) return; // Skip if ID isn't mapped in JSON
 
       const title = normalizeText(recipe.title);
       const ingredients = recipe.ingredients || [];
@@ -64,30 +65,29 @@ document.addEventListener('DOMContentLoaded', () => {
       let score = 0;
 
       if (title.includes(query)) {
-        // Priority 1: Title match (Higher likelihood score)
-        score = 2; 
+        score = 2; // Priority 1: Title match
       } else {
-        // Priority 2: Ingredients match (Lower likelihood score)
         const ingredientMatch = ingredients.some(ing => normalizeText(ing).includes(query));
         if (ingredientMatch) {
-          score = 1;
+          score = 1; // Priority 2: Ingredients match
         }
       }
 
+      // If it's a match, clone the element and store its weight
       if (score > 0) {
-        matches.push({ element: li, score: score });
-      } else {
-        li.style.display = 'none';
+        const clonedLi = li.cloneNode(true);
+        // Ensure the cloned item is visible (in case it was hidden by CSS elsewhere)
+        clonedLi.style.display = ''; 
+        matches.push({ element: clonedLi, score: score });
       }
     });
 
     // Sort matches by likelihood (highest score first)
     matches.sort((a, b) => b.score - a.score);
 
-    // Reorder DOM elements based on sorted matches and ensure they are visible
+    // Append the sorted, cloned elements into the search list container
     matches.forEach(match => {
-      match.element.style.display = '';
-      recipeList.appendChild(match.element); 
+      searchList.appendChild(match.element);
     });
   });
 });

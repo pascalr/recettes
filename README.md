@@ -17,6 +17,7 @@ TODO:
 - Voir docs/todo.html pour les recettes avec images à rajouter
 - Écrire des instructions pour les recettes incomplètes
 - M'assurer que toutes les recettes sont transférées. Relish n'était pas transféré. Voir pourquoi.
+- Un nice to have: Search -oeuf -lait pour avoir des recettes sans oeuf et sans lait
 
 
 
