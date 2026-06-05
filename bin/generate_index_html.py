@@ -11,6 +11,8 @@ except FileType:
     print("Erreur lors de la lecture de index.json")
     exit(1)
 
+base_categories = ["Déjeuners", "Entrées", "Soupes", "Plats principaux", "Desserts", "Boissons", "Autres"]
+
 # Dictionnaire pour regrouper les recettes par catégorie
 grouped_recipes = {}
 
@@ -102,8 +104,10 @@ html_content = """<!DOCTYPE html>
     <div class="container">
       <ul class="recipe-list">"""
 
+all_categories = base_categories + [cat for cat in grouped_recipes.keys() if cat not in base_categories]
+
 # Ajout dynamique des catégories et des recettes
-for category in grouped_recipes.keys():
+for category in all_categories:
     recipes_in_cat = grouped_recipes.get(category, [])
 
     # On n'affiche la catégorie que s'il y a des recettes dedans
@@ -127,7 +131,7 @@ html_content += """
 """
 
 # 5. Écriture du résultat dans le fichier index.html
-with open("./docs/auto_index.html", "w", encoding="utf-8") as f:
+with open("./docs/index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Le fichier auto_index.html a été recréé avec succès !")
+print("Le fichier index.html a été recréé avec succès !")

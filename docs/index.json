@@ -217,7 +217,7 @@
         "category": "Autres"
     },
     "pina_colada": {
-        "title": "Boisson au rhum à la vanille",
+        "title": "Piña Colada",
         "image": "135.jpeg",
         "ingredients": [
             "jus d'ananas",
@@ -658,7 +658,7 @@
             "cannelle moulue",
             "beurre"
         ],
-        "category": "Desserts"
+        "category": "Déjeuners"
     },
     "hamburger_haricot_noir_riz": {
         "title": "Hamburger aux haricots noirs et riz",
@@ -684,7 +684,7 @@
             "sucre",
             "eau"
         ],
-        "category": "Autres"
+        "category": "Boissons"
     },
     "pain_de_viande": {
         "title": "Pain de viande",
@@ -826,7 +826,7 @@
             "poivre",
             "eau"
         ],
-        "category": "Autres"
+        "category": "Soupes"
     },
     "puree_courge_poivree": {
         "title": "Purée de courge poivrée",
