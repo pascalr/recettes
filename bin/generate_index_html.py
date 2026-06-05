@@ -95,6 +95,36 @@ html_content = """<!DOCTYPE html>
         letter-spacing: 0.5px;
         font-size: 1rem; 
       }
+
+      /* Container to handle centering and spacing at the top of your page */
+      .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Spacing between input and button */
+        margin: 40px auto; /* Generous spacing above and below the search bar */
+        margin-bottom: 20px;
+        padding: 0 20px; /* Prevents edge-bleeding on mobile screens */
+        max-width: 600px; /* Limits the width so it doesn't stretch too far on desktop */
+      }
+
+      /* The actual input field */
+      #recipe-search {
+        flex: 1; /* Allows the input to grow and fill the container */
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 25px; /* Smooth rounded edges */
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      /* High visibility focus state when a user clicks into it */
+      #recipe-search:focus {
+        border-color: #ff6b6b; /* Warm, foodie-friendly accent color */
+        box-shadow: 0 4px 10px rgba(255, 107, 107, 0.15);
+      }
     </style>
   </head>
   <body>
@@ -102,6 +132,14 @@ html_content = """<!DOCTYPE html>
       <span class="navbar-title">Site de Pascal - Recettes</span>
     </nav>
     <div class="container">
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="recipe-search" 
+          placeholder="Rechercher des recettes ou par ingrédients (ex: pizza, tomate...)" 
+          autocomplete="off"
+        >
+      </div>
       <ul class="recipe-list">"""
 
 all_categories = base_categories + [cat for cat in grouped_recipes.keys() if cat not in base_categories]
