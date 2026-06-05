@@ -17,3 +17,13 @@ TODO:
 - Voir docs/todo.html pour les recettes avec images à rajouter
 - Écrire des instructions pour les recettes incomplètes
 - M'assurer que toutes les recettes sont transférées. Relish n'était pas transféré. Voir pourquoi.
+
+
+
+
+
+
+
+
+WIP js prompt:
+Write html line to include javascript file after page loaded. Write javascript file that handles event on input tag id = "recipe-search". It should fetch data from "./index.json" URL. Whenever at least 2 key pressed, it should filter recipes. Recipes are in a ul tag with class = "recipe-list". The keys from index.json matches the ids of the li tags. Whenever searching, hide all the h2 tags. It should prioritize matching index.json "title" property. After that it should check index.json "ingredients" array for a match. It should sort by likelihood. It should not matter accents and lettercases.

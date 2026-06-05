@@ -128,6 +128,7 @@ html_content = """<!DOCTYPE html>
     </style>
   </head>
   <body>
+    <script src="./assets/recipe-search.js" defer></script>
     <nav class="navbar-home">
       <span class="navbar-title">Site de Pascal - Recettes</span>
     </nav>
@@ -140,7 +141,8 @@ html_content = """<!DOCTYPE html>
           autocomplete="off"
         >
       </div>
-      <ul class="recipe-list">"""
+      <ul id="search-list" class="recipe-list"></ul>
+      <ul id="categories-list" class="recipe-list">"""
 
 all_categories = base_categories + [cat for cat in grouped_recipes.keys() if cat not in base_categories]
 
@@ -153,7 +155,7 @@ for category in all_categories:
         html_content += f"\n        <h2>{category}</h2>"
         for recipe in recipes_in_cat:
             html_content += f"""
-        <li>
+        <li id="{recipe['id']}">
           <a href="./{recipe['id']}.html">
             <img src="{recipe['img_src']}" width="71" height="48"/>
             <div>{recipe['title']}</div>
