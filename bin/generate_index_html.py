@@ -156,7 +156,7 @@ for category in all_categories:
         for recipe in recipes_in_cat:
             html_content += f"""
         <li id="{recipe['id']}">
-          <a href="./{recipe['id']}.html">
+          <a href="./r/{recipe['id']}.html">
             <img src="{recipe['img_src']}" width="71" height="48"/>
             <div>{recipe['title']}</div>
           </a>

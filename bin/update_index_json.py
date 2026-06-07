@@ -47,7 +47,7 @@ def main():
     index_data = load_index()
     
     # Find all .html files in the current directory
-    html_files = glob.glob("./docs/*.html")
+    html_files = glob.glob("./docs/r/*.html")
     
     if not html_files:
         print("No .html files found in the docs directory.")
@@ -58,10 +58,6 @@ def main():
     for file_path in html_files:
         # Get just the filename (e.g., 'about.html' from 'docs/about.html')
         file_name = os.path.basename(file_path)
-
-        # Skip index.html specifically
-        if file_name.lower() == "index.html" or file_name.lower() == "todo.html":
-            continue
 
         # Strip the extension to get the clean key (e.g., 'about')
         base_name = os.path.splitext(file_name)[0]
