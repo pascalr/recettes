@@ -103,7 +103,7 @@ Here is a recipe template you should follow strictly, without adding any extra e
   </body>
 </html>
 
-Output ONLY the raw JSON object. Do not include any conversational filler, markdown formatting (like ```json), or explanations.
+Output ONLY the whole HTML page from DOCTYPE to closing html tag. Do not include any conversational filler, markdown formatting (like ```html), or explanations.
 
 Extract from the following:
 """
@@ -140,43 +140,42 @@ def main():
       # Break the loop since we successfully created the file
       break
         
-    copy_to_clipboard(SYSTEM_PROMPT)
+  copy_to_clipboard(SYSTEM_PROMPT)
 
-    # Wait for user interaction
-    print("Go to your LLM, paste the clipboard, and paste the recipe you want to add.")
-    print("Then copy the LLM's JSON response back to the clipboard")
-    print("Once copied, return here and press [Enter] to read from clipboard...")
-    input("Press Enter when ready...")
+  # Wait for user interaction
+  print("Go to your LLM, paste the clipboard, and paste the recipe you want to add.")
+  print("Then copy the LLM's JSON response back to the clipboard")
+  print("Once copied, return here and press [Enter] to read from clipboard...")
+  input("Press Enter when ready...")
 
-    # Read the LLM response from Wayland clipboard using wl-paste
-    try:
-        result = subprocess.run(['wl-paste', '--no-newline'], capture_output=True, text=True, check=True)
-        llm_response = result.stdout.strip()
-    except subprocess.CalledProcessError:
-        print("Error: Failed to read from clipboard using wl-paste. Skipping this file.")
-        continue
+  # Read the LLM response from Wayland clipboard using wl-paste
+  try:
+      result = subprocess.run(['wl-paste', '--no-newline'], capture_output=True, text=True, check=True)
+      llm_response = result.stdout.strip()
+  except subprocess.CalledProcessError:
+      print("Error: Failed to read from clipboard using wl-paste.")
+      return
 
-    # Parse the JSON response
-    try:
-        # Simple cleanup in case the LLM wrapped it in ```html ... ``` markdown blocks
-        if llm_response.startswith("```html"):
-            llm_response = llm_response.split("```html", 1)[1].rsplit("```", 1)[0].strip()
-        elif llm_response.startswith("```"):
-            llm_response = llm_response.split("```", 1)[1].rsplit("```", 1)[0].strip()
-        
-     try:
-          # Create parent directories (docs/r/) if they don't exist yet
-          target_path.parent.mkdir(parents=True, exist_ok=True)
-          
-          # 4. Write the HTML content to the file
-          target_path.write_text(llm_response, encoding="utf-8")
-          print(f"Success! File created at: {target_path}")
-        
-        except Exception as e:
-            print(f"An error occurred while creating the file: {e}")
-            break
+  # Parse the JSON response
+  try:
+      # Simple cleanup in case the LLM wrapped it in ```html ... ``` markdown blocks
+      if llm_response.startswith("```html"):
+          llm_response = llm_response.split("```html", 1)[1].rsplit("```", 1)[0].strip()
+      elif llm_response.startswith("```"):
+          llm_response = llm_response.split("```", 1)[1].rsplit("```", 1)[0].strip()
+      
+      # Create parent directories (docs/r/) if they don't exist yet
+      target_path.parent.mkdir(parents=True, exist_ok=True)
+      
+      # 4. Write the HTML content to the file
+      target_path.write_text(llm_response, encoding="utf-8")
+      print(f"Success! File created at: {target_path}")
+      
+  except Exception as e:
+      print(f"An error occurred while creating the file: {e}")
+      return
 
-    print("\nProcessing complete!")
+  print("\nProcessing complete!")
 
 if __name__ == "__main__":
     main()
