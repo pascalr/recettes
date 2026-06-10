@@ -15,10 +15,10 @@ TODO:
 - Un script pour rajouter une image. (Copie un système prompt. Ensuite prend l'image copié et la sauvegarde. Ensuite génère un thumbnail pour l'image.)
 - Un nice to have: Search -oeuf -lait pour avoir des recettes sans oeuf et sans lait
 
+TODO:
+Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
-Pizza tomate et ail
-Courge spaghetti au feta, bacon et champignons
 Dal aux lentilles corail
 Dumplings au riz en papier
 Granola
