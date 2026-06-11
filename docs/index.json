@@ -1022,5 +1022,43 @@
             "macaroni"
         ],
         "category": "Plats principaux"
+    },
+    "dal_lentilles_corail": {
+        "title": "Dal aux lentilles corail",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "oignons",
+            "gousses d'ail",
+            "lentilles sèches",
+            "eau",
+            "lait de coco",
+            "purée de tomate",
+            "curry",
+            "curcuma",
+            "gingembre",
+            "sel"
+        ],
+        "category": "Plats principaux"
+    },
+    "courge_spaghetti_feta_bacon_champignons": {
+        "title": "Courge spaghetti aux champignons, feta et bacon",
+        "image": "",
+        "ingredients": [
+            "courge spaghetti",
+            "feta",
+            "champignons de Paris",
+            "allumettes de bacon",
+            "huile d'olive",
+            "sel",
+            "poivre",
+            "herbe aromatique"
+        ],
+        "category": "Plats principaux"
+    },
+    "pizza_tomate_et_ail": {
+        "title": "Pizza tomate et ail",
+        "image": "185.jpeg",
+        "ingredients": [],
+        "category": "Plats principaux"
     }
 }
