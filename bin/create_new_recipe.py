@@ -105,6 +105,12 @@ Here is a recipe template you should follow strictly, without adding any extra e
 
 Output ONLY the whole HTML page from DOCTYPE to closing html tag. Do not include any conversational filler, markdown formatting (like ```html), or explanations.
 
+Replace the recipe name. Replace the preparation time, cooking time and total time if available.
+
+Replace the ingredients following the same syntax using fractions and preposition "de" for example.
+
+Replace the instructions with the ones provided in the input. When a step invole only one ingredient, insert the quantity inline in the step. When it involves many, just after the step recreate a list with the quantities of the ingredients required.
+
 Extract from the following:
 """
 
