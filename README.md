@@ -19,7 +19,6 @@ TODO:
 Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
-Dumplings au riz en papier
 Granola
 Salade russe
 Quiche ??? Est brisé...
