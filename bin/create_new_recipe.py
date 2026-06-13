@@ -9,109 +9,64 @@ from pathlib import Path
 
 # Configuration
 INDEX_FILE = "./docs/index.json"
-SYSTEM_PROMPT = """You are a precise data processor. Your task is to take the provided input and generate a valid HTML page.
-Here is a recipe template you should follow strictly, without adding any extra elements or sections. The HTML should be well-structured and valid, using appropriate tags for each section.:
+SYSTEM_PROMPT = """You are a precise data processor. Your task is to take the provided input and generate a valid JSON object representing a recipe.
 
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recette: Gâteau blanc</title>
-    <link rel="stylesheet" href="../assets/reset.css" />
-    <link rel="stylesheet" href="../assets/recipe.css" />
-  </head>
-  <body>
-    <a href="../index.html" class="navbar"></a>
-    <div class="recipe">
-      <div class="recipe-header">
-        <div class="recipe-image-container">
-          <div class="recipe-image-wrapper">
-            <img src="../assets/recipe_placeholder.png" alt="Gâteau blanc" />
-          </div>
-        </div>
-        <div>
-          <h1 class="recipe-title">Gâteau blanc</h1>
-          <div class="recipe-detail"><b>Préparation: </b>15 minutes</div>
-          <div class="recipe-detail"><b>Cuisson: </b>35 minutes</div>
-          <div class="recipe-detail"><b>Total: </b>50 minutes</div>
-        </div>
-      </div>
+Output ONLY valid JSON. Do not include any conversational filler, markdown formatting (like ```json), or explanations.
 
-      <h2>Ingrédients</h2>
-      <ul class="ing-list">
-        <li>
-          <span>1/2 t de <span class="food-name">beurre</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span>1 t de <span class="food-name">sucre</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span>2 <span class="food-name">oeuf</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span><span class="food-name">extrait de vanille</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span>1 1/2 t de <span class="food-name">farine</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span>2 1/2 c. à thé de <span class="food-name">poudre à pâte</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span>1 pincée de <span class="food-name">sel</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-        <li>
-          <span>2/3 t de <span class="food-name">lait</span></span>
-          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
-        </li>
-      </ul>
+[STRUCTURAL SCHEMA]
+- "title": A string for the recipe name.
+- "ingredients": An array of strings. Emphasize the food name by surrounding it with bold tags "<b>" and "</b>".
+- "details": An array of objects with the fields:
+    - "type": Can be "preparation", "cooking", "total", or "servings".
+    - "value": A string.
+- "instructions": An array of objects with the fields:
+    - "type": Can be "step", "ingredients", "note", or "header".
+        - For "step": Include a "value" string. Emphasize food names with "<b>" and "</b>", but ONLY do that when not in a list.
+        - For "ingredients": Use this when the previous step includes multiple new ingredients. It repeats the ingredients used in this step. Include an "ingredients" array of strings, formatted exactly like the main "ingredients" array.
+        - For "note": Include a "value" string for notes in the recipe.
+        - For "header": Include a "value" string for section headers.
 
-      <h2>Instructions</h2>
-      <div class="recipe-instructions">
-        <div class="recipe-step">
-          Crémer 1/2 t de <span class="food-name">beurre</span>. Ajouter graduellement le sucre, les œufs, la vanille et bien battre
-        </div>
-        <ul>
-          <li>1 t de <span class="food-name">sucre</span></li>
-          <li>2 <span class="food-name">oeuf</span></li>
-          <li><span class="food-name">extrait de vanille</span></li>
-        </ul>
-        <div class="recipe-step">
-          Dans un autre bol, mélanger la farine, la poudre à pâte et le sel.
-        </div>
-        <ul>
-          <li>1 1/2 t de <span class="food-name">farine</span></li>
-          <li>2 1/2 c. à thé de <span class="food-name">poudre à pâte</span></li>
-          <li>1 pincée de <span class="food-name">sel</span></li>
-        </ul>
-        <div class="recipe-step">
-          Mélanger à la première préparation en alternant les ingrédients secs avec le lait.
-        </div>
-        <div class="recipe-step">
-          Verser dans un moule beurré et cuire au four préchauffé à 350 degrés F pendant environ 35 min.
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+[STRICT FORMATTING RULES]
+1. Every single ingredient string in 'ingredients' array MUST wrap the food name in <b> tags. Do not leave any raw food names un-tagged."
+2. Every ingredients quantity must be repeated in the instructions when used. Either inline in a "step" or in a separate "ingredients" section immediately following the step.
 
-Output ONLY the whole HTML page from DOCTYPE to closing html tag. Do not include any conversational filler, markdown formatting (like ```html), or explanations.
+[CORRECT FORMATTING EXAMPLE]
+{
+  "title": "Gâteau blanc",
+  "details": [
+    {"type": "preparation", "value": "15 minutes"},
+    {"type": "cooking", "value": "35 minutes"},
+    {"type": "total", "value": "50 minutes"}
+  ],
+  "ingredients": [
+    "1/2 t de <b>beurre</b>",
+    "1 t de <b>sucre</b>",
+    "2 <b>oeufs</b>"
+  ],
+  "instructions": [
+    {
+      "type": "header",
+      "value": "Préparation du gâteau"
+    },
+    {
+      "type": "step",
+      "value": "Crémer 1/2 t de <b>beurre</b>. Ajouter graduellement le sucre et les oeufs."
+    },
+    {
+      "type": "ingredients",
+      "ingredients": [
+        "1 t de <b>sucre</b>",
+        "2 <b>oeufs</b>"
+      ]
+    },
+    {
+      "type": "note",
+      "value": "Le beurre doit être à température ambiante."
+    }
+  ]
+}
 
-Replace the recipe name. Replace the preparation time, cooking time and total time if available.
-
-Replace the ingredients following the same syntax using fractions and preposition "de" for example.
-
-Replace the instructions with the ones provided in the input. When a step invole only one ingredient, insert the quantity inline in the step. When it involves many, just after the step recreate a list with the quantities of the ingredients required.
-
-Extract from the following:
+Extract and structure the recipe from the following:
 """
 
 def copy_to_clipboard(text):
@@ -123,38 +78,125 @@ def copy_to_clipboard(text):
         print("Error: 'wl-copy' is not installed or not running a Wayland session. Install wl-clipboard and ensure you're on Wayland to use this script.")
         sys.exit(1)
 
+def generate_html(data):
+    """Converts the parsed JSON data into the required HTML format."""
+    title = data.get("title", "Nouvelle Recette")
+    
+    html = [
+        "<!DOCTYPE html>",
+        '<html lang="fr">',
+        "  <head>",
+        '    <meta charset="UTF-8" />',
+        '    <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+        f'    <title>Recette: {title}</title>',
+        '    <link rel="stylesheet" href="../assets/reset.css" />',
+        '    <link rel="stylesheet" href="../assets/recipe.css" />',
+        "  </head>",
+        "  <body>",
+        '    <a href="../index.html" class="navbar"></a>',
+        '    <div class="recipe">',
+        '      <div class="recipe-header">',
+        '        <div class="recipe-image-container">',
+        '          <div class="recipe-image-wrapper">',
+        f'            <img src="../assets/recipe_placeholder.png" alt="{title}" />',
+        '          </div>',
+        '        </div>',
+        '        <div>',
+        f'          <h1 class="recipe-title">{title}</h1>'
+    ]
+
+    detail_labels = {
+        "preparation": "Préparation: ",
+        "cooking": "Cuisson: ",
+        "total": "Total: ",
+        "servings": "Portions: "
+    }
+    
+    for d in data.get("details", []):
+        dtype = d.get("type", "")
+        dval = d.get("value", "")
+        label = detail_labels.get(dtype, dtype.capitalize() + ": ")
+        html.append(f'          <div class="recipe-detail"><b>{label}</b>{dval}</div>')
+
+    html.extend([
+        '        </div>',
+        '      </div>',
+        '',
+        '      <h2>Ingrédients</h2>',
+        '      <ul class="ing-list">'
+    ])
+
+    for ing in data.get("ingredients", []):
+        ing_html = ing.replace("<b>", '<span class="food-name">').replace("</b>", "</span>")
+        html.extend([
+            '        <li>',
+            f'          <span>{ing_html}</span>',
+            '          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>',
+            '        </li>'
+        ])
+
+    html.extend([
+        '      </ul>',
+        '',
+        '      <h2>Instructions</h2>',
+        '      <div class="recipe-instructions">'
+    ])
+
+    for inst in data.get("instructions", []):
+        itype = inst.get("type")
+        if itype == "header":
+            html.append(f'        <h3>{inst.get("value", "")}</h3>')
+        elif itype == "note":
+            html.append(f'        <div class="recipe-note"><i>Note: {inst.get("value", "")}</i></div>')
+        elif itype == "step":
+            step_val = inst.get("value", "").replace("<b>", '<span class="food-name">').replace("</b>", "</span>")
+            html.extend([
+                '        <div class="recipe-step">',
+                f'          {step_val}',
+                '        </div>'
+            ])
+        elif itype == "ingredients":
+            html.append('        <ul>')
+            for sub_ing in inst.get("ingredients", []):
+                sub_ing_html = sub_ing.replace("<b>", '<span class="food-name">').replace("</b>", "</span>")
+                html.append(f'          <li>{sub_ing_html}</li>')
+            html.append('        </ul>')
+
+    html.extend([
+        '      </div>',
+        '    </div>',
+        '  </body>',
+        '</html>'
+    ])
+
+    return "\n".join(html)
+
 def main():
 
+  # Copy prompt before asking for filename
+  copy_to_clipboard(SYSTEM_PROMPT)
+  print("The system prompt has been automatically copied to your clipboard.")
+  print("1. Go to your LLM, paste the clipboard, and append the recipe you want to add.")
+  print("2. Copy the LLM's JSON response back to the clipboard.\n")
+
   while True:
-    # 1. Ask the user for a name with an example
-    print("Please enter a unique recipe name for your new recipe. (ex: 'chocolate_cake')")
+    print("Please enter a unique recipe name for your new recipe file. (ex: 'chocolate_cake')")
     user_input = input("Enter name: ").strip()
 
-    # Basic validation to ensure they didn't give an empty string
     if not user_input:
         print("Name cannot be empty. Please try again.\n")
         continue
 
-    # 2. Define the target file path
-    # This automatically handles directory slashes correctly across OS platforms
     target_path = Path(f"./docs/r/{user_input}.html")
 
-    # 3. Check if the file already exists
     if target_path.exists():
         print(f"Error: The file '{target_path}' already exists. Please choose another name.\n")
     else:
-      # Break the loop since we successfully created the file
       break
         
-  copy_to_clipboard(SYSTEM_PROMPT)
-
   # Wait for user interaction
-  print("Go to your LLM, paste the clipboard, and paste the recipe you want to add.")
-  print("Then copy the LLM's JSON response back to the clipboard")
-  print("Once copied, return here and press [Enter] to read from clipboard...")
-  input("Press Enter when ready...")
+  input("\nOnce you have copied the LLM's JSON response to your clipboard, press [Enter] to generate the HTML...")
 
-  # Read the LLM response from Wayland clipboard using wl-paste
   try:
       result = subprocess.run(['wl-paste', '--no-newline'], capture_output=True, text=True, check=True)
       llm_response = result.stdout.strip()
@@ -162,21 +204,29 @@ def main():
       print("Error: Failed to read from clipboard using wl-paste.")
       return
 
-  # Parse the JSON response
   try:
-      # Simple cleanup in case the LLM wrapped it in ```html ... ``` markdown blocks
-      if llm_response.startswith("```html"):
-          llm_response = llm_response.split("```html", 1)[1].rsplit("```", 1)[0].strip()
+      # Simple cleanup in case the LLM wrapped it in ```json ... ``` markdown blocks
+      if llm_response.startswith("```json"):
+          llm_response = llm_response.split("```json", 1)[1].rsplit("```", 1)[0].strip()
       elif llm_response.startswith("```"):
           llm_response = llm_response.split("```", 1)[1].rsplit("```", 1)[0].strip()
       
+      # Parse the JSON response
+      recipe_data = json.loads(llm_response)
+      
+      # Convert JSON to HTML
+      final_html = generate_html(recipe_data)
+
       # Create parent directories (docs/r/) if they don't exist yet
       target_path.parent.mkdir(parents=True, exist_ok=True)
       
-      # 4. Write the HTML content to the file
-      target_path.write_text(llm_response, encoding="utf-8")
+      # Write the HTML content to the file
+      target_path.write_text(final_html, encoding="utf-8")
       print(f"Success! File created at: {target_path}")
       
+  except json.JSONDecodeError as e:
+      print(f"Error: Could not parse clipboard content as JSON. Ensure the LLM returned valid JSON.\nDetails: {e}")
+      return
   except Exception as e:
       print(f"An error occurred while creating the file: {e}")
       return

@@ -1060,5 +1060,34 @@
         "image": "185.jpeg",
         "ingredients": [],
         "category": "Plats principaux"
+    },
+    "granola": {
+        "title": "Granola",
+        "image": "24.jpg",
+        "ingredients": [
+            "flocons d'avoine roulés à l'ancienne",
+            "pacanes",
+            "graines de citrouille",
+            "cannelle moulue",
+            "huile de noix de coco",
+            "sirop d'érable",
+            "extrait de vanille",
+            "canneberges séchés"
+        ],
+        "category": "Déjeuners"
+    },
+    "salade_russe": {
+        "title": "Salade russe",
+        "image": "184.jpeg",
+        "ingredients": [
+            "patate",
+            "oeufs",
+            "thon nature",
+            "betterave",
+            "maïs",
+            "mayonnaise",
+            "huile d'olive"
+        ],
+        "category": "Plats principaux"
     }
 }
