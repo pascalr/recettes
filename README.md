@@ -19,9 +19,6 @@ TODO:
 Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
-Salade russe
-Quiche ??? Est brisé...
-Gâteau au gruau et au sucre à la crème
 Sucre à la crème
 Riz espagnol
 Sauce hollandaise
