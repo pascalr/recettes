@@ -1,70 +1,101 @@
 #!/usr/bin/env python3
 
-import json
 import os
 import glob
 import subprocess
 import sys
+import re
 from pathlib import Path
 
 # Configuration
 INDEX_FILE = "./docs/index.json"
-SYSTEM_PROMPT = """You are a precise data processor. Your task is to take the provided input and generate a valid JSON object representing a recipe.
+SYSTEM_PROMPT = """You are a precise data processor. Your task is to take the provided input and generate structural HTML representing a recipe.
 
-Output ONLY valid JSON. Do not include any conversational filler, markdown formatting (like ```json), or explanations.
+Output ONLY valid HTML content. Do not include any conversational filler, markdown formatting (like ```html), or explanations.
 
 [STRUCTURAL SCHEMA]
-- "title": A string for the recipe name.
-- "ingredients": An array of strings. Emphasize the food name by surrounding it with bold tags "<b>" and "</b>".
-- "details": An array of objects with the fields:
-    - "type": Can be "preparation", "cooking", "total", or "servings".
-    - "value": A string.
-- "instructions": An array of objects with the fields:
-    - "type": Can be "step", "ingredients", "note", or "header".
-        - For "step": Include a "value" string. Emphasize food names with "<b>" and "</b>", but ONLY do that when not in a list.
-        - For "ingredients": Use this when the previous step includes multiple new ingredients. It repeats the ingredients used in this step. Include an "ingredients" array of strings, formatted exactly like the main "ingredients" array.
-        - For "note": Include a "value" string for notes in the recipe.
-        - For "header": Include a "value" string for section headers.
+- <title>: A text element for the recipe name.
+- <div class="recipe-detail">: Used for recipe details like "Préparation:", "Cuisson:", "Total:", or "Portions:". Wrap the label in <b> tags.
+- <h2>Ingrédients</h2>: Header followed by a <ul class="ing-list"> where each item contains a <span> for the text, a <span class="food-name"> wrapping the ingredient food name, and the edit icon markup.
+- <h2>Instructions</h2>: Header followed by a <div class="recipe-instructions"> block containing steps (<div class="recipe-step">), notes (<div class="recipe-note">), headers (<h3>), and lists (<ul>) repeating the used ingredients.
 
 [STRICT FORMATTING RULES]
-1. Every single ingredient string in 'ingredients' array MUST wrap the food name in <b> tags. Do not leave any raw food names un-tagged."
-2. Every ingredients quantity must be repeated in the instructions when used. Either inline in a "step" or in a separate "ingredients" section immediately following the step.
+1. Every single ingredient item must wrap its core food name in a <span class="food-name"> tag. Do not leave any raw food names un-tagged.
+2. Every ingredients quantity must be repeated in the instructions when used, either inline or in a separate <ul> block.
 
 [CORRECT FORMATTING EXAMPLE]
-{
-  "title": "Gâteau blanc",
-  "details": [
-    {"type": "preparation", "value": "15 minutes"},
-    {"type": "cooking", "value": "35 minutes"},
-    {"type": "total", "value": "50 minutes"}
-  ],
-  "ingredients": [
-    "1/2 t de <b>beurre</b>",
-    "1 t de <b>sucre</b>",
-    "2 <b>oeufs</b>"
-  ],
-  "instructions": [
-    {
-      "type": "header",
-      "value": "Préparation du gâteau"
-    },
-    {
-      "type": "step",
-      "value": "Crémer 1/2 t de <b>beurre</b>. Ajouter graduellement le sucre et les oeufs."
-    },
-    {
-      "type": "ingredients",
-      "ingredients": [
-        "1 t de <b>sucre</b>",
-        "2 <b>oeufs</b>"
-      ]
-    },
-    {
-      "type": "note",
-      "value": "Le beurre doit être à température ambiante."
-    }
-  ]
-}
+<title>Pain blanc à la machine à pain</title>
+
+<div class="recipe-detail"><b>Préparation: </b>5 minutes</div>
+<div class="recipe-detail"><b>Cuisson: </b>26 minutes</div>
+<div class="recipe-detail"><b>Total: </b>2 heures</div>
+
+<h2>Ingrédients</h2>
+<ul class="ing-list">
+    <li>
+        <span>1 1/2 c. à thé de <span class="food-name">levure sèche active</span></span>
+        <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
+    </li>
+    <li>
+        <span>3 1/2 t de <span class="food-name">farine</span></span>
+        <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
+    </li>
+    <li>
+        <span>2 c. à soupe de <span class="food-name">sucre</span></span>
+        <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
+    </li>
+    <li>
+        <span>2 c. à soupe de <span class="food-name">huile</span></span>
+        <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
+    </li>
+    <li>
+        <span>1 1/2 t d'<span class="food-name">eau tiède</span></span>
+        <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
+    </li>
+    <li>
+        <span>1 c. à thé de <span class="food-name">sel</span></span>
+        <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>
+    </li>
+</ul>
+
+<h2>Instructions</h2>
+<div class="recipe-instructions">
+    <div class="recipe-note">
+        Une machine à pain est utile pour sauver du temps. Par contre, la cuisson y est parfois décevante. Je suggère d’utiliser l’appareil en mode pétrissage, puis de cuire la pâte au four
+    </div>
+    <div class="recipe-step">
+        Dans le contenant de la machine à pain, ajouter un peu de farine, la levure, puis le reste de la farine pour protéger la levure du sel
+    </div>
+    <ul>
+        <li>1 1/2 c. à thé de <span class="food-name">levure sèche active</span></li>
+        <li>3 1/2 t de <span class="food-name">farine</span></li>
+    </ul>
+    <div class="recipe-step">
+        Ajouter les autres ingrédients
+    </div>
+    <ul>
+        <li>2 c. à soupe de <span class="food-name">sucre</span></li>
+        <li>2 c. à soupe de <span class="food-name">huile</span></li>
+        <li>1 1/2 t d'<span class="food-name">eau tiède</span></li>
+        <li>1 c. à thé de <span class="food-name">sel</span></li>
+    </ul>
+    <div class="recipe-step">
+        Démarrer la machine au mode pétrissage ou la programmer avec un minuteur pour une période future.
+    </div>
+    <div class="recipe-step">
+        Façonner la pâte selon la forme désirée (ex miche ou petits pains). Déposer sur une plaque recouverte d’un tapis de cuisson en silicone. Cuire au four préchauffé à 180 °C (350 °F) pendant 26 minutes.
+    </div>
+    <h3>Notes</h3>
+    <div class="recipe-note">
+        Si la levure est vielle et vous n'êtes pas certain si elle est encore bonne, vous pouvez la tester avant de risquer de rater un pain entier. Ajouter le sucre et levure à 1/2 t d'eau tiède. Si la levure est encore efficace, elle devrait réagir et former des petites bulles. Utiliser le mélange comme à la place de la levure normale dans la recette. N'oubliez pas de mettre 1/2 t d'eau tiède de moins!
+    </div>
+    <div class="recipe-note">
+        Le sel peut tuer la levure. Il est primordial que ces ingrédients ne soient pas en contact direct. Ainsi, je recommande de faire un petit nid dans la farine pour la levure.
+    </div>
+    <div class="recipe-note">
+        Le plus important pour s'assurer que le pain lève est la température de l'eau. Elle doit être à peu près à la température du corps humain. Pas trop chaud, ni trop froid.
+    </div>
+</div>
 
 Extract and structure the recipe from the following:
 """
@@ -78,9 +109,41 @@ def copy_to_clipboard(text):
         print("Error: 'wl-copy' is not installed or not running a Wayland session. Install wl-clipboard and ensure you're on Wayland to use this script.")
         sys.exit(1)
 
-def generate_html(data):
-    """Converts the parsed JSON data into the required HTML format."""
-    title = data.get("title", "Nouvelle Recette")
+def parse_and_clean_html(raw_html):
+    """
+    Parses out the title and details from the LLM HTML body,
+    returning clean layout fragments.
+    """
+    title = "Nouvelle Recette"
+    details_list = []
+    
+    # 1. Extract and clean Title
+    if "<title>" in raw_html and "</title>" in raw_html:
+        try:
+            title_part = raw_html.split("<title>", 1)[1]
+            title = title_part.split("</title>", 1)[0].strip()
+            raw_html = raw_html.replace(f"<title>{title}</title>", "")
+        except Exception:
+            pass
+
+    # 2. Extract all 'recipe-detail' lines dynamically using regex
+    detail_pattern = r'(<div class="recipe-detail">.*?</div>)'
+    details_matches = re.findall(detail_pattern, raw_html)
+    
+    for match in details_matches:
+        details_list.append(f"          {match.strip()}")
+        # Remove it from the main body content stream
+        raw_html = raw_html.replace(match, "")
+
+    # Clean leftover whitespace fragments
+    cleaned_body = raw_html.strip()
+    
+    return title, "\n".join(details_list), cleaned_body
+
+def generate_html_page(html_content):
+    """Wraps the inner recipe HTML generated by the LLM into the structural page template."""
+    
+    title, details_html, body_content = parse_and_clean_html(html_content)
     
     html = [
         "<!DOCTYPE html>",
@@ -102,72 +165,17 @@ def generate_html(data):
         '          </div>',
         '        </div>',
         '        <div>',
-        f'          <h1 class="recipe-title">{title}</h1>'
-    ]
-
-    detail_labels = {
-        "preparation": "Préparation: ",
-        "cooking": "Cuisson: ",
-        "total": "Total: ",
-        "servings": "Portions: "
-    }
-    
-    for d in data.get("details", []):
-        dtype = d.get("type", "")
-        dval = d.get("value", "")
-        label = detail_labels.get(dtype, dtype.capitalize() + ": ")
-        html.append(f'          <div class="recipe-detail"><b>{label}</b>{dval}</div>')
-
-    html.extend([
+        f'          <h1 class="recipe-title">{title}</h1>',
+        # Injected the cleanly isolated recipe details right here!
+        details_html,
         '        </div>',
         '      </div>',
-        '',
-        '      <h2>Ingrédients</h2>',
-        '      <ul class="ing-list">'
-    ])
-
-    for ing in data.get("ingredients", []):
-        ing_html = ing.replace("<b>", '<span class="food-name">').replace("</b>", "</span>")
-        html.extend([
-            '        <li>',
-            f'          <span>{ing_html}</span>',
-            '          <div class="ing-btn"><img src="../assets/pencil-square.svg" /></div>',
-            '        </li>'
-        ])
-
-    html.extend([
-        '      </ul>',
-        '',
-        '      <h2>Instructions</h2>',
-        '      <div class="recipe-instructions">'
-    ])
-
-    for inst in data.get("instructions", []):
-        itype = inst.get("type")
-        if itype == "header":
-            html.append(f'        <h3>{inst.get("value", "")}</h3>')
-        elif itype == "note":
-            html.append(f'        <div class="recipe-note"><i>Note: {inst.get("value", "")}</i></div>')
-        elif itype == "step":
-            step_val = inst.get("value", "").replace("<b>", '<span class="food-name">').replace("</b>", "</span>")
-            html.extend([
-                '        <div class="recipe-step">',
-                f'          {step_val}',
-                '        </div>'
-            ])
-        elif itype == "ingredients":
-            html.append('        <ul>')
-            for sub_ing in inst.get("ingredients", []):
-                sub_ing_html = sub_ing.replace("<b>", '<span class="food-name">').replace("</b>", "</span>")
-                html.append(f'          <li>{sub_ing_html}</li>')
-            html.append('        </ul>')
-
-    html.extend([
-        '      </div>',
+        # Injected remaining data elements (Ingredients and Instructions sections)
+        f'      {body_content}',
         '    </div>',
         '  </body>',
         '</html>'
-    ])
+    ]
 
     return "\n".join(html)
 
@@ -177,7 +185,7 @@ def main():
   copy_to_clipboard(SYSTEM_PROMPT)
   print("The system prompt has been automatically copied to your clipboard.")
   print("1. Go to your LLM, paste the clipboard, and append the recipe you want to add.")
-  print("2. Copy the LLM's JSON response back to the clipboard.\n")
+  print("2. Copy the LLM's HTML response back to the clipboard.\n")
 
   while True:
     print("Please enter a unique recipe name for your new recipe file. (ex: 'chocolate_cake')")
@@ -195,7 +203,7 @@ def main():
       break
         
   # Wait for user interaction
-  input("\nOnce you have copied the LLM's JSON response to your clipboard, press [Enter] to generate the HTML...")
+  input("\nOnce you have copied the LLM's HTML response to your clipboard, press [Enter] to generate the HTML...")
 
   try:
       result = subprocess.run(['wl-paste', '--no-newline'], capture_output=True, text=True, check=True)
@@ -205,17 +213,14 @@ def main():
       return
 
   try:
-      # Simple cleanup in case the LLM wrapped it in ```json ... ``` markdown blocks
-      if llm_response.startswith("```json"):
-          llm_response = llm_response.split("```json", 1)[1].rsplit("```", 1)[0].strip()
+      # Clean up if the LLM wrapped it inside ```html ... ``` markdown codeblocks
+      if llm_response.startswith("```html"):
+          llm_response = llm_response.split("```html", 1)[1].rsplit("```", 1)[0].strip()
       elif llm_response.startswith("```"):
           llm_response = llm_response.split("```", 1)[1].rsplit("```", 1)[0].strip()
       
-      # Parse the JSON response
-      recipe_data = json.loads(llm_response)
-      
-      # Convert JSON to HTML
-      final_html = generate_html(recipe_data)
+      # Process and generate full valid HTML page
+      final_html = generate_html_page(llm_response)
 
       # Create parent directories (docs/r/) if they don't exist yet
       target_path.parent.mkdir(parents=True, exist_ok=True)
@@ -224,9 +229,6 @@ def main():
       target_path.write_text(final_html, encoding="utf-8")
       print(f"Success! File created at: {target_path}")
       
-  except json.JSONDecodeError as e:
-      print(f"Error: Could not parse clipboard content as JSON. Ensure the LLM returned valid JSON.\nDetails: {e}")
-      return
   except Exception as e:
       print(f"An error occurred while creating the file: {e}")
       return

@@ -19,7 +19,6 @@ TODO:
 Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
-Sucre à la crème
 Riz espagnol
 Sauce hollandaise
 Hamburger aux lentilles
