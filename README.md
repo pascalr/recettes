@@ -15,18 +15,13 @@ TODO:
 - Un script pour rajouter une image. (Copie un système prompt. Ensuite prend l'image copié et la sauvegarde. Ensuite génère un thumbnail pour l'image.)
 - Un nice to have: Search -oeuf -lait pour avoir des recettes sans oeuf et sans lait
 
+TODO: Faire que create_recipe le LLM retourne déjà ce qu'il faut pour classer la recette et appeler update_index automatiquement.
+
 TODO:
 Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
-Riz espagnol
-Sauce hollandaise
-Hamburger aux lentilles
-Shortcake aux fraises
-Bananes plantains frites
-Pâtes au pesto
-Tarte à la citrouille et à l'érable
-Pâte à pizza
+
 Pouding chômeur
 Sauce à pizza
 Tofu général tao (Heda)
@@ -35,6 +30,7 @@ Biscuits aux graines de sésame
 Tofu magique selon Loounie
 Tofu caramélisé à l'érable
 Curry de tofu à l'ancienne
+
 Tofu parmentier
 Tofu mariné au balsamique
 Mapo tofu
@@ -43,6 +39,7 @@ Tofu milanais
 Doigts de tofu avec sauce moutarde et miel
 Hamburger aux haricots rouges
 Biscuits aux pain d'épices
+
 Galettes à la mélasse
 Tofu général tao
 Biscuits tendres et moelleux aux brisures de chocolat
@@ -51,6 +48,7 @@ Muffins à la cannelle
 Pain déjeuner style pizza
 Pâté chinois végétarien
 Pois chiches cuits
+
 Quatre quart aux bananes
 Pets-de-soeur
 Haricots rouges cuits
@@ -59,6 +57,7 @@ Pâte de curry jaune
 Gâteau rouge velours
 Oeuf de lin
 Tarte à la lime
+
 Poulet champignons à la chinoise
 Carrés coco et cerise
 Ketchup maison
@@ -67,6 +66,7 @@ Tofu sauce chinoise à l'ail
 Petits gâteaux à la forêt noire
 Pouding aux fraises
 Biscuits de pâte aux raisins secs
+
 Biscuits au son
 Galettes au chocolat
 Galettes de Sarrasin
@@ -75,6 +75,7 @@ Gâteau aux carottes
 Gâteau au gruau et au sucre à la crème
 Galettes au gruau
 Sauce nems
+
 Salade vinaigrette à l'ail
 Riz au quinoa et curcuma
 Poe banane
@@ -84,3 +85,8 @@ Tacos végés
 Crêpe hollandaise
 Dal aux lentilles corail
 Tapenlou
+
+
+
+TODO: Des recettes suggestions? En rouge pour dire que c'est manquant et que tu ne peux pas cliquer dessus. Simplement des entrées dans index.json.
+- Pâtes au pesto

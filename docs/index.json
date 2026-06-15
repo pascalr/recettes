@@ -1089,5 +1089,91 @@
             "huile d'olive"
         ],
         "category": "Plats principaux"
+    },
+    "pate_pizza": {
+        "title": "Pâte à pizza",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "farine",
+            "levure sèche active",
+            "sucre",
+            "sel",
+            "eau tiède"
+        ],
+        "category": "Autres"
+    },
+    "bananes_plantains_frites": {
+        "title": "Bananes plantains frites",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "bananes plantains",
+            "huile végétale"
+        ],
+        "category": "Entrées"
+    },
+    "riz_espagnol": {
+        "title": "Riz espagnol",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "bacon",
+            "oignon espagnol",
+            "poivron vert",
+            "céleri",
+            "bouillon de poulet",
+            "riz à grain long",
+            "tomates",
+            "chili en poudre",
+            "sel",
+            "poivre",
+            "paprika"
+        ],
+        "category": "Plats principaux"
+    },
+    "sucre_a_la_creme": {
+        "title": "Sucre à la crème",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "sucre",
+            "crème",
+            "extrait de vanille",
+            "cacao",
+            "pablum",
+            "beurre"
+        ],
+        "category": "Desserts"
+    },
+    "tarte_citrouille_erable": {
+        "title": "Tarte à la citrouille et à l'érable",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "pâte brisée",
+            "oeufs",
+            "farine",
+            "sirop d'érable",
+            "crème",
+            "purée de citrouille",
+            "crème fouettée",
+            "sucre d'érable"
+        ],
+        "category": "Desserts"
+    },
+    "gateau_au_gruau_et_sucre_a_la_creme": {
+        "title": "Gâteau au gruau et au sucre à la crème",
+        "image": "recipe_placeholder.png",
+        "ingredients": [
+            "flocons d'avoine",
+            "beurre",
+            "eau bouillante",
+            "sucre",
+            "cassonade",
+            "essence d'érable",
+            "oeufs",
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "lait",
+            "sucre à glacer"
+        ],
+        "category": "Desserts"
     }
 }

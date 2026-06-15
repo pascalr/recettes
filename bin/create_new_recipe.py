@@ -11,7 +11,7 @@ from pathlib import Path
 INDEX_FILE = "./docs/index.json"
 SYSTEM_PROMPT = """You are a precise data processor. Your task is to take the provided input and generate structural HTML representing a recipe.
 
-Output ONLY valid HTML content. Do not include any conversational filler, markdown formatting (like ```html), or explanations.
+Output ONLY valid HTML content. Do not include any conversational filler or explanations.
 
 [STRUCTURAL SCHEMA]
 - <title>: A text element for the recipe name.
