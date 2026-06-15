@@ -1175,5 +1175,23 @@
             "sucre à glacer"
         ],
         "category": "Desserts"
+    },
+    "pouding_chomeur": {
+        "title": "Pouding chômeur",
+        "image": "",
+        "ingredients": [
+            "sirop d’érable",
+            "eau",
+            "beurre",
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "sucre",
+            "graisse végétale",
+            "oeufs battus",
+            "lait",
+            "coco"
+        ],
+        "category": "Desserts"
     }
 }

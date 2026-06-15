@@ -22,7 +22,6 @@ Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
 
-Pouding chômeur
 Sauce à pizza
 Tofu général tao (Heda)
 Petit gâteaux au chocolat sans gluten
