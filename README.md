@@ -17,31 +17,19 @@ TODO:
 
 TODO: Faire que create_recipe le LLM retourne déjà ce qu'il faut pour classer la recette et appeler update_index automatiquement.
 
-TODO:
-Courge spaghetti au feta, bacon et champignons
+Faire une page cuisson des aliments? Un petit paragraph très court pour chaque.
+- Oeufs
+- Mais
+- Pois chiches
+- Lentilles
+Ex:  Oeufs à la coque
+Plongez-le délicatement dans une casserole d'eau bouillante (utiliser une cuillère pour déposer les oeufs). Laissez cuire 11 minutes pour un oeuf dur. Plongez-le immédiatement dans un bol d'eau glacée pour arrêter la cuisson et l'écaler facilement. (On a toujours cuit à partir de l'eau froide et calculer 10 minutes, mais apparament c'est plus facile à écailler avec le choc thermique)
 
 TODO: Recettes si manquantes:
 
-Tofu caramélisé à l'érable
-Curry de tofu à l'ancienne
-
-Tofu parmentier
-Tofu mariné au balsamique
-Mapo tofu
-Tofu sichuan
-Tofu milanais
-Doigts de tofu avec sauce moutarde et miel
-Hamburger aux haricots rouges
-Biscuits aux pain d'épices
-
-Galettes à la mélasse
-Tofu général tao
-Biscuits tendres et moelleux aux brisures de chocolat
 Muffins déjeuner aux patates douces
-Muffins à la cannelle
-Pain déjeuner style pizza
+
 Pâté chinois végétarien
-Pois chiches cuits
 
 Quatre quart aux bananes
 Pets-de-soeur

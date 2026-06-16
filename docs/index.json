@@ -1207,7 +1207,7 @@
         "category": "Autres"
     },
     "tofu_general_tao": {
-        "title": "Tofu général tao (Heda)",
+        "title": "Tofu général tao",
         "image": "",
         "ingredients": [
             "eau",
@@ -1238,5 +1238,56 @@
             "levure alimentaire en flocons"
         ],
         "category": "Plats principaux"
+    },
+    "tofu_marine_au_balsamique": {
+        "title": "Tofu mariné au balsamique",
+        "image": "",
+        "ingredients": [
+            "huile d'olive",
+            "vinaigre balsamique",
+            "tamari",
+            "miel",
+            "ail",
+            "basilic séché",
+            "origan séché",
+            "thym séché",
+            "romarin séché",
+            "tofu"
+        ],
+        "category": "Plats principaux"
+    },
+    "mapo_tofu": {
+        "title": "Mapo tofu",
+        "image": "",
+        "ingredients": [
+            "huile",
+            "poivre de sichuan moulu",
+            "gingembre frais haché",
+            "ail",
+            "porc haché",
+            "eau",
+            "tofu",
+            "fécule de maïs",
+            "huile de sésame",
+            "sucre",
+            "oignon vert"
+        ],
+        "category": "Plats principaux"
+    },
+    "galette_a_la_melasse": {
+        "title": "Galettes à la mélasse",
+        "image": "",
+        "ingredients": [
+            "farine",
+            "bicarbonate de soude",
+            "sel",
+            "cannelle moulue",
+            "graisse",
+            "sucre",
+            "oeuf",
+            "eau",
+            "mélasse"
+        ],
+        "category": "Desserts"
     }
 }
