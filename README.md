@@ -22,11 +22,6 @@ Courge spaghetti au feta, bacon et champignons
 
 TODO: Recettes si manquantes:
 
-Sauce à pizza
-Tofu général tao (Heda)
-Petit gâteaux au chocolat sans gluten
-Biscuits aux graines de sésame
-Tofu magique selon Loounie
 Tofu caramélisé à l'érable
 Curry de tofu à l'ancienne
 

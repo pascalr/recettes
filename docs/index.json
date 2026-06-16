@@ -1193,5 +1193,50 @@
             "coco"
         ],
         "category": "Desserts"
+    },
+    "sauce_pizza": {
+        "title": "Sauce à pizza",
+        "image": "",
+        "ingredients": [
+            "huile d'olive",
+            "pâte de tomate",
+            "origan séché",
+            "vinaigre balsamique",
+            "ail des bois"
+        ],
+        "category": "Autres"
+    },
+    "tofu_general_tao": {
+        "title": "Tofu général tao (Heda)",
+        "image": "",
+        "ingredients": [
+            "eau",
+            "ketchup",
+            "tofu extra ferme",
+            "cassonade",
+            "fécule de maïs",
+            "chili en flocons",
+            "gingembre moulu",
+            "ail en poudre",
+            "poudre bouillon aromatisé au poulet",
+            "flocons de piment broyé",
+            "vinaigre blanc",
+            "sauce soja"
+        ],
+        "category": "Plats principaux"
+    },
+    "tofu_magique_selon_loounie": {
+        "title": "Tofu magique selon Loounie",
+        "image": "",
+        "ingredients": [
+            "tofu extra ferme",
+            "huile",
+            "vinaigre de cidre de pomme",
+            "sauce soja",
+            "sirop d'érable",
+            "huile neutre",
+            "levure alimentaire en flocons"
+        ],
+        "category": "Plats principaux"
     }
 }
