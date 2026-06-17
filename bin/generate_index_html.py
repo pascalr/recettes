@@ -2,14 +2,15 @@
 
 import json
 import os
+import sys
 
 # 1. Chargement des données du fichier JSON
 try:
     with open("./docs/index.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-except FileType:
-    print("Erreur lors de la lecture de index.json")
-    exit(1)
+except Exception as e:  # Fixed the undefined FileType error to a generic Exception
+    print(f"Erreur lors de la lecture de index.json : {e}")
+    sys.exit(1)
 
 base_categories = ["Déjeuners", "Entrées", "Soupes", "Plats principaux", "Desserts", "Boissons", "Autres"]
 
@@ -21,7 +22,6 @@ for recipe_id, recipe_info in data.items():
     category = recipe_info.get("category")
 
     # Détermination de l'image (Logique basée sur votre structure HTML existante)
-    # On va chercher l'extension et le nom si présents, sinon image par défaut
     img_name = recipe_info.get("image", "")
 
     if img_name == "recipe_placeholder.png" or not img_name:
@@ -33,12 +33,14 @@ for recipe_id, recipe_info in data.items():
         "id": recipe_id,
         "title": recipe_info.get("title"),
         "img_src": img_src,
+        "link": recipe_info.get("link", f"./r/{recipe_id}.html"),
+        # Fetch the 'recipe' boolean value (defaults to True if not present)
+        "is_recipe": recipe_info.get("recipe", True) 
     }
 
     if category in grouped_recipes:
         grouped_recipes[category].append(recipe_data)
     else:
-        # Au cas où une nouvelle catégorie apparaîtrait dans le JSON
         grouped_recipes[category] = [recipe_data]
 
 # Tri des recettes par nom (title) dans chaque catégorie
@@ -96,34 +98,36 @@ html_content = """<!DOCTYPE html>
         font-size: 1rem; 
       }
 
-      /* Container to handle centering and spacing at the top of your page */
       .search-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px; /* Spacing between input and button */
-        margin: 40px auto; /* Generous spacing above and below the search bar */
+        gap: 10px;
+        margin: 40px auto;
         margin-bottom: 20px;
-        padding: 0 20px; /* Prevents edge-bleeding on mobile screens */
-        max-width: 600px; /* Limits the width so it doesn't stretch too far on desktop */
+        padding: 0 20px;
+        max-width: 600px;
       }
 
-      /* The actual input field */
       #recipe-search {
-        flex: 1; /* Allows the input to grow and fill the container */
+        flex: 1;
         padding: 12px 20px;
         font-size: 16px;
         border: 2px solid #ddd;
-        border-radius: 25px; /* Smooth rounded edges */
+        border-radius: 25px;
         outline: none;
         transition: all 0.3s ease;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
       }
 
-      /* High visibility focus state when a user clicks into it */
       #recipe-search:focus {
-        border-color: #ff6b6b; /* Warm, foodie-friendly accent color */
+        border-color: #ff6b6b;
         box-shadow: 0 4px 10px rgba(255, 107, 107, 0.15);
+      }
+      
+      /* Added a helper class to completely hide empty categories dynamically */
+      .category-hidden {
+        display: none !important;
       }
     </style>
   </head>
@@ -133,9 +137,9 @@ html_content = """<!DOCTYPE html>
       <span class="navbar-title">Site de Pascal - Recettes</span>
     </nav>
     <div class="container">
-      <ul class="nav nav-tabs mb-3">
-        <li class="nav-item"><a class="nav-link active" href="/">Recettes</a></li>
-        <li class="nav-item"><a class="nav-link" href="/y">Inspirations</a></li>
+      <ul class="nav nav-tabs mb-3" id="recipe-tabs">
+        <li class="nav-item"><a class="nav-link active" id="tab-recettes" href="#">Recettes</a></li>
+        <li class="nav-item"><a class="nav-link" id="tab-inspirations" href="#">Inspirations</a></li>
       </ul>
       <div class="search-container">
         <input 
@@ -154,22 +158,84 @@ all_categories = base_categories + [cat for cat in grouped_recipes.keys() if cat
 for category in all_categories:
     recipes_in_cat = grouped_recipes.get(category, [])
 
-    # On n'affiche la catégorie que s'il y a des recettes dedans
     if recipes_in_cat:
-        html_content += f"\n        <h2>{category}</h2>"
+        # Added a class to the H2 title so we can manage its visibility via JS
+        html_content += f"\n        <h2 class='category-title'>{category}</h2>"
         for recipe in recipes_in_cat:
+            # Added dynamic data-recipe property converted to string lowercase ("true"/"false")
+            is_recipe_str = str(recipe['is_recipe']).lower()
             html_content += f"""
-        <li id="{recipe['id']}">
-          <a href="./r/{recipe['id']}.html">
+        <li id="{recipe['id']}" data-recipe="{is_recipe_str}">
+          <a href="{recipe['link']}">
             <img src="{recipe['img_src']}" width="71" height="48"/>
             <div>{recipe['title']}</div>
           </a>
         </li>"""
 
-# Clôture des balises HTML
+# Clôture des balises HTML + Interactivity Script
 html_content += """
        </ul>
     </div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const tabRecettes = document.getElementById("tab-recettes");
+        const tabInspirations = document.getElementById("tab-inspirations");
+        const recipeItems = document.querySelectorAll("#categories-list li[data-recipe]");
+        const categoryTitles = document.querySelectorAll(".category-title");
+
+        function filterRecipes(showAll) {
+          // 1. Toggle recipe items visibility
+          recipeItems.forEach(item => {
+            const isRecipe = item.getAttribute("data-recipe") === "true";
+            if (showAll || isRecipe) {
+              item.style.display = "";
+            } else {
+              item.style.display = "none";
+            }
+          });
+
+          // 2. Hide category titles if they contain zero visible recipes
+          categoryTitles.forEach(title => {
+            let nextEl = title.nextElementSibling;
+            let hasVisibleRecipes = false;
+            
+            while (nextEl && nextEl.tagName === "LI") {
+              if (nextEl.style.display !== "none") {
+                hasVisibleRecipes = true;
+                break;
+              }
+              nextEl = nextEl.nextElementSibling;
+            }
+            
+            if (hasVisibleRecipes) {
+              title.classList.remove("category-hidden");
+            } else {
+              title.classList.add("category-hidden");
+            }
+          });
+        }
+
+        // Tab "Recettes" click handler (Default state)
+        tabRecettes.addEventListener("click", function(e) {
+          e.preventDefault();
+          tabInspirations.classList.remove("active");
+          tabRecettes.classList.add("active");
+          filterRecipes(false); // Only show "recipe": true
+        });
+
+        // Tab "Inspirations" click handler
+        tabInspirations.addEventListener("click", function(e) {
+          e.preventDefault();
+          tabRecettes.classList.remove("active");
+          tabInspirations.classList.add("active");
+          filterRecipes(true); // Show everything
+        });
+
+        // Run on initial page load (Default to filtering out "recipe": false)
+        filterRecipes(false);
+      });
+    </script>
   </body>
 </html>
 """

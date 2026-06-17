@@ -48,34 +48,36 @@
         font-size: 1rem; 
       }
 
-      /* Container to handle centering and spacing at the top of your page */
       .search-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px; /* Spacing between input and button */
-        margin: 40px auto; /* Generous spacing above and below the search bar */
+        gap: 10px;
+        margin: 40px auto;
         margin-bottom: 20px;
-        padding: 0 20px; /* Prevents edge-bleeding on mobile screens */
-        max-width: 600px; /* Limits the width so it doesn't stretch too far on desktop */
+        padding: 0 20px;
+        max-width: 600px;
       }
 
-      /* The actual input field */
       #recipe-search {
-        flex: 1; /* Allows the input to grow and fill the container */
+        flex: 1;
         padding: 12px 20px;
         font-size: 16px;
         border: 2px solid #ddd;
-        border-radius: 25px; /* Smooth rounded edges */
+        border-radius: 25px;
         outline: none;
         transition: all 0.3s ease;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
       }
 
-      /* High visibility focus state when a user clicks into it */
       #recipe-search:focus {
-        border-color: #ff6b6b; /* Warm, foodie-friendly accent color */
+        border-color: #ff6b6b;
         box-shadow: 0 4px 10px rgba(255, 107, 107, 0.15);
+      }
+      
+      /* Added a helper class to completely hide empty categories dynamically */
+      .category-hidden {
+        display: none !important;
       }
     </style>
   </head>
@@ -85,9 +87,9 @@
       <span class="navbar-title">Site de Pascal - Recettes</span>
     </nav>
     <div class="container">
-      <ul class="nav nav-tabs mb-3">
-        <li class="nav-item"><a class="nav-link active" href="/">Recettes</a></li>
-        <li class="nav-item"><a class="nav-link" href="/y">Inspirations</a></li>
+      <ul class="nav nav-tabs mb-3" id="recipe-tabs">
+        <li class="nav-item"><a class="nav-link active" id="tab-recettes" href="#">Recettes</a></li>
+        <li class="nav-item"><a class="nav-link" id="tab-inspirations" href="#">Inspirations</a></li>
       </ul>
       <div class="search-container">
         <input 
@@ -99,530 +101,530 @@
       </div>
       <ul id="search-list" class="recipe-list"></ul>
       <ul id="categories-list" class="recipe-list">
-        <h2>Déjeuners</h2>
-        <li id="boucles_cannelle">
+        <h2 class='category-title'>Déjeuners</h2>
+        <li id="boucles_cannelle" data-recipe="false">
           <a href="./r/boucles_cannelle.html">
             <img src="./images/thumb/137.jpeg" width="71" height="48"/>
             <div>Boucles à la cannelle</div>
           </a>
         </li>
-        <li id="crepe_mince">
+        <li id="crepe_mince" data-recipe="true">
           <a href="./r/crepe_mince.html">
             <img src="./images/thumb/29.jpg" width="71" height="48"/>
             <div>Crêpe mince</div>
           </a>
         </li>
-        <li id="crepes">
+        <li id="crepes" data-recipe="true">
           <a href="./r/crepes.html">
             <img src="./images/thumb/162.jpeg" width="71" height="48"/>
             <div>Crêpes</div>
           </a>
         </li>
-        <li id="gaufres">
+        <li id="gaufres" data-recipe="true">
           <a href="./r/gaufres.html">
             <img src="./images/thumb/37.jpg" width="71" height="48"/>
             <div>Gaufres</div>
           </a>
         </li>
-        <li id="granola">
+        <li id="granola" data-recipe="false">
           <a href="./r/granola.html">
             <img src="./images/thumb/24.jpg" width="71" height="48"/>
             <div>Granola</div>
           </a>
         </li>
-        <li id="pain_dore">
+        <li id="pain_dore" data-recipe="true">
           <a href="./r/pain_dore.html">
             <img src="./images/thumb/164.jpeg" width="71" height="48"/>
             <div>Pain doré</div>
           </a>
         </li>
-        <h2>Entrées</h2>
-        <li id="bananes_plantains_frites">
+        <h2 class='category-title'>Entrées</h2>
+        <li id="bananes_plantains_frites" data-recipe="false">
           <a href="./r/bananes_plantains_frites.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Bananes plantains frites</div>
           </a>
         </li>
-        <h2>Soupes</h2>
-        <li id="potage_citrouille">
+        <h2 class='category-title'>Soupes</h2>
+        <li id="potage_citrouille" data-recipe="true">
           <a href="./r/potage_citrouille.html">
             <img src="./images/thumb/181.jpeg" width="71" height="48"/>
             <div>Potage à la citrouille</div>
           </a>
         </li>
-        <li id="potage_courge_butternut">
+        <li id="potage_courge_butternut" data-recipe="true">
           <a href="./r/potage_courge_butternut.html">
             <img src="./images/thumb/182.jpeg" width="71" height="48"/>
             <div>Potage à la courge butternut</div>
           </a>
         </li>
-        <li id="soupe_patate_haricots_blanc">
+        <li id="soupe_patate_haricots_blanc" data-recipe="false">
           <a href="./r/soupe_patate_haricots_blanc.html">
             <img src="./images/thumb/7.jpg" width="71" height="48"/>
             <div>Soupe aux patates et haricots blancs</div>
           </a>
         </li>
-        <li id="soupe_pois_casses">
+        <li id="soupe_pois_casses" data-recipe="true">
           <a href="./r/soupe_pois_casses.html">
             <img src="./images/thumb/9.jpg" width="71" height="48"/>
             <div>Soupe de pois cassés verts</div>
           </a>
         </li>
-        <h2>Plats principaux</h2>
-        <li id="boeuf_africain">
+        <h2 class='category-title'>Plats principaux</h2>
+        <li id="boeuf_africain" data-recipe="false">
           <a href="./r/boeuf_africain.html">
             <img src="./images/thumb/160.jpeg" width="71" height="48"/>
             <div>Boeuf africain</div>
           </a>
         </li>
-        <li id="boulettes_pois_chiche">
+        <li id="boulettes_pois_chiche" data-recipe="true">
           <a href="./r/boulettes_pois_chiche.html">
             <img src="./images/thumb/6.jpg" width="71" height="48"/>
             <div>Boulettes de pois chiches</div>
           </a>
         </li>
-        <li id="cigares_aux_chous">
+        <li id="cigares_aux_chous" data-recipe="false">
           <a href="./r/cigares_aux_chous.html">
             <img src="./images/thumb/74.jpg" width="71" height="48"/>
             <div>Cigares aux choux</div>
           </a>
         </li>
-        <li id="courge_spaghetti_feta_bacon_champignons">
+        <li id="courge_spaghetti_feta_bacon_champignons" data-recipe="true">
           <a href="./r/courge_spaghetti_feta_bacon_champignons.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Courge spaghetti aux champignons, feta et bacon</div>
           </a>
         </li>
-        <li id="curry_thai_patates_douces">
+        <li id="curry_thai_patates_douces" data-recipe="false">
           <a href="./r/curry_thai_patates_douces.html">
             <img src="./images/thumb/8.jpg" width="71" height="48"/>
             <div>Curry Thaï crémeux aux patates douces</div>
           </a>
         </li>
-        <li id="dal_lentilles_corail">
+        <li id="dal_lentilles_corail" data-recipe="true">
           <a href="./r/dal_lentilles_corail.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Dal aux lentilles corail</div>
           </a>
         </li>
-        <li id="falafels">
+        <li id="falafels" data-recipe="false">
           <a href="./r/falafels.html">
             <img src="./images/thumb/18.jpg" width="71" height="48"/>
             <div>Falafels</div>
           </a>
         </li>
-        <li id="hamburger_haricot_noir_riz">
+        <li id="hamburger_haricot_noir_riz" data-recipe="true">
           <a href="./r/hamburger_haricot_noir_riz.html">
             <img src="./images/thumb/133.jpeg" width="71" height="48"/>
             <div>Hamburger aux haricots noirs et riz</div>
           </a>
         </li>
-        <li id="hotdog_tofu_panné">
+        <li id="hotdog_tofu_panné" data-recipe="true">
           <a href="./r/hotdog_tofu_panné.html">
             <img src="./images/thumb/68.jpg" width="71" height="48"/>
             <div>Hotdog au tofu panné</div>
           </a>
         </li>
-        <li id="lasagne_vege">
+        <li id="lasagne_vege" data-recipe="false">
           <a href="./r/lasagne_vege.html">
             <img src="./images/thumb/13.jpg" width="71" height="48"/>
             <div>Lasagne végé</div>
           </a>
         </li>
-        <li id="macaroni_au_fromage_et_courge_butternut">
+        <li id="macaroni_au_fromage_et_courge_butternut" data-recipe="true">
           <a href="./r/macaroni_au_fromage_et_courge_butternut.html">
             <img src="./images/thumb/5.jpg" width="71" height="48"/>
             <div>Macaroni au fromage à la courge butternut</div>
           </a>
         </li>
-        <li id="mapo_tofu">
+        <li id="mapo_tofu" data-recipe="true">
           <a href="./r/mapo_tofu.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Mapo tofu</div>
           </a>
         </li>
-        <li id="pain_de_viande">
+        <li id="pain_de_viande" data-recipe="true">
           <a href="./r/pain_de_viande.html">
             <img src="./images/thumb/178.png" width="71" height="48"/>
             <div>Pain de viande</div>
           </a>
         </li>
-        <li id="pain_de_viande_vege">
+        <li id="pain_de_viande_vege" data-recipe="false">
           <a href="./r/pain_de_viande_vege.html">
             <img src="./images/thumb/194.png" width="71" height="48"/>
             <div>Pain de viande végé</div>
           </a>
         </li>
-        <li id="pizza_tomate_et_ail">
+        <li id="pizza_tomate_et_ail" data-recipe="false">
           <a href="./r/pizza_tomate_et_ail.html">
             <img src="./images/thumb/185.jpeg" width="71" height="48"/>
             <div>Pizza tomate et ail</div>
           </a>
         </li>
-        <li id="pizza_vege">
+        <li id="pizza_vege" data-recipe="false">
           <a href="./r/pizza_vege.html">
             <img src="./images/thumb/10.jpg" width="71" height="48"/>
             <div>Pizza végétarienne</div>
           </a>
         </li>
-        <li id="aubergines_pois_chiche">
+        <li id="aubergines_pois_chiche" data-recipe="true">
           <a href="./r/aubergines_pois_chiche.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Plat d'aubergines et pois chiches</div>
           </a>
         </li>
-        <li id="poulet_champignons_a_la_chinoise">
+        <li id="poulet_champignons_a_la_chinoise" data-recipe="true">
           <a href="./r/poulet_champignons_a_la_chinoise.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Poulet champignons à la chinoise</div>
           </a>
         </li>
-        <li id="pate_chinois_vege">
+        <li id="pate_chinois_vege" data-recipe="true">
           <a href="./r/pate_chinois_vege.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Pâté chinois végétarien</div>
           </a>
         </li>
-        <li id="pate_mexicain_vege">
+        <li id="pate_mexicain_vege" data-recipe="true">
           <a href="./r/pate_mexicain_vege.html">
             <img src="./images/thumb/157.jpeg" width="71" height="48"/>
             <div>Pâté mexicain végé</div>
           </a>
         </li>
-        <li id="quiche_epinard">
+        <li id="quiche_epinard" data-recipe="true">
           <a href="./r/quiche_epinard.html">
             <img src="./images/thumb/139.jpeg" width="71" height="48"/>
             <div>Quiche aux épinards</div>
           </a>
         </li>
-        <li id="ragout_loville">
+        <li id="ragout_loville" data-recipe="true">
           <a href="./r/ragout_loville.html">
             <img src="./images/thumb/170.jpeg" width="71" height="48"/>
             <div>Ragoût Loville</div>
           </a>
         </li>
-        <li id="riz_espagnol">
+        <li id="riz_espagnol" data-recipe="false">
           <a href="./r/riz_espagnol.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Riz espagnol</div>
           </a>
         </li>
-        <li id="salade_russe">
+        <li id="salade_russe" data-recipe="true">
           <a href="./r/salade_russe.html">
             <img src="./images/thumb/184.jpeg" width="71" height="48"/>
             <div>Salade russe</div>
           </a>
         </li>
-        <li id="sandwich_thon">
+        <li id="sandwich_thon" data-recipe="true">
           <a href="./r/sandwich_thon.html">
             <img src="./images/thumb/187.jpeg" width="71" height="48"/>
             <div>Sandwich au thon</div>
           </a>
         </li>
-        <li id="tofu_au_beurre">
+        <li id="tofu_au_beurre" data-recipe="false">
           <a href="./r/tofu_au_beurre.html">
             <img src="./images/thumb/14.jpg" width="71" height="48"/>
             <div>Tofu au beurre</div>
           </a>
         </li>
-        <li id="tofu_general_tao">
+        <li id="tofu_general_tao" data-recipe="false">
           <a href="./r/tofu_general_tao.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Tofu général tao</div>
           </a>
         </li>
-        <li id="tofu_magique_selon_loounie">
+        <li id="tofu_magique_selon_loounie" data-recipe="true">
           <a href="./r/tofu_magique_selon_loounie.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Tofu magique selon Loounie</div>
           </a>
         </li>
-        <li id="tofu_marine_au_balsamique">
+        <li id="tofu_marine_au_balsamique" data-recipe="true">
           <a href="./r/tofu_marine_au_balsamique.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Tofu mariné au balsamique</div>
           </a>
         </li>
-        <h2>Desserts</h2>
-        <li id="biscuits_amandes">
+        <h2 class='category-title'>Desserts</h2>
+        <li id="biscuits_amandes" data-recipe="true">
           <a href="./r/biscuits_amandes.html">
             <img src="./images/thumb/132.jpeg" width="71" height="48"/>
             <div>Biscuits aux amandes</div>
           </a>
         </li>
-        <li id="biscuits_aux_brisures_de_chocolat">
+        <li id="biscuits_aux_brisures_de_chocolat" data-recipe="true">
           <a href="./r/biscuits_aux_brisures_de_chocolat.html">
             <img src="./images/thumb/15.jpg" width="71" height="48"/>
             <div>Biscuits aux brisures de chocolat</div>
           </a>
         </li>
-        <li id="biscuits_dattes_canneberges">
+        <li id="biscuits_dattes_canneberges" data-recipe="true">
           <a href="./r/biscuits_dattes_canneberges.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Biscuits aux dattes et canneberges</div>
           </a>
         </li>
-        <li id="biscuits_fantaisie_chocolat">
+        <li id="biscuits_fantaisie_chocolat" data-recipe="true">
           <a href="./r/biscuits_fantaisie_chocolat.html">
             <img src="./images/thumb/146.jpeg" width="71" height="48"/>
             <div>Biscuits de fantaisie au chocolat</div>
           </a>
         </li>
-        <li id="biscuits_tendres_brisures_chocolat">
+        <li id="biscuits_tendres_brisures_chocolat" data-recipe="true">
           <a href="./r/biscuits_tendres_brisures_chocolat.html">
             <img src="./images/thumb/204.jpeg" width="71" height="48"/>
             <div>Biscuits tendres aux brisures de chocolat</div>
           </a>
         </li>
-        <li id="biscuits_avoine_raisins">
+        <li id="biscuits_avoine_raisins" data-recipe="true">
           <a href="./r/biscuits_avoine_raisins.html">
             <img src="./images/thumb/138.jpeg" width="71" height="48"/>
             <div>Biscuits à l'avoine et aux raisins secs</div>
           </a>
         </li>
-        <li id="biscuits_creme_sure">
+        <li id="biscuits_creme_sure" data-recipe="true">
           <a href="./r/biscuits_creme_sure.html">
             <img src="./images/thumb/145.jpeg" width="71" height="48"/>
             <div>Biscuits à la crème sure</div>
           </a>
         </li>
-        <li id="brownies_chocolat">
+        <li id="brownies_chocolat" data-recipe="true">
           <a href="./r/brownies_chocolat.html">
             <img src="./images/thumb/28.jpg" width="71" height="48"/>
             <div>Brownies au chocolat</div>
           </a>
         </li>
-        <li id="buche_de_noel">
+        <li id="buche_de_noel" data-recipe="true">
           <a href="./r/buche_de_noel.html">
             <img src="./images/thumb/150.jpg" width="71" height="48"/>
             <div>Bûche de noël</div>
           </a>
         </li>
-        <li id="cowboy_cookies">
+        <li id="cowboy_cookies" data-recipe="true">
           <a href="./r/cowboy_cookies.html">
             <img src="./images/thumb/161.jpeg" width="71" height="48"/>
             <div>Cowboy cookies</div>
           </a>
         </li>
-        <li id="croustade_aux_pommes">
+        <li id="croustade_aux_pommes" data-recipe="true">
           <a href="./r/croustade_aux_pommes.html">
             <img src="./images/thumb/134.jpeg" width="71" height="48"/>
             <div>Croustade aux pommes</div>
           </a>
         </li>
-        <li id="galette_a_la_melasse">
+        <li id="galette_a_la_melasse" data-recipe="true">
           <a href="./r/galette_a_la_melasse.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Galettes à la mélasse</div>
           </a>
         </li>
-        <li id="gateau_chocolat">
+        <li id="gateau_chocolat" data-recipe="true">
           <a href="./r/gateau_chocolat.html">
             <img src="./images/thumb/189.jpeg" width="71" height="48"/>
             <div>Gâteau au chocolat</div>
           </a>
         </li>
-        <li id="gateau_au_gruau_et_sucre_a_la_creme">
+        <li id="gateau_au_gruau_et_sucre_a_la_creme" data-recipe="true">
           <a href="./r/gateau_au_gruau_et_sucre_a_la_creme.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Gâteau au gruau et au sucre à la crème</div>
           </a>
         </li>
-        <li id="gateau_carottes">
+        <li id="gateau_carottes" data-recipe="true">
           <a href="./r/gateau_carottes.html">
             <img src="./images/thumb/144.jpeg" width="71" height="48"/>
             <div>Gâteau aux carottes</div>
           </a>
         </li>
-        <li id="gateau_blanc">
+        <li id="gateau_blanc" data-recipe="true">
           <a href="./r/gateau_blanc.html">
             <img src="./images/thumb/222.jpeg" width="71" height="48"/>
             <div>Gâteau blanc</div>
           </a>
         </li>
-        <li id="madeleines_au_miel">
+        <li id="madeleines_au_miel" data-recipe="true">
           <a href="./r/madeleines_au_miel.html">
             <img src="./images/thumb/3.jpg" width="71" height="48"/>
             <div>Madeleines au miel</div>
           </a>
         </li>
-        <li id="muffins_chocolat">
+        <li id="muffins_chocolat" data-recipe="true">
           <a href="./r/muffins_chocolat.html">
             <img src="./images/thumb/25.jpg" width="71" height="48"/>
             <div>Muffins au chocolat</div>
           </a>
         </li>
-        <li id="muffins_bleuets">
+        <li id="muffins_bleuets" data-recipe="true">
           <a href="./r/muffins_bleuets.html">
             <img src="./images/thumb/17.jpg" width="71" height="48"/>
             <div>Muffins aux bleuets</div>
           </a>
         </li>
-        <li id="muffins_brisure_chocolat">
+        <li id="muffins_brisure_chocolat" data-recipe="true">
           <a href="./r/muffins_brisure_chocolat.html">
             <img src="./images/thumb/177.png" width="71" height="48"/>
             <div>Muffins aux brisures de chocolat</div>
           </a>
         </li>
-        <li id="muffins_framboises">
+        <li id="muffins_framboises" data-recipe="true">
           <a href="./r/muffins_framboises.html">
             <img src="./images/thumb/190.jpeg" width="71" height="48"/>
             <div>Muffins aux framboises</div>
           </a>
         </li>
-        <li id="muffins_pomme_cannelle">
+        <li id="muffins_pomme_cannelle" data-recipe="true">
           <a href="./r/muffins_pomme_cannelle.html">
             <img src="./images/thumb/188.jpeg" width="71" height="48"/>
             <div>Muffins aux pommes et à la cannelle</div>
           </a>
         </li>
-        <li id="muffins_avoine_bleuet">
+        <li id="muffins_avoine_bleuet" data-recipe="true">
           <a href="./r/muffins_avoine_bleuet.html">
             <img src="./images/thumb/191.jpeg" width="71" height="48"/>
             <div>Muffins à l'avoine et aux bleuets</div>
           </a>
         </li>
-        <li id="muffins_creme_sure_cannelle">
+        <li id="muffins_creme_sure_cannelle" data-recipe="true">
           <a href="./r/muffins_creme_sure_cannelle.html">
             <img src="./images/thumb/192.jpeg" width="71" height="48"/>
             <div>Muffins à la crème sûre et à la cannelle</div>
           </a>
         </li>
-        <li id="pain_banane">
+        <li id="pain_banane" data-recipe="true">
           <a href="./r/pain_banane.html">
             <img src="./images/thumb/169.jpeg" width="71" height="48"/>
             <div>Pain aux bananes</div>
           </a>
         </li>
-        <li id="pets_de_soeur">
+        <li id="pets_de_soeur" data-recipe="true">
           <a href="./r/pets_de_soeur.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Pets-de-soeur</div>
           </a>
         </li>
-        <li id="pouding_au_pain">
+        <li id="pouding_au_pain" data-recipe="true">
           <a href="./r/pouding_au_pain.html">
             <img src="./images/thumb/159.jpeg" width="71" height="48"/>
             <div>Pouding au pain</div>
           </a>
         </li>
-        <li id="pouding_chomeur">
+        <li id="pouding_chomeur" data-recipe="true">
           <a href="./r/pouding_chomeur.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Pouding chômeur</div>
           </a>
         </li>
-        <li id="sucre_a_la_creme">
+        <li id="sucre_a_la_creme" data-recipe="true">
           <a href="./r/sucre_a_la_creme.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Sucre à la crème</div>
           </a>
         </li>
-        <li id="tarte_au_sucre">
+        <li id="tarte_au_sucre" data-recipe="true">
           <a href="./r/tarte_au_sucre.html">
             <img src="./images/thumb/23.jpg" width="71" height="48"/>
             <div>Tarte au sucre</div>
           </a>
         </li>
-        <li id="tarte_aux_pommes">
+        <li id="tarte_aux_pommes" data-recipe="true">
           <a href="./r/tarte_aux_pommes.html">
             <img src="./images/thumb/19.jpg" width="71" height="48"/>
             <div>Tarte aux pommes</div>
           </a>
         </li>
-        <li id="tarte_citrouille_erable">
+        <li id="tarte_citrouille_erable" data-recipe="true">
           <a href="./r/tarte_citrouille_erable.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Tarte à la citrouille et à l'érable</div>
           </a>
         </li>
-        <h2>Boissons</h2>
-        <li id="citronade">
+        <h2 class='category-title'>Boissons</h2>
+        <li id="citronade" data-recipe="true">
           <a href="./r/citronade.html">
             <img src="./images/thumb/147.jpeg" width="71" height="48"/>
             <div>Citronade</div>
           </a>
         </li>
-        <li id="pina_colada">
+        <li id="pina_colada" data-recipe="true">
           <a href="./r/pina_colada.html">
             <img src="./images/thumb/135.jpeg" width="71" height="48"/>
             <div>Piña Colada</div>
           </a>
         </li>
-        <h2>Autres</h2>
-        <li id="aioli_chinoise_sucree">
+        <h2 class='category-title'>Autres</h2>
+        <li id="aioli_chinoise_sucree" data-recipe="true">
           <a href="./r/aioli_chinoise_sucree.html">
             <img src="./images/thumb/158.jpeg" width="71" height="48"/>
             <div>Aïoli chinoise sucrée</div>
           </a>
         </li>
-        <li id="confiture_fraises_crues">
+        <li id="confiture_fraises_crues" data-recipe="true">
           <a href="./r/confiture_fraises_crues.html">
             <img src="./images/thumb/4.jpg" width="71" height="48"/>
             <div>Confiture aux fraises crues</div>
           </a>
         </li>
-        <li id="confiture_canneberge">
+        <li id="confiture_canneberge" data-recipe="true">
           <a href="./r/confiture_canneberge.html">
             <img src="./images/thumb/148.jpeg" width="71" height="48"/>
             <div>Confiture de caneberge</div>
           </a>
         </li>
-        <li id="pain_blanc_a_la_machine">
+        <li id="pain_blanc_a_la_machine" data-recipe="true">
           <a href="./r/pain_blanc_a_la_machine.html">
             <img src="./images/thumb/21.jpg" width="71" height="48"/>
             <div>Pain blanc à la machine à pain</div>
           </a>
         </li>
-        <li id="pain_hamburger">
+        <li id="pain_hamburger" data-recipe="true">
           <a href="./r/pain_hamburger.html">
             <img src="./images/thumb/61.jpg" width="71" height="48"/>
             <div>Pain à hamburger</div>
           </a>
         </li>
-        <li id="pain_hotdog">
+        <li id="pain_hotdog" data-recipe="true">
           <a href="./r/pain_hotdog.html">
             <img src="./images/thumb/163.jpeg" width="71" height="48"/>
             <div>Pain à hotdog</div>
           </a>
         </li>
-        <li id="puree_courge_poivree">
+        <li id="puree_courge_poivree" data-recipe="true">
           <a href="./r/puree_courge_poivree.html">
             <img src="./images/thumb/2.jpg" width="71" height="48"/>
             <div>Purée de courge poivrée</div>
           </a>
         </li>
-        <li id="pate_brisee_beurre">
+        <li id="pate_brisee_beurre" data-recipe="true">
           <a href="./r/pate_brisee_beurre.html">
             <img src="./images/thumb/53.jpg" width="71" height="48"/>
             <div>Pâte brisée (beurre)</div>
           </a>
         </li>
-        <li id="pate_brisee_recette_maman">
+        <li id="pate_brisee_recette_maman" data-recipe="true">
           <a href="./r/pate_brisee_recette_maman.html">
             <img src="./images/thumb/53.jpg" width="71" height="48"/>
             <div>Pâte brisée (à ma maman)</div>
           </a>
         </li>
-        <li id="pate_pizza">
+        <li id="pate_pizza" data-recipe="true">
           <a href="./r/pate_pizza.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Pâte à pizza</div>
           </a>
         </li>
-        <li id="relish">
+        <li id="relish" data-recipe="true">
           <a href="./r/relish.html">
             <img src="./images/thumb/280.png" width="71" height="48"/>
             <div>Relish maison</div>
           </a>
         </li>
-        <li id="sauce_pizza">
+        <li id="sauce_pizza" data-recipe="true">
           <a href="./r/sauce_pizza.html">
             <img src="./assets/recipe_placeholder.png" width="71" height="48"/>
             <div>Sauce à pizza</div>
           </a>
         </li>
-        <li id="trempette_artichauts">
+        <li id="trempette_artichauts" data-recipe="true">
           <a href="./r/trempette_artichauts.html">
             <img src="./images/thumb/54.jpg" width="71" height="48"/>
             <div>Trempette aux artichauts</div>
@@ -630,5 +632,65 @@
         </li>
        </ul>
     </div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const tabRecettes = document.getElementById("tab-recettes");
+        const tabInspirations = document.getElementById("tab-inspirations");
+        const recipeItems = document.querySelectorAll("#categories-list li[data-recipe]");
+        const categoryTitles = document.querySelectorAll(".category-title");
+
+        function filterRecipes(showAll) {
+          // 1. Toggle recipe items visibility
+          recipeItems.forEach(item => {
+            const isRecipe = item.getAttribute("data-recipe") === "true";
+            if (showAll || isRecipe) {
+              item.style.display = "";
+            } else {
+              item.style.display = "none";
+            }
+          });
+
+          // 2. Hide category titles if they contain zero visible recipes
+          categoryTitles.forEach(title => {
+            let nextEl = title.nextElementSibling;
+            let hasVisibleRecipes = false;
+            
+            while (nextEl && nextEl.tagName === "LI") {
+              if (nextEl.style.display !== "none") {
+                hasVisibleRecipes = true;
+                break;
+              }
+              nextEl = nextEl.nextElementSibling;
+            }
+            
+            if (hasVisibleRecipes) {
+              title.classList.remove("category-hidden");
+            } else {
+              title.classList.add("category-hidden");
+            }
+          });
+        }
+
+        // Tab "Recettes" click handler (Default state)
+        tabRecettes.addEventListener("click", function(e) {
+          e.preventDefault();
+          tabInspirations.classList.remove("active");
+          tabRecettes.classList.add("active");
+          filterRecipes(false); // Only show "recipe": true
+        });
+
+        // Tab "Inspirations" click handler
+        tabInspirations.addEventListener("click", function(e) {
+          e.preventDefault();
+          tabRecettes.classList.remove("active");
+          tabInspirations.classList.add("active");
+          filterRecipes(true); // Show everything
+        });
+
+        // Run on initial page load (Default to filtering out "recipe": false)
+        filterRecipes(false);
+      });
+    </script>
   </body>
 </html>
