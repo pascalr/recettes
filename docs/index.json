@@ -10,7 +10,9 @@
             "curcuma",
             "clou de girofle moulu",
             "graines de moutarde"
-        ]
+        ],
+        "inspiration": false,
+        "link": "./r/relish.html"
     },
     "gateau_blanc": {
         "title": "Gâteau blanc",
@@ -25,7 +27,9 @@
             "sel",
             "lait"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/gateau_blanc.html"
     },
     "pain_hotdog": {
         "title": "Pain à hotdog",
@@ -39,7 +43,9 @@
             "sucre",
             "farine"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/pain_hotdog.html"
     },
     "crepe_mince": {
         "title": "Crêpe mince",
@@ -50,7 +56,9 @@
             "œufs",
             "lait"
         ],
-        "category": "Déjeuners"
+        "category": "Déjeuners",
+        "inspiration": false,
+        "link": "./r/crepe_mince.html"
     },
     "buche_de_noel": {
         "title": "Bûche de noël",
@@ -68,7 +76,9 @@
             "extrait de vanille",
             "lait"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/buche_de_noel.html"
     },
     "biscuits_amandes": {
         "title": "Biscuits aux amandes",
@@ -83,7 +93,9 @@
             "farine",
             "amandes effilées"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_amandes.html"
     },
     "lasagne_vege": {
         "title": "Lasagne végé",
@@ -107,7 +119,9 @@
             "farine",
             "lait"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/lasagne_vege.html"
     },
     "pate_brisee_beurre": {
         "title": "Pâte brisée (beurre)",
@@ -118,7 +132,9 @@
             "beurre non salé froid",
             "eau glacée"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/pate_brisee_beurre.html"
     },
     "pain_banane": {
         "title": "Pain aux bananes",
@@ -133,7 +149,9 @@
             "bananes mûres",
             "lait"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/pain_banane.html"
     },
     "muffins_creme_sure_cannelle": {
         "title": "Muffins à la crème sûre et à la cannelle",
@@ -152,7 +170,9 @@
             "noix de Grenoble ou de pacanes hachées (facultatif)",
             "cannelle moulue"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_creme_sure_cannelle.html"
     },
     "pain_hamburger": {
         "title": "Pain à hamburger",
@@ -166,7 +186,9 @@
             "sucre",
             "farine"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/pain_hamburger.html"
     },
     "gateau_carottes": {
         "title": "Gâteau aux carottes",
@@ -187,7 +209,9 @@
             "sucre à glacer",
             "extrait de vanille"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/gateau_carottes.html"
     },
     "curry_thai_patates_douces": {
         "title": "Curry Thaï crémeux aux patates douces",
@@ -204,7 +228,9 @@
             "coriandre",
             "sauce de poisson"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/curry_thai_patates_douces.html"
     },
     "confiture_canneberge": {
         "title": "Confiture de caneberge",
@@ -214,7 +240,9 @@
             "eau",
             "caneberges surgelées"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/confiture_canneberge.html"
     },
     "pina_colada": {
         "title": "Piña Colada",
@@ -225,7 +253,9 @@
             "crème glacée à la vanille",
             "vanille en poudre"
         ],
-        "category": "Boissons"
+        "category": "Boissons",
+        "inspiration": false,
+        "link": "./r/pina_colada.html"
     },
     "tarte_aux_pommes": {
         "title": "Tarte aux pommes",
@@ -238,7 +268,9 @@
             "beurre non salé",
             "abaisse de pâte brisée non cuite"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/tarte_aux_pommes.html"
     },
     "biscuits_aux_brisures_de_chocolat": {
         "title": "Biscuits aux brisures de chocolat",
@@ -255,7 +287,9 @@
             "bicarbonate de soude",
             "brisures de chocolat mi-sucré"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_aux_brisures_de_chocolat.html"
     },
     "cowboy_cookies": {
         "title": "Cowboy cookies",
@@ -274,7 +308,9 @@
             "noix de coco râpée",
             "brisures de chocolat"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/cowboy_cookies.html"
     },
     "aubergines_pois_chiche": {
         "title": "Plat d'aubergines et pois chiches",
@@ -300,7 +336,9 @@
             "poivre",
             "fromage halloumi"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/aubergines_pois_chiche.html"
     },
     "muffins_bleuets": {
         "title": "Muffins aux bleuets",
@@ -317,7 +355,9 @@
             "crème sure",
             "bleuets"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_bleuets.html"
     },
     "muffins_avoine_bleuet": {
         "title": "Muffins à l'avoine et aux bleuets",
@@ -334,7 +374,9 @@
             "beurre",
             "bleuets frais"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_avoine_bleuet.html"
     },
     "muffins_pomme_cannelle": {
         "title": "Muffins aux pommes et à la cannelle",
@@ -350,7 +392,9 @@
             "beurre fondu",
             "pomme"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_pomme_cannelle.html"
     },
     "gaufres": {
         "title": "Gaufres",
@@ -364,7 +408,9 @@
             "poudre à pâte",
             "sel"
         ],
-        "category": "Déjeuners"
+        "category": "Déjeuners",
+        "inspiration": false,
+        "link": "./r/gaufres.html"
     },
     "potage_citrouille": {
         "title": "Potage à la citrouille",
@@ -378,7 +424,9 @@
             "bouillon de poulet",
             "sel et poivre"
         ],
-        "category": "Soupes"
+        "category": "Soupes",
+        "inspiration": false,
+        "link": "./r/potage_citrouille.html"
     },
     "gateau_chocolat": {
         "title": "Gâteau au chocolat",
@@ -395,7 +443,9 @@
             "extrait de vanille",
             "oeuf"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/gateau_chocolat.html"
     },
     "pain_blanc_a_la_machine": {
         "title": "Pain blanc à la machine à pain",
@@ -408,7 +458,9 @@
             "eau tiède",
             "sel"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/pain_blanc_a_la_machine.html"
     },
     "sandwich_thon": {
         "title": "Sandwich au thon",
@@ -420,7 +472,9 @@
             "mayonnaise",
             "poivre"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/sandwich_thon.html"
     },
     "boulettes_pois_chiche": {
         "title": "Boulettes de pois chiches",
@@ -436,7 +490,9 @@
             "sel",
             "huile"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/boulettes_pois_chiche.html"
     },
     "pouding_au_pain": {
         "title": "Pouding au pain",
@@ -449,7 +505,9 @@
             "pain coupées en morceaux",
             "grand casseau de bleuets"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/pouding_au_pain.html"
     },
     "biscuits_avoine_raisins": {
         "title": "Biscuits à l'avoine et aux raisins secs",
@@ -467,7 +525,9 @@
             "flocons d'avoine",
             "raisins secs"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_avoine_raisins.html"
     },
     "madeleines_au_miel": {
         "title": "Madeleines au miel",
@@ -480,7 +540,9 @@
             "miel",
             "beurre non salé"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/madeleines_au_miel.html"
     },
     "biscuits_dattes_canneberges": {
         "title": "Biscuits aux dattes et canneberges",
@@ -497,7 +559,9 @@
             "vanille",
             "pépittes de chocolat noir"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_dattes_canneberges.html"
     },
     "aioli_chinoise_sucree": {
         "title": "Aïoli chinoise sucrée",
@@ -510,7 +574,9 @@
             "huile neutre",
             "sirop d'érable"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/aioli_chinoise_sucree.html"
     },
     "biscuits_creme_sure": {
         "title": "Biscuits à la crème sure",
@@ -526,7 +592,9 @@
             "poudre à pâte",
             "crème sure"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_creme_sure.html"
     },
     "pate_mexicain_vege": {
         "title": "Pâté mexicain végé",
@@ -545,7 +613,9 @@
             "chili en flocons",
             "fromage cheddar"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/pate_mexicain_vege.html"
     },
     "pizza_vege": {
         "title": "Pizza végétarienne",
@@ -559,7 +629,9 @@
             "fromage gouda",
             "feuilles de basilic"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/pizza_vege.html"
     },
     "pain_dore": {
         "title": "Pain doré",
@@ -570,7 +642,9 @@
             "tranches de pain",
             "beurre"
         ],
-        "category": "Déjeuners"
+        "category": "Déjeuners",
+        "inspiration": false,
+        "link": "./r/pain_dore.html"
     },
     "soupe_patate_haricots_blanc": {
         "title": "Soupe aux patates et haricots blancs",
@@ -589,7 +663,9 @@
             "sel",
             "poivre"
         ],
-        "category": "Soupes"
+        "category": "Soupes",
+        "inspiration": false,
+        "link": "./r/soupe_patate_haricots_blanc.html"
     },
     "cigares_aux_chous": {
         "title": "Cigares aux choux",
@@ -605,7 +681,9 @@
             "jus de tomate",
             "beurre"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/cigares_aux_chous.html"
     },
     "ragout_loville": {
         "title": "Ragoût Loville",
@@ -630,7 +708,9 @@
             "huile",
             "tomates en dés"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/ragout_loville.html"
     },
     "pate_brisee_recette_maman": {
         "title": "Pâte brisée (à ma maman)",
@@ -641,7 +721,9 @@
             "sel",
             "eau très froide"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/pate_brisee_recette_maman.html"
     },
     "boucles_cannelle": {
         "title": "Boucles à la cannelle",
@@ -658,7 +740,9 @@
             "cannelle moulue",
             "beurre"
         ],
-        "category": "Déjeuners"
+        "category": "Déjeuners",
+        "inspiration": false,
+        "link": "./r/boucles_cannelle.html"
     },
     "hamburger_haricot_noir_riz": {
         "title": "Hamburger aux haricots noirs et riz",
@@ -674,7 +758,9 @@
             "cumin",
             "huile"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/hamburger_haricot_noir_riz.html"
     },
     "citronade": {
         "title": "Citronade",
@@ -684,7 +770,9 @@
             "sucre",
             "eau"
         ],
-        "category": "Boissons"
+        "category": "Boissons",
+        "inspiration": false,
+        "link": "./r/citronade.html"
     },
     "pain_de_viande": {
         "title": "Pain de viande",
@@ -696,7 +784,9 @@
             "oeufs",
             "ketchup maison"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/pain_de_viande.html"
     },
     "hotdog_tofu_panné": {
         "title": "Hotdog au tofu panné",
@@ -710,7 +800,9 @@
             "sel et poivre",
             "pains à hotdog"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/hotdog_tofu_panné.html"
     },
     "confiture_fraises_crues": {
         "title": "Confiture aux fraises crues",
@@ -719,7 +811,9 @@
             "fraises fraîches",
             "sucre"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/confiture_fraises_crues.html"
     },
     "muffins_framboises": {
         "title": "Muffins aux framboises",
@@ -737,7 +831,9 @@
             "extrait de vanille",
             "framboises surgelées"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_framboises.html"
     },
     "crepes": {
         "title": "Crêpes",
@@ -750,7 +846,9 @@
             "oeufs",
             "lait"
         ],
-        "category": "Déjeuners"
+        "category": "Déjeuners",
+        "inspiration": false,
+        "link": "./r/crepes.html"
     },
     "muffins_brisure_chocolat": {
         "title": "Muffins aux brisures de chocolat",
@@ -765,7 +863,9 @@
             "lait",
             "brisures de chocolat mi-sucré"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_brisure_chocolat.html"
     },
     "muffins_chocolat": {
         "title": "Muffins au chocolat",
@@ -780,7 +880,9 @@
             "lait",
             "huile végétale"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/muffins_chocolat.html"
     },
     "falafels": {
         "title": "Falafels",
@@ -799,7 +901,9 @@
             "farine tout usage",
             "huile d'olive"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/falafels.html"
     },
     "soupe_pois_casses": {
         "title": "Soupe de pois cassés verts",
@@ -812,7 +916,9 @@
             "eau",
             "pois verts cassés"
         ],
-        "category": "Soupes"
+        "category": "Soupes",
+        "inspiration": false,
+        "link": "./r/soupe_pois_casses.html"
     },
     "potage_courge_butternut": {
         "title": "Potage à la courge butternut",
@@ -826,7 +932,9 @@
             "poivre",
             "eau"
         ],
-        "category": "Soupes"
+        "category": "Soupes",
+        "inspiration": false,
+        "link": "./r/potage_courge_butternut.html"
     },
     "puree_courge_poivree": {
         "title": "Purée de courge poivrée",
@@ -838,7 +946,9 @@
             "gingembre moulu",
             "sel et poivre"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/puree_courge_poivree.html"
     },
     "biscuits_fantaisie_chocolat": {
         "title": "Biscuits de fantaisie au chocolat",
@@ -853,7 +963,9 @@
             "farine tout usage",
             "cacao"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_fantaisie_chocolat.html"
     },
     "pain_de_viande_vege": {
         "title": "Pain de viande végé",
@@ -869,7 +981,9 @@
             "sel et poivre",
             "ketchup maison"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/pain_de_viande_vege.html"
     },
     "brownies_chocolat": {
         "title": "Brownies au chocolat",
@@ -884,7 +998,9 @@
             "sel",
             "farine"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/brownies_chocolat.html"
     },
     "tarte_au_sucre": {
         "title": "Tarte au sucre",
@@ -899,7 +1015,9 @@
             "beurre non salé froid",
             "eau glacée"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/tarte_au_sucre.html"
     },
     "boeuf_africain": {
         "title": "Boeuf africain",
@@ -919,7 +1037,9 @@
             "carottes",
             "champignons"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/boeuf_africain.html"
     },
     "croustade_aux_pommes": {
         "title": "Croustade aux pommes",
@@ -932,7 +1052,9 @@
             "pommes coupées et épépinées",
             "sucre"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/croustade_aux_pommes.html"
     },
     "quiche_epinard": {
         "title": "Quiche aux épinards",
@@ -951,7 +1073,9 @@
             "mozzarella",
             "brie"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/quiche_epinard.html"
     },
     "biscuits_tendres_brisures_chocolat": {
         "title": "Biscuits tendres aux brisures de chocolat",
@@ -968,7 +1092,9 @@
             "sel",
             "brisures de chocolat"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_tendres_brisures_chocolat.html"
     },
     "tofu_au_beurre": {
         "title": "Tofu au beurre",
@@ -990,7 +1116,9 @@
             "coriandre fraîche",
             "menthe fraîche"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/tofu_au_beurre.html"
     },
     "trempette_artichauts": {
         "title": "Trempette aux artichauts",
@@ -1003,7 +1131,9 @@
             "bébés épinards",
             "poivre"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/trempette_artichauts.html"
     },
     "macaroni_au_fromage_et_courge_butternut": {
         "title": "Macaroni au fromage à la courge butternut",
@@ -1021,7 +1151,9 @@
             "bouillon de légumes",
             "macaroni"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/macaroni_au_fromage_et_courge_butternut.html"
     },
     "dal_lentilles_corail": {
         "title": "Dal aux lentilles corail",
@@ -1038,7 +1170,9 @@
             "gingembre",
             "sel"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/dal_lentilles_corail.html"
     },
     "courge_spaghetti_feta_bacon_champignons": {
         "title": "Courge spaghetti aux champignons, feta et bacon",
@@ -1053,13 +1187,17 @@
             "poivre",
             "herbe aromatique"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/courge_spaghetti_feta_bacon_champignons.html"
     },
     "pizza_tomate_et_ail": {
         "title": "Pizza tomate et ail",
         "image": "185.jpeg",
         "ingredients": [],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/pizza_tomate_et_ail.html"
     },
     "granola": {
         "title": "Granola",
@@ -1074,7 +1212,9 @@
             "extrait de vanille",
             "canneberges séchés"
         ],
-        "category": "Déjeuners"
+        "category": "Déjeuners",
+        "inspiration": false,
+        "link": "./r/granola.html"
     },
     "salade_russe": {
         "title": "Salade russe",
@@ -1088,7 +1228,9 @@
             "mayonnaise",
             "huile d'olive"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/salade_russe.html"
     },
     "pate_pizza": {
         "title": "Pâte à pizza",
@@ -1100,7 +1242,9 @@
             "sel",
             "eau tiède"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/pate_pizza.html"
     },
     "bananes_plantains_frites": {
         "title": "Bananes plantains frites",
@@ -1109,7 +1253,9 @@
             "bananes plantains",
             "huile végétale"
         ],
-        "category": "Entrées"
+        "category": "Entrées",
+        "inspiration": false,
+        "link": "./r/bananes_plantains_frites.html"
     },
     "riz_espagnol": {
         "title": "Riz espagnol",
@@ -1127,7 +1273,9 @@
             "poivre",
             "paprika"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/riz_espagnol.html"
     },
     "sucre_a_la_creme": {
         "title": "Sucre à la crème",
@@ -1140,7 +1288,9 @@
             "pablum",
             "beurre"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/sucre_a_la_creme.html"
     },
     "tarte_citrouille_erable": {
         "title": "Tarte à la citrouille et à l'érable",
@@ -1155,7 +1305,9 @@
             "crème fouettée",
             "sucre d'érable"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/tarte_citrouille_erable.html"
     },
     "gateau_au_gruau_et_sucre_a_la_creme": {
         "title": "Gâteau au gruau et au sucre à la crème",
@@ -1174,7 +1326,9 @@
             "lait",
             "sucre à glacer"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/gateau_au_gruau_et_sucre_a_la_creme.html"
     },
     "pouding_chomeur": {
         "title": "Pouding chômeur",
@@ -1192,7 +1346,9 @@
             "lait",
             "coco"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/pouding_chomeur.html"
     },
     "sauce_pizza": {
         "title": "Sauce à pizza",
@@ -1204,7 +1360,9 @@
             "vinaigre balsamique",
             "ail des bois"
         ],
-        "category": "Autres"
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/sauce_pizza.html"
     },
     "tofu_general_tao": {
         "title": "Tofu général tao",
@@ -1223,7 +1381,9 @@
             "vinaigre blanc",
             "sauce soja"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/tofu_general_tao.html"
     },
     "tofu_magique_selon_loounie": {
         "title": "Tofu magique selon Loounie",
@@ -1237,7 +1397,9 @@
             "huile neutre",
             "levure alimentaire en flocons"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/tofu_magique_selon_loounie.html"
     },
     "tofu_marine_au_balsamique": {
         "title": "Tofu mariné au balsamique",
@@ -1254,7 +1416,9 @@
             "romarin séché",
             "tofu"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/tofu_marine_au_balsamique.html"
     },
     "mapo_tofu": {
         "title": "Mapo tofu",
@@ -1272,7 +1436,9 @@
             "sucre",
             "oignon vert"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/mapo_tofu.html"
     },
     "galette_a_la_melasse": {
         "title": "Galettes à la mélasse",
@@ -1288,7 +1454,9 @@
             "eau",
             "mélasse"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/galette_a_la_melasse.html"
     },
     "pate_chinois_vege": {
         "title": "Pâté chinois végétarien",
@@ -1308,7 +1476,9 @@
             "oignon",
             "ail"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/pate_chinois_vege.html"
     },
     "pets_de_soeur": {
         "title": "Pets-de-soeur",
@@ -1318,7 +1488,9 @@
             "sirop d'érable",
             "eau"
         ],
-        "category": "Desserts"
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/pets_de_soeur.html"
     },
     "poulet_champignons_a_la_chinoise": {
         "title": "Poulet champignons à la chinoise",
@@ -1336,6 +1508,8 @@
             "eau",
             "poivre"
         ],
-        "category": "Plats principaux"
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/poulet_champignons_a_la_chinoise.html"
     }
 }

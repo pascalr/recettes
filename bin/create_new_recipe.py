@@ -276,7 +276,9 @@ def main():
             "title": title,
             "image": "",
             "ingredients": ingredients,
-            "category": category
+            "category": category,
+            "inspiration": False,
+            "link": f"./r/{user_input}.html"
         }
 
         save_index(index_data)
