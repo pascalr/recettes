@@ -22,6 +22,8 @@ Faire une page cuisson des aliments? Un petit paragraph très court pour chaque.
 - Mais
 - Pois chiches
 - Lentilles
+- Haricots rouges, Haricots noirs
+- Oignons caramélisés
 Ex:  Oeufs à la coque
 Plongez-le délicatement dans une casserole d'eau bouillante (utiliser une cuillère pour déposer les oeufs). Laissez cuire 11 minutes pour un oeuf dur. Plongez-le immédiatement dans un bol d'eau glacée pour arrêter la cuisson et l'écaler facilement. (On a toujours cuit à partir de l'eau froide et calculer 10 minutes, mais apparament c'est plus facile à écailler avec le choc thermique)
 
@@ -29,18 +31,6 @@ TODO: Recettes si manquantes:
 
 Muffins déjeuner aux patates douces
 
-Pâté chinois végétarien
-
-Quatre quart aux bananes
-Pets-de-soeur
-Haricots rouges cuits
-Oignons caramélisés
-Pâte de curry jaune
-Gâteau rouge velours
-Oeuf de lin
-Tarte à la lime
-
-Poulet champignons à la chinoise
 Carrés coco et cerise
 Ketchup maison
 Ail des bois mariné

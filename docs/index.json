@@ -1289,5 +1289,53 @@
             "mélasse"
         ],
         "category": "Desserts"
+    },
+    "pate_chinois_vege": {
+        "title": "Pâté chinois végétarien",
+        "image": "",
+        "ingredients": [
+            "blé d'inde",
+            "patate",
+            "beurre",
+            "lait",
+            "herbes salées",
+            "sel et poivre",
+            "lentilles sèches",
+            "pvt sec",
+            "eau",
+            "sauce huitre",
+            "sauce soja",
+            "oignon",
+            "ail"
+        ],
+        "category": "Plats principaux"
+    },
+    "pets_de_soeur": {
+        "title": "Pets-de-soeur",
+        "image": "",
+        "ingredients": [
+            "pâte à tarte",
+            "sirop d'érable",
+            "eau"
+        ],
+        "category": "Desserts"
+    },
+    "poulet_champignons_a_la_chinoise": {
+        "title": "Poulet champignons à la chinoise",
+        "image": "",
+        "ingredients": [
+            "poulet",
+            "champignons",
+            "oignon",
+            "gousse d'ail",
+            "sauce soja",
+            "sauce huître",
+            "graines de sésame",
+            "huile de sésame",
+            "sucre",
+            "eau",
+            "poivre"
+        ],
+        "category": "Plats principaux"
     }
 }
