@@ -285,16 +285,3 @@ input[type="checkbox"] {
 .active {
   font-weight: bold;
 }
-
-.nav {
-  background-color: #212529;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em;
-}
-
-.nav a, .nav a:visited, .nav a:hover {
-  color: white;
-  text-decoration: none;
-}

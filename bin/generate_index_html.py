@@ -133,6 +133,10 @@ html_content = """<!DOCTYPE html>
       <span class="navbar-title">Site de Pascal - Recettes</span>
     </nav>
     <div class="container">
+      <ul class="nav nav-tabs mb-3">
+        <li class="nav-item"><a class="nav-link active" href="/">Recettes</a></li>
+        <li class="nav-item"><a class="nav-link" href="/y">Inspirations</a></li>
+      </ul>
       <div class="search-container">
         <input 
           type="text" 
