@@ -1825,5 +1825,11 @@
         "category": "Plats principaux",
         "recipe": false,
         "link": "./r/tapenlou.html"
+    },
+    "soupe_nouilles_brocoli": {
+        "title": "Soupe aux nouilles et brocoli",
+        "image": "1.jpg",
+        "category": "Soupes",
+        "recipe": false
     }
 }

@@ -33,7 +33,7 @@ for recipe_id, recipe_info in data.items():
         "id": recipe_id,
         "title": recipe_info.get("title"),
         "img_src": img_src,
-        "link": recipe_info.get("link", f"./r/{recipe_id}.html"),
+        "link": recipe_info.get("link"),
         # Fetch the 'recipe' boolean value (defaults to True if not present)
         "is_recipe": recipe_info.get("recipe", True) 
     }
@@ -62,20 +62,18 @@ html_content = """<!DOCTYPE html>
         margin: 0.5em 0 0.25em 0;
         border-bottom: 1px solid black;
       }
+      .recipe-list li {
+        font-size: 1.1em;
+      }
       .recipe-list li a {
         color: black;
-        font-size: 1.1em;
         text-decoration: none;
       }
-      .recipe-list li a div {
+      .recipe-list li a, .recipe-list li.missing-link {
         display: flex;
         align-items: center;
       }
-      .recipe-list li a {
-        display: flex;
-        align-items: center;
-      }
-      .recipe-list li a img {
+      .recipe-list li a img, .recipe-list li.missing-link img {
         margin-right: 0.5em;
       }
       .navbar-home {
@@ -129,6 +127,10 @@ html_content = """<!DOCTYPE html>
       .category-hidden {
         display: none !important;
       }
+
+      .missing-link {
+        color: #d83b3b;
+      }
     </style>
   </head>
   <body>
@@ -165,13 +167,24 @@ for category in all_categories:
         for recipe in recipes_in_cat:
             # Added dynamic data-recipe property converted to string lowercase ("true"/"false")
             is_recipe_str = str(recipe['is_recipe']).lower()
-            html_content += f"""
-        <li id="{recipe['id']}" data-recipe="{is_recipe_str}">
-          <a href="{recipe['link']}">
-            <img src="{recipe['img_src']}" width="71" height="48"/>
-            <div>{recipe['title']}</div>
-          </a>
-        </li>"""
+
+            # Check if the link is None, null, or an empty string
+            if not recipe.get('link'):
+                # Render without the <a> tag and add a class for CSS styling
+                html_content += f"""
+            <li id="{recipe['id']}" data-recipe="{is_recipe_str}" class="missing-link">
+              <img src="{recipe['img_src']}" width="71" height="48"/>
+              <div>{recipe['title']}</div>
+            </li>"""
+            else:
+                # Render normally with the <a> tag
+                html_content += f"""
+            <li id="{recipe['id']}" data-recipe="{is_recipe_str}">
+              <a href="{recipe['link']}">
+                <img src="{recipe['img_src']}" width="71" height="48"/>
+                <div>{recipe['title']}</div>
+              </a>
+            </li>"""
 
 # Clôture des balises HTML + Interactivity Script
 html_content += """
