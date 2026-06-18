@@ -2281,6 +2281,36 @@
         "image": "301.jpg",
         "category": "Plats principaux",
         "recipe": false
+    },
+    "pain_zucchini_blanc": {
+        "title": "Pain au zucchini blanc",
+        "image": "234.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "pain_zucchini_chocolat": {
+        "title": "Pain au zucchini et chocolat",
+        "image": "239.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "salade_pois_chiche": {
+        "title": "Salade de pois chiches",
+        "image": "143.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "gratin_brocoli": {
+        "title": "Gratin de brocoli",
+        "image": "217.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "gratin_chou_fleur": {
+        "title": "Gratin de chou fleur",
+        "image": "232.jpeg",
+        "category": "Entrées",
+        "recipe": false
     }
 
 
