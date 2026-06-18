@@ -140,6 +140,7 @@ html_content = """<!DOCTYPE html>
       <ul class="nav nav-tabs mb-3" id="recipe-tabs">
         <li class="nav-item"><a class="nav-link active" id="tab-recettes" href="#">Recettes</a></li>
         <li class="nav-item"><a class="nav-link" id="tab-inspirations" href="#">Inspirations</a></li>
+        <li class="nav-item"><a class="nav-link" href="./aide_memoire.html">Aide-mémoire</a></li>
       </ul>
       <div class="search-container">
         <input 
