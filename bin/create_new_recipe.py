@@ -277,7 +277,7 @@ def main():
             "image": "",
             "ingredients": ingredients,
             "category": category,
-            "inspiration": False,
+            "recipe": True,
             "link": f"./r/{user_input}.html"
         }
 

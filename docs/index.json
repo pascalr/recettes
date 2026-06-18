@@ -1157,7 +1157,7 @@
     },
     "dal_lentilles_corail": {
         "title": "Dal aux lentilles corail",
-        "image": "recipe_placeholder.png",
+        "image": "281.jpeg",
         "ingredients": [
             "oignons",
             "gousses d'ail",
@@ -1525,7 +1525,7 @@
             "noix de coco râpée"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/carres_coco_cerise.html"
     },
     "ketchup_maison": {
@@ -1542,7 +1542,7 @@
             "gros sel"
         ],
         "category": "Autres",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/ketchup_maison.html"
     },
     "ail_des_bois_marines": {
@@ -1562,7 +1562,7 @@
             "ail des bois"
         ],
         "category": "Autres",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/ail_des_bois_marines.html"
     },
     "petits_gateaux_a_la_foret_noire": {
@@ -1582,7 +1582,7 @@
             "poudre à pâte"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/petits_gateaux_a_la_foret_noire.html"
     },
     "pouding_aux_fraises": {
@@ -1600,7 +1600,7 @@
             "cassonade"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/pouding_aux_fraises.html"
     },
     "biscuits_de_pate_aux_raisins_secs": {
@@ -1619,7 +1619,7 @@
             "lait"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/biscuits_de_pate_aux_raisins_secs.html"
     },
     "biscuits_au_son": {
@@ -1636,7 +1636,7 @@
             "eau tiède"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/biscuits_au_son.html"
     },
     "galettes_au_chocolat": {
@@ -1653,7 +1653,7 @@
             "bicarbonate de soude"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/galettes_au_chocolat.html"
     },
     "galettes_de_sarrasin": {
@@ -1667,7 +1667,7 @@
             "oeuf"
         ],
         "category": "Autres",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/galettes_de_sarrasin.html"
     },
     "milles_feuilles": {
@@ -1685,7 +1685,7 @@
             "eau"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/milles_feuilles.html"
     },
     "sauce_nems": {
@@ -1698,8 +1698,8 @@
             "carotte",
             "nuoc mâm"
         ],
-        "category": "Entrées",
-        "inspiration": false,
+        "category": "Autres",
+        "recipe": true,
         "link": "./r/sauce_nems.html"
     },
     "riz_quinoa_curcuma": {
@@ -1716,7 +1716,7 @@
             "curcuma"
         ],
         "category": "Plats principaux",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/riz_quinoa_curcuma.html"
     },
     "poe_banane": {
@@ -1730,7 +1730,7 @@
             "lait de coco"
         ],
         "category": "Desserts",
-        "inspiration": false,
+        "recipe": false,
         "link": "./r/poe_banane.html"
     },
     "tofu_a_la_vapeur": {
@@ -1748,7 +1748,7 @@
             "sirop d'érable"
         ],
         "category": "Plats principaux",
-        "inspiration": false,
+        "recipe": true,
         "link": "./r/tofu_a_la_vapeur.html"
     },
     "salade_artichauts_feta_dattes": {
@@ -1761,7 +1761,7 @@
             "oignons rouges"
         ],
         "category": "Entrées",
-        "inspiration": true,
+        "recipe": false,
         "link": "./r/salade_artichauts_feta_dattes.html"
     },
     "tacos_vege": {
@@ -1786,7 +1786,44 @@
             "pâte de tomate"
         ],
         "category": "Plats principaux",
-        "inspiration": false,
+        "recipe": false,
         "link": "./r/tacos_vege.html"
+    },
+    "crepe_hollandaise": {
+        "title": "Crêpe hollandaise",
+        "image": "",
+        "ingredients": [
+            "oeufs",
+            "sucre",
+            "lait",
+            "farine",
+            "extrait de vanille pure",
+            "beurre fondu"
+        ],
+        "category": "Déjeuners",
+        "recipe": true,
+        "link": "./r/crepe_hollandaise.html"
+    },
+    "tapenlou": {
+        "title": "Tapenlou",
+        "image": "",
+        "ingredients": [
+            "poulet",
+            "porc",
+            "crevettes crues",
+            "bok choy",
+            "champignons",
+            "riz",
+            "oignon",
+            "sauce soja",
+            "oignons verts",
+            "gingembre râpé",
+            "carottes râpées",
+            "huile végétale",
+            "sel"
+        ],
+        "category": "Plats principaux",
+        "recipe": false,
+        "link": "./r/tapenlou.html"
     }
 }

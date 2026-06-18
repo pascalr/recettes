@@ -29,16 +29,13 @@ Plongez-le délicatement dans une casserole d'eau bouillante (utiliser une cuill
 
 TODO: Recettes si manquantes:
 
+Image de crepe hollandaise je suis certain de l'avoir quelque part
+
 Muffins déjeuner aux patates douces
 
 Galettes au gruau??? Je ne me rappelle pas de cette recette...
 
-Tacos végés
-Crêpe hollandaise
-Dal aux lentilles corail
 Tapenlou
-
-
 
 TODO: Des recettes suggestions? En rouge pour dire que c'est manquant et que tu ne peux pas cliquer dessus. Simplement des entrées dans index.json.
 - Pâtes au pesto
