@@ -1259,7 +1259,7 @@
     },
     "riz_espagnol": {
         "title": "Riz espagnol",
-        "image": "recipe_placeholder.png",
+        "image": "223.jpeg",
         "ingredients": [
             "bacon",
             "oignon espagnol",
@@ -1279,7 +1279,7 @@
     },
     "sucre_a_la_creme": {
         "title": "Sucre à la crème",
-        "image": "recipe_placeholder.png",
+        "image": "257.jpeg",
         "ingredients": [
             "sucre",
             "crème",
@@ -1753,7 +1753,7 @@
     },
     "salade_artichauts_feta_dattes": {
         "title": "Salade d'artichauts feta et dattes",
-        "image": "",
+        "image": "155.jpeg",
         "ingredients": [
             "artichauds",
             "feta au miel",
@@ -1766,7 +1766,7 @@
     },
     "tacos_vege": {
         "title": "Tacos végés",
-        "image": "",
+        "image": "130.jpeg",
         "ingredients": [
             "haricots noirs secs",
             "oignon",
@@ -1791,7 +1791,7 @@
     },
     "crepe_hollandaise": {
         "title": "Crêpe hollandaise",
-        "image": "",
+        "image": "277.jpeg",
         "ingredients": [
             "oeufs",
             "sucre",
@@ -1831,5 +1831,458 @@
         "image": "1.jpg",
         "category": "Soupes",
         "recipe": false
+    },
+    "pates_au_pesto": {
+        "title": "Pâtes au pesto",
+        "image": "12.jpg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "ramen": {
+        "title": "Ramen",
+        "image": "26.jpg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "shortcake_aux_fraises": {
+        "title": "Shortcake aux fraises",
+        "image": "27.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "dumplings": {
+        "title": "Dumplings",
+        "image": "30.jpg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "tortillas": {
+        "title": "Tortillas",
+        "image": "31.jpg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "houmous": {
+        "title": "Houmous",
+        "image": "38.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "doigts_de_sorciere": {
+        "title": "Doigts de sorciere",
+        "image": "55.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "papaye_lait_de_coco_rhum_vanille": {
+        "title": "Papaye au lait de coco, rhum et vanille",
+        "image": "56.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "pain_de_ble_entier": {
+        "title": "Pain de blé entier",
+        "image": "59.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "pain_baguette": {
+        "title": "Pain baguette",
+        "image": "60.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "bagels": {
+        "title": "Bagels",
+        "image": "62.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "croissants": {
+        "title": "Croissants",
+        "image": "63.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "tarte_aux_fraises": {
+        "title": "Tarte aux fraises",
+        "image": "65.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "tarte_a_la_lime": {
+        "title": "Tarte à la lime",
+        "image": "66.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "tarte_aux_bleuets": {
+        "title": "Tarte aux bleuets",
+        "image": "67.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "bonhommes_de_pain_d_epices": {
+        "title": "Bonhommes de pain d'épice",
+        "image": "69.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "empanadas": {
+        "title": "Empanadas",
+        "image": "77.jpg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "guacamole": {
+        "title": "Guacamole",
+        "image": "78.jpg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "pates_carbonara": {
+        "title": "Pâtes carbonara",
+        "image": "79.jpg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "macarons": {
+        "title": "Macarons",
+        "image": "80.jpg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "milkshake_aux_fraises": {
+        "title": "Milkshake aux fraises",
+        "image": "93.jpg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "bruschettas": {
+        "title": "Bruschettas",
+        "image": "106.jpg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "sauce_brune": {
+        "title": "Sauce brune",
+        "image": "110.jpg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "pizza_tofu_magique_poivrons_rouges_et_ail_des_bois": {
+        "title": "Pizza tofu magique, poivrons rouges et ail des bois",
+        "image": "131.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "brochettes_de_legume": {
+        "title": "Brochettes de légumes",
+        "image": "140.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "orzo_et_champignons": {
+        "title": "Orzo et champignons",
+        "image": "142.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "pizza_sauce_cachou_courge_butternut": {
+        "title": "Pizza sauce cachou et courge butternut",
+        "image": "149.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "soupe_aux_tomates": {
+        "title": "Soupes aux tomates",
+        "image": "154.jpeg",
+        "category": "Soupes",
+        "recipe": false
+    },
+    "riz_jaune": {
+        "title": "Riz jaune",
+        "image": "156.jpeg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "sandwich_aux_tomates": {
+        "title": "Sandwich aux tomates",
+        "image": "165.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "pates_bolognaise": {
+        "title": "Pâtes sauce bolognaise",
+        "image": "166.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "taboule": {
+        "title": "Taboulé",
+        "image": "167.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "sandwich_aux_oeufs": {
+        "title": "Sandwich aux oeufs",
+        "image": "176.png",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "gratin_aubergine": {
+        "title": "Gratin d'aubergines",
+        "image": "179.png",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "gratin_courgette": {
+        "title": "Gratin de courgettes",
+        "image": "180.png",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "poutine": {
+        "title": "Poutine",
+        "image": "193.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "lait_avoine": {
+        "title": "Lait d'avoine",
+        "image": "197.jpeg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "cafe_late": {
+        "title": "Café laté",
+        "image": "198.jpeg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "chocolat_chaud": {
+        "title": "Chocolat chaud",
+        "image": "199.jpeg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "mayonnaise": {
+        "title": "Mayonnaise maison",
+        "image": "202.jpeg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "yogourt_petits_fruits": {
+        "title": "Yogourt aux petits fruits",
+        "image": "203.jpeg",
+        "category": "Déjeuners",
+        "recipe": false
+    },
+    "sandwich_jambon": {
+        "title": "Sandwich au jambon",
+        "image": "205.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "macaroni_au_fromage": {
+        "title": "Macaroni au fromage",
+        "image": "207.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "soupe_minestrone": {
+        "title": "Soupe minestrone",
+        "image": "208.jpeg",
+        "category": "Soupes",
+        "recipe": false
+    },
+    "moutarde_maison": {
+        "title": "Moutarde maison",
+        "image": "209.jpeg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "panini": {
+        "title": "Paninis",
+        "image": "210.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "soupe_aux_pois": {
+        "title": "Soupe aux pois",
+        "image": "212.jpeg",
+        "category": "Soupes",
+        "recipe": false
+    },
+    "salade_de_pates": {
+        "title": "Salade de pâtes",
+        "image": "213.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "omelette": {
+        "title": "Omelette",
+        "image": "214.jpeg",
+        "category": "Déjeuners",
+        "recipe": false
+    },
+    "pitas": {
+        "title": "Pain pitas maison",
+        "image": "219.jpeg",
+        "category": "Autres",
+        "recipe": false
+    },
+    "jus_de_pomme": {
+        "title": "Jus de pomme",
+        "image": "221.jpeg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "renverse_ananas": {
+        "title": "Renversé à l'ananas",
+        "image": "224.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "chous_a_la_creme": {
+        "title": "Chous à la crème",
+        "image": "225.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "fondu_au_chocolat": {
+        "title": "Fondu au chocolat",
+        "image": "230.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "nachos": {
+        "title": "Nachos",
+        "image": "235.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "salade_grecque": {
+        "title": "Salade grecque",
+        "image": "237.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "jus_ananas": {
+        "title": "Jus d'ananas",
+        "image": "240.jpeg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "jus_orange": {
+        "title": "Jus d'orange",
+        "image": "241.jpeg",
+        "category": "Boissons",
+        "recipe": false
+    },
+    "sauce_tzaziki": {
+        "title": "Sauce tzaziki",
+        "image": "244.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "gruau": {
+        "title": "Gruau",
+        "image": "249.jpeg",
+        "category": "Déjeuners",
+        "recipe": false
+    },
+    "creme_asperge": {
+        "title": "Crème d'asperge",
+        "image": "250.jpeg",
+        "category": "Soupes",
+        "recipe": false
+    },
+    "creme_champignon": {
+        "title": "Crème de champignons",
+        "image": "251.jpeg",
+        "category": "Soupes",
+        "recipe": false
+    },
+    "popcorn": {
+        "title": "Popcorn",
+        "image": "255.jpeg",
+        "category": "Entrées",
+        "recipe": false
+    },
+    "fondant_au_chocolat": {
+        "title": "Fondant au chocolat",
+        "image": "256.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "ratatouille": {
+        "title": "Ratatouille",
+        "image": "259.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "pates_alfredo": {
+        "title": "Pâtes sauce alfredo",
+        "image": "266.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "chili_sin_carne": {
+        "title": "Chili sin carne",
+        "image": "267.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "burito": {
+        "title": "Burito",
+        "image": "268.jpeg",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "tarte_aux_pacanes": {
+        "title": "Tarte aux pacanes",
+        "image": "270.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "pouding_vanille": {
+        "title": "Pouding à la vanille",
+        "image": "274.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "creme_brulee": {
+        "title": "Crème brûlée",
+        "image": "278.jpeg",
+        "category": "Desserts",
+        "recipe": false
+    },
+    "soupe_miso": {
+        "title": "Soupe miso",
+        "image": "283.jpeg",
+        "category": "Soupes",
+        "recipe": false
+    },
+    "sushis": {
+        "title": "Sushis",
+        "image": "296.png",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "poke_bols": {
+        "title": "Poke bols",
+        "image": "",
+        "category": "Plats principaux",
+        "recipe": false
+    },
+    "paelia": {
+        "title": "Paelia",
+        "image": "301.jpg",
+        "category": "Plats principaux",
+        "recipe": false
     }
+
+
+    
 }
