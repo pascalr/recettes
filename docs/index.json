@@ -1564,5 +1564,43 @@
         "category": "Autres",
         "inspiration": false,
         "link": "./r/ail_des_bois_marines.html"
+    },
+    "petits_gateaux_a_la_foret_noire": {
+        "title": "Petits gâteaux à la forêt noire",
+        "image": "",
+        "ingredients": [
+            "fromage à la crème ramolli",
+            "oeuf",
+            "cerises pour garniture à tartes (1/2 moins de sucre)",
+            "brisures de chocolat",
+            "bicarbonate de soude",
+            "crème sure",
+            "beurre ramolli",
+            "cassonade bien tassée",
+            "chocolat non sucré fondu",
+            "farine tout usage",
+            "poudre à pâte"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/petits_gateaux_a_la_foret_noire.html"
+    },
+    "pouding_aux_fraises": {
+        "title": "Pouding aux fraises",
+        "image": "",
+        "ingredients": [
+            "oeuf",
+            "margarine molle",
+            "sucre",
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "lait",
+            "fraises coupées en 2",
+            "cassonade"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/pouding_aux_fraises.html"
     }
 }

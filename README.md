@@ -31,9 +31,6 @@ TODO: Recettes si manquantes:
 
 Muffins déjeuner aux patates douces
 
-Tofu sauce chinoise à l'ail
-Petits gâteaux à la forêt noire
-Pouding aux fraises
 Biscuits de pâte aux raisins secs
 
 Biscuits au son
