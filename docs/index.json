@@ -1511,5 +1511,58 @@
         "category": "Plats principaux",
         "recipe": true,
         "link": "./r/poulet_champignons_a_la_chinoise.html"
+    },
+    "carres_coco_cerise": {
+        "title": "Carrés coco et cerise",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "cassonade tassée",
+            "beurre dure",
+            "lait condensé sucré",
+            "extrait de vanille",
+            "cerises au marasquin",
+            "noix de coco râpée"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/carres_coco_cerise.html"
+    },
+    "ketchup_maison": {
+        "title": "Ketchup maison",
+        "image": "",
+        "ingredients": [
+            "tomate",
+            "sucre",
+            "vinaigre blanc",
+            "poivron vert",
+            "oignon",
+            "pied de céleri",
+            "épices à marinade",
+            "gros sel"
+        ],
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/ketchup_maison.html"
+    },
+    "ail_des_bois_marines": {
+        "title": "Ail des bois mariné",
+        "image": "",
+        "ingredients": [
+            "gousses d'ail des bois",
+            "huile",
+            "vinaigre blanc",
+            "persil",
+            "sucre",
+            "sel",
+            "jus de citron",
+            "paprika",
+            "moutarde en poudre",
+            "crème de tarte",
+            "ail des bois"
+        ],
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/ail_des_bois_marines.html"
     }
 }

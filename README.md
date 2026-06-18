@@ -31,9 +31,6 @@ TODO: Recettes si manquantes:
 
 Muffins déjeuner aux patates douces
 
-Carrés coco et cerise
-Ketchup maison
-Ail des bois mariné
 Tofu sauce chinoise à l'ail
 Petits gâteaux à la forêt noire
 Pouding aux fraises
