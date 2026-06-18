@@ -33,11 +33,6 @@ Muffins déjeuner aux patates douces
 
 Galettes au gruau??? Je ne me rappelle pas de cette recette...
 
-Salade vinaigrette à l'ail
-Riz au quinoa et curcuma
-Poe banane
-Tofu à la vapeur
-Salade d'artichauts feta et dattes
 Tacos végés
 Crêpe hollandaise
 Dal aux lentilles corail

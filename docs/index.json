@@ -1701,5 +1701,92 @@
         "category": "Entrées",
         "inspiration": false,
         "link": "./r/sauce_nems.html"
+    },
+    "riz_quinoa_curcuma": {
+        "title": "Riz au quinoa et curcuma",
+        "image": "",
+        "ingredients": [
+            "quinoa",
+            "riz",
+            "eau",
+            "bouillon aromatisé au poulet",
+            "huile d'olive",
+            "gousses d'ail",
+            "cannelle moulue",
+            "curcuma"
+        ],
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/riz_quinoa_curcuma.html"
+    },
+    "poe_banane": {
+        "title": "Poe banane",
+        "image": "",
+        "ingredients": [
+            "banane mûre",
+            "farine de manioc ou tapioca",
+            "gousse de vanille",
+            "rhum brun",
+            "lait de coco"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/poe_banane.html"
+    },
+    "tofu_a_la_vapeur": {
+        "title": "Tofu à la vapeur",
+        "image": "183.jpeg",
+        "ingredients": [
+            "tofu",
+            "brocoli",
+            "haricots verts",
+            "gousses d'ail",
+            "moutarde de Dijon",
+            "huile de sésame",
+            "sauce huître",
+            "huile neutre",
+            "sirop d'érable"
+        ],
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/tofu_a_la_vapeur.html"
+    },
+    "salade_artichauts_feta_dattes": {
+        "title": "Salade d'artichauts feta et dattes",
+        "image": "",
+        "ingredients": [
+            "artichauds",
+            "feta au miel",
+            "dattes",
+            "oignons rouges"
+        ],
+        "category": "Entrées",
+        "inspiration": true,
+        "link": "./r/salade_artichauts_feta_dattes.html"
+    },
+    "tacos_vege": {
+        "title": "Tacos végés",
+        "image": "",
+        "ingredients": [
+            "haricots noirs secs",
+            "oignon",
+            "poivron",
+            "courgettes",
+            "aubergine",
+            "gousses d'ail",
+            "huile",
+            "PVT",
+            "eau",
+            "épices sriracha",
+            "paprika fumé",
+            "cumin",
+            "flocons de chilli",
+            "sel",
+            "poivre",
+            "pâte de tomate"
+        ],
+        "category": "Plats principaux",
+        "inspiration": false,
+        "link": "./r/tacos_vege.html"
     }
 }
