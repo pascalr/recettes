@@ -31,16 +31,7 @@ TODO: Recettes si manquantes:
 
 Muffins déjeuner aux patates douces
 
-Biscuits de pâte aux raisins secs
-
-Biscuits au son
-Galettes au chocolat
-Galettes de Sarrasin
-Mille-feuilles
-Gâteau aux carottes
-Gâteau au gruau et au sucre à la crème
-Galettes au gruau
-Sauce nems
+Galettes au gruau??? Je ne me rappelle pas de cette recette...
 
 Salade vinaigrette à l'ail
 Riz au quinoa et curcuma

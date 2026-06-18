@@ -1602,5 +1602,104 @@
         "category": "Desserts",
         "inspiration": false,
         "link": "./r/pouding_aux_fraises.html"
+    },
+    "biscuits_de_pate_aux_raisins_secs": {
+        "title": "Biscuits de pâte aux raisins secs",
+        "image": "",
+        "ingredients": [
+            "farine tout usage",
+            "sucre",
+            "crème de tarte",
+            "poudre à pâte",
+            "bicarbonate de soude",
+            "sel",
+            "cannelle moulue",
+            "beurre",
+            "raisins secs",
+            "lait"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_de_pate_aux_raisins_secs.html"
+    },
+    "biscuits_au_son": {
+        "title": "Biscuits au son",
+        "image": "",
+        "ingredients": [
+            "beurre",
+            "cassonade",
+            "oeuf",
+            "son de blé",
+            "farine",
+            "poudre à pâte",
+            "sel",
+            "eau tiède"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/biscuits_au_son.html"
+    },
+    "galettes_au_chocolat": {
+        "title": "Galettes au chocolat",
+        "image": "",
+        "ingredients": [
+            "beurre",
+            "chocolat Baker's",
+            "cassonade",
+            "oeuf",
+            "lait",
+            "extrait de vanille",
+            "farine",
+            "bicarbonate de soude"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/galettes_au_chocolat.html"
+    },
+    "galettes_de_sarrasin": {
+        "title": "Galettes de Sarrasin",
+        "image": "",
+        "ingredients": [
+            "farine de sarrasin",
+            "eau ou lait",
+            "sel",
+            "bicarbonate de soude",
+            "oeuf"
+        ],
+        "category": "Autres",
+        "inspiration": false,
+        "link": "./r/galettes_de_sarrasin.html"
+    },
+    "milles_feuilles": {
+        "title": "Mille-feuilles",
+        "image": "",
+        "ingredients": [
+            "biscuits Graham",
+            "lait",
+            "mélange à pudding vanille ou chocolat",
+            "crème 35%",
+            "sucre à glacer",
+            "extrait de vanille",
+            "crème",
+            "cacao",
+            "eau"
+        ],
+        "category": "Desserts",
+        "inspiration": false,
+        "link": "./r/milles_feuilles.html"
+    },
+    "sauce_nems": {
+        "title": "Sauce nems",
+        "image": "",
+        "ingredients": [
+            "eau",
+            "vinaigre blanc",
+            "sucre",
+            "carotte",
+            "nuoc mâm"
+        ],
+        "category": "Entrées",
+        "inspiration": false,
+        "link": "./r/sauce_nems.html"
     }
 }
