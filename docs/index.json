@@ -2311,8 +2311,83 @@
         "image": "232.jpeg",
         "category": "Entrées",
         "recipe": false
+    },
+    "marry_me_chicken_soup": {
+        "title": "Marry me chicken soup",
+        "image": "",
+        "ingredients": [
+            "échalotes",
+            "poireaux",
+            "champignons",
+            "épinards",
+            "tomates séchées",
+            "blancs de poulet",
+            "pesto de tomates",
+            "bouillon de poulet",
+            "orzo",
+            "crème",
+            "ricotta",
+            "poivre",
+            "thym",
+            "romarin",
+            "origan",
+            "paprika"
+        ],
+        "category": "Soupes",
+        "recipe": true,
+        "link": "./r/marry_me_chicken_soup.html"
+    },
+    "salade_patate_sucre_sale": {
+        "title": "Salade de patates sucrées-salées",
+        "image": "",
+        "ingredients": [
+            "patates avec peau",
+            "fécule de tapioca",
+            "pois chiches",
+            "oignon rouge",
+            "huile d'olive",
+            "ail en poudre",
+            "oignon en poudre",
+            "gingembre moulu",
+            "paprika fumé",
+            "sel",
+            "poivre",
+            "huile de sésame",
+            "champignons",
+            "ail",
+            "brocoli",
+            "canneberges séchées",
+            "feta",
+            "fromage de chèvre",
+            "mayonnaise",
+            "yaourt grec nature",
+            "sirop d'érable"
+        ],
+        "category": "Plats principaux",
+        "recipe": true,
+        "link": "./r/salade_patate_sucre_sale.html"
+    },
+    "galette_quinoa_sauce_menthe": {
+        "title": "Galettes de quinoa, sauce au yaourt et à la menthe",
+        "image": "",
+        "ingredients": [
+            "quinoa",
+            "épinards frais",
+            "feta",
+            "œufs",
+            "oignon",
+            "ail",
+            "farine",
+            "sel",
+            "poivre",
+            "Huile d’olive",
+            "yaourt nature",
+            "jus de citron",
+            "huile d’olive",
+            "menthe fraîche"
+        ],
+        "category": "Plats principaux",
+        "recipe": true,
+        "link": "./r/galette_quinoa_sauce_menthe.html"
     }
-
-
-    
 }
