@@ -2389,5 +2389,31 @@
         "category": "Plats principaux",
         "recipe": true,
         "link": "./r/galette_quinoa_sauce_menthe.html"
+    },
+    "salade_patate_chou_fleur": {
+        "title": "Salade de patate, choux-fleurs, pois chiches et feta",
+        "image": "",
+        "ingredients": [
+            "chou-fleur moyen",
+            "pois chiches",
+            "huile d'olive extra vierge",
+            "paprika fumé",
+            "sel",
+            "poivre",
+            "orzo",
+            "citron",
+            "moutarde de Dijon",
+            "miel",
+            "origan séché",
+            "poivre noir",
+            "ail",
+            "olives Kalamata",
+            "feta émiettée",
+            "persil frais",
+            "Poivre noir"
+        ],
+        "category": "Plats principaux",
+        "recipe": true,
+        "link": "./r/salade_patate_chou_fleur.html"
     }
 }
