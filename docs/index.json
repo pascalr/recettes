@@ -2415,5 +2415,21 @@
         "category": "Plats principaux",
         "recipe": true,
         "link": "./r/salade_patate_chou_fleur.html"
+    },
+    "caviar_aubergine": {
+        "title": "Caviar d'aubergine",
+        "image": "",
+        "ingredients": [],
+        "category": "Autres",
+        "recipe": true,
+        "link": "./r/caviar_aubergine.html"
+    },
+    "muffins_zucchini_chocolat_noir": {
+        "title": "Muffins zucchini chocolat noir",
+        "image": "",
+        "ingredients": [],
+        "category": "Desserts",
+        "recipe": true,
+        "link": "./r/muffins_zucchini_chocolat_noir.html"
     }
 }
